@@ -20,8 +20,7 @@ namespace Feedbapp.Views
         {
             Services.RestService restService = new Services.RestService();
             var json =  await restService.GetUser(etyUsername.Text);
-
-
+            
             if (!string.IsNullOrWhiteSpace(json))
             {
                 //Redirect();
