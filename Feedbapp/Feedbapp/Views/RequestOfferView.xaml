@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Feedbapp.Views.RequestOfferView">
+  <StackLayout VerticalOptions="Center" HorizontalOptions="Center" >
+    <RelativeLayout  Padding="0,0,0,50">
+      <Button BackgroundColor="#1fd660" Text="Solicitar" WidthRequest="250" HeightRequest="100" Clicked="GoToRequestView"></Button>
+    </RelativeLayout>
+    <RelativeLayout >
+      <Button BackgroundColor="#1fd660" Text="Ofrecer" WidthRequest="250" HeightRequest="100" ></Button>
+    </RelativeLayout>
+  </StackLayout>
+</ContentPage>

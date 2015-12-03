@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Feedbapp.Views.LoginView" BackgroundColor="#212830">
+  <StackLayout VerticalOptions="Center"  >
+    <Entry Placeholder="username (windows user)" WidthRequest="200" HorizontalOptions="Center" x:Name="etyUsername"></Entry>
+    <Button BackgroundColor="#1fd660" Text="Login" WidthRequest="200" HorizontalOptions="Center" Clicked="OnLoginClicked"></Button>
+  </StackLayout>
+</ContentPage>

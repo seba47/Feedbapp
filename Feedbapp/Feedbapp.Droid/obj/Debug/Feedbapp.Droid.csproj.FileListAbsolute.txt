@@ -1,0 +1,55 @@
+C:\Users\scabrera\Documents\Visual Studio 2015\Projects\Feedbacker\Feedbapp\Feedbapp\Feedbapp.Droid\bin\Debug\Feedbapp.Droid.dll
+C:\Users\scabrera\Documents\Visual Studio 2015\Projects\Feedbacker\Feedbapp\Feedbapp\Feedbapp.Droid\bin\Debug\Feedbapp.Droid.pdb
+C:\Users\scabrera\Documents\Visual Studio 2015\Projects\Feedbacker\Feedbapp\Feedbapp\Feedbapp.Droid\bin\Debug\Feedbapp.Droid.apk
+C:\Users\scabrera\Documents\Visual Studio 2015\Projects\Feedbacker\Feedbapp\Feedbapp\Feedbapp.Droid\bin\Debug\Feedbapp.Droid-Signed.apk
+C:\Users\scabrera\Documents\Visual Studio 2015\Projects\Feedbacker\Feedbapp\Feedbapp\Feedbapp.Droid\bin\Debug\Feedbapp.dll
+C:\Users\scabrera\Documents\Visual Studio 2015\Projects\Feedbacker\Feedbapp\Feedbapp\Feedbapp.Droid\bin\Debug\FormsViewGroup.dll
+C:\Users\scabrera\Documents\Visual Studio 2015\Projects\Feedbacker\Feedbapp\Feedbapp\Feedbapp.Droid\bin\Debug\Xamarin.Android.Support.v4.dll
+C:\Users\scabrera\Documents\Visual Studio 2015\Projects\Feedbacker\Feedbapp\Feedbapp\Feedbapp.Droid\bin\Debug\Xamarin.Forms.Core.dll
+C:\Users\scabrera\Documents\Visual Studio 2015\Projects\Feedbacker\Feedbapp\Feedbapp\Feedbapp.Droid\bin\Debug\Xamarin.Forms.Platform.Android.dll
+C:\Users\scabrera\Documents\Visual Studio 2015\Projects\Feedbacker\Feedbapp\Feedbapp\Feedbapp.Droid\bin\Debug\Xamarin.Forms.Xaml.dll
+C:\Users\scabrera\Documents\Visual Studio 2015\Projects\Feedbacker\Feedbapp\Feedbapp\Feedbapp.Droid\bin\Debug\Feedbapp.pdb
+C:\Users\scabrera\Documents\Visual Studio 2015\Projects\Feedbacker\Feedbapp\Feedbapp\Feedbapp.Droid\bin\Debug\Xamarin.Forms.Core.xml
+C:\Users\scabrera\Documents\Visual Studio 2015\Projects\Feedbacker\Feedbapp\Feedbapp\Feedbapp.Droid\bin\Debug\Xamarin.Forms.Xaml.xml
+C:\Users\scabrera\Documents\Visual Studio 2015\Projects\Feedbacker\Feedbapp\Feedbapp\Feedbapp.Droid\obj\Debug\Feedbapp.Droid.csprojResolveAssemblyReference.cache
+C:\Users\scabrera\Documents\Visual Studio 2015\Projects\Feedbacker\Feedbapp\Feedbapp\Feedbapp.Droid\obj\Debug\res\drawable\monoandroidsplash.png
+C:\Users\scabrera\Documents\Visual Studio 2015\Projects\Feedbacker\Feedbapp\Feedbapp\Feedbapp.Droid\obj\Debug\res\values\styles.xml
+C:\Users\scabrera\Documents\Visual Studio 2015\Projects\Feedbacker\Feedbapp\Feedbapp\Feedbapp.Droid\obj\Debug\Feedbapp.Droid.dll
+C:\Users\scabrera\Documents\Visual Studio 2015\Projects\Feedbacker\Feedbapp\Feedbapp\Feedbapp.Droid\obj\Debug\Feedbapp.Droid.pdb
+C:\Users\scabrera\Documents\Visual Studio 2015\Projects\Feedbacker\Feedbapp\Feedbapp\Feedbapp.Droid\obj\Debug\android\bin\Feedbapp.Droid.apk
+C:\Users\scabrera\Documents\Visual Studio 2015\Projects\Feedbacker\Feedbapp\Feedbapp\Feedbapp.Droid\obj\Debug\res\drawable\icon.png
+C:\Users\scabrera\Documents\Visual Studio 2015\Projects\Feedbacker\Feedbapp\Feedbapp\Feedbapp.Droid\obj\Debug\res\drawable-hdpi\icon.png
+C:\Users\scabrera\Documents\Visual Studio 2015\Projects\Feedbacker\Feedbapp\Feedbapp\Feedbapp.Droid\obj\Debug\res\drawable-xhdpi\icon.png
+C:\Users\scabrera\Documents\Visual Studio 2015\Projects\Feedbacker\Feedbapp\Feedbapp\Feedbapp.Droid\obj\Debug\res\drawable-xxhdpi\icon.png
+C:\Users\scabrera\Documents\Visual Studio 2015\Projects\Feedbacker\Feedbapp\Feedbapp\Feedbapp.Droid\obj\Debug\res\drawable\splashscreen.png
+C:\Users\scabrera\Documents\Visual Studio 2015\Projects\Feedbacker\Feedbapp\Feedbapp\Feedbapp.Droid\obj\Debug\R.cs.flag
+C:\Users\scabrera\Documents\Visual Studio 2015\Projects\Feedbacker\Feedbapp\Feedbapp\Feedbapp.Droid\obj\Debug\uploadflags.txt
+C:\Users\scabrera\Documents\Visual Studio 2015\Projects\Feedbacker\Feedbapp\Feedbapp\Feedbapp.Droid\obj\Debug\res\drawable\uruit_logo.png
+F:\Feedbapp\Feedbapp\Feedbapp.Droid\bin\Debug\Feedbapp.Droid.dll.config
+F:\Feedbapp\Feedbapp\Feedbapp.Droid\bin\Debug\Feedbapp.Droid.dll
+F:\Feedbapp\Feedbapp\Feedbapp.Droid\bin\Debug\Feedbapp.Droid.pdb
+F:\Feedbapp\Feedbapp\Feedbapp.Droid\bin\Debug\Feedbapp.Droid.apk
+F:\Feedbapp\Feedbapp\Feedbapp.Droid\bin\Debug\Feedbapp.Droid-Signed.apk
+F:\Feedbapp\Feedbapp\Feedbapp.Droid\bin\Debug\Feedbapp.dll
+F:\Feedbapp\Feedbapp\Feedbapp.Droid\bin\Debug\FormsViewGroup.dll
+F:\Feedbapp\Feedbapp\Feedbapp.Droid\bin\Debug\Xamarin.Android.Support.v4.dll
+F:\Feedbapp\Feedbapp\Feedbapp.Droid\bin\Debug\Xamarin.Forms.Core.dll
+F:\Feedbapp\Feedbapp\Feedbapp.Droid\bin\Debug\Xamarin.Forms.Platform.Android.dll
+F:\Feedbapp\Feedbapp\Feedbapp.Droid\bin\Debug\Xamarin.Forms.Xaml.dll
+F:\Feedbapp\Feedbapp\Feedbapp.Droid\bin\Debug\Feedbapp.pdb
+F:\Feedbapp\Feedbapp\Feedbapp.Droid\bin\Debug\Xamarin.Forms.Core.xml
+F:\Feedbapp\Feedbapp\Feedbapp.Droid\bin\Debug\Xamarin.Forms.Xaml.xml
+F:\Feedbapp\Feedbapp\Feedbapp.Droid\obj\Debug\Feedbapp.Droid.csprojResolveAssemblyReference.cache
+F:\Feedbapp\Feedbapp\Feedbapp.Droid\obj\Debug\res\drawable\monoandroidsplash.png
+F:\Feedbapp\Feedbapp\Feedbapp.Droid\obj\Debug\res\values\styles.xml
+F:\Feedbapp\Feedbapp\Feedbapp.Droid\obj\Debug\Feedbapp.Droid.dll
+F:\Feedbapp\Feedbapp\Feedbapp.Droid\obj\Debug\Feedbapp.Droid.pdb
+F:\Feedbapp\Feedbapp\Feedbapp.Droid\obj\Debug\android\bin\Feedbapp.Droid.apk
+F:\Feedbapp\Feedbapp\Feedbapp.Droid\obj\Debug\res\drawable\icon.png
+F:\Feedbapp\Feedbapp\Feedbapp.Droid\obj\Debug\res\drawable-hdpi\icon.png
+F:\Feedbapp\Feedbapp\Feedbapp.Droid\obj\Debug\res\drawable-xhdpi\icon.png
+F:\Feedbapp\Feedbapp\Feedbapp.Droid\obj\Debug\res\drawable-xxhdpi\icon.png
+F:\Feedbapp\Feedbapp\Feedbapp.Droid\obj\Debug\res\drawable\splashscreen.png
+F:\Feedbapp\Feedbapp\Feedbapp.Droid\obj\Debug\res\drawable\uruit_logo.png
+F:\Feedbapp\Feedbapp\Feedbapp.Droid\obj\Debug\R.cs.flag
+F:\Feedbapp\Feedbapp\Feedbapp.Droid\obj\Debug\uploadflags.txt
