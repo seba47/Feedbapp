@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using Feedbapp.ViewModels;
 using Xamarin.Forms;
 
 namespace Feedbapp.Views
@@ -13,37 +13,25 @@ namespace Feedbapp.Views
         public LoginView()
         {
             InitializeComponent();
-            
+            this.BindingContext = new LoginViewModel();
         }
-
         public async void OnLoginClicked(object sender, EventArgs args)
         {
-            Services.RestService restService = new Services.RestService();
-            var json =  await restService.GetUser(etyUsername.Text);
-            
-            if (!string.IsNullOrWhiteSpace(json))
+            Redirect();
+            Models.UserModel u = await ((LoginViewModel)this.BindingContext).Login();
+            if (u != null)
             {
-                //Redirect();
-            }
-            else
+                Redirect();
+            }else
             {
                 await DisplayAlert("Login incorrecto", "El usuario no existe", "Cancelar");
             }
-
-            //await Navigation.PopModalAsync();
-            //var root = Navigation.NavigationStack[0];
-            //Navigation.InsertPageBefore(this, root);
-            //await Navigation.PopAsync();
         }
-
         public async void Redirect()
         {
             var root = Navigation.NavigationStack[0];
             Navigation.InsertPageBefore(new CustomMasterDetailPage(), root);
             await Navigation.PopAsync();
         }
-
-
-       
     }
 }

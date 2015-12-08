@@ -3,6 +3,7 @@ F:\Feedbapp\Feedbapp\Feedbapp.Droid\obj\Debug\assemblies\Feedbapp.dll
 F:\Feedbapp\Feedbapp\Feedbapp.Droid\obj\Debug\assemblies\FormsViewGroup.dll
 F:\Feedbapp\Feedbapp\Feedbapp.Droid\obj\Debug\assemblies\Mono.Android.dll
 F:\Feedbapp\Feedbapp\Feedbapp.Droid\obj\Debug\assemblies\mscorlib.dll
+F:\Feedbapp\Feedbapp\Feedbapp.Droid\obj\Debug\assemblies\Newtonsoft.Json.dll
 F:\Feedbapp\Feedbapp\Feedbapp.Droid\obj\Debug\assemblies\System.Core.dll
 F:\Feedbapp\Feedbapp\Feedbapp.Droid\obj\Debug\assemblies\System.dll
 F:\Feedbapp\Feedbapp\Feedbapp.Droid\obj\Debug\assemblies\System.Xml.dll

@@ -32,11 +32,13 @@ F:\Feedbapp\Feedbapp\Feedbapp.Droid\bin\Debug\Feedbapp.Droid.apk
 F:\Feedbapp\Feedbapp\Feedbapp.Droid\bin\Debug\Feedbapp.Droid-Signed.apk
 F:\Feedbapp\Feedbapp\Feedbapp.Droid\bin\Debug\Feedbapp.dll
 F:\Feedbapp\Feedbapp\Feedbapp.Droid\bin\Debug\FormsViewGroup.dll
+F:\Feedbapp\Feedbapp\Feedbapp.Droid\bin\Debug\Newtonsoft.Json.dll
 F:\Feedbapp\Feedbapp\Feedbapp.Droid\bin\Debug\Xamarin.Android.Support.v4.dll
 F:\Feedbapp\Feedbapp\Feedbapp.Droid\bin\Debug\Xamarin.Forms.Core.dll
 F:\Feedbapp\Feedbapp\Feedbapp.Droid\bin\Debug\Xamarin.Forms.Platform.Android.dll
 F:\Feedbapp\Feedbapp\Feedbapp.Droid\bin\Debug\Xamarin.Forms.Xaml.dll
 F:\Feedbapp\Feedbapp\Feedbapp.Droid\bin\Debug\Feedbapp.pdb
+F:\Feedbapp\Feedbapp\Feedbapp.Droid\bin\Debug\Newtonsoft.Json.xml
 F:\Feedbapp\Feedbapp\Feedbapp.Droid\bin\Debug\Xamarin.Forms.Core.xml
 F:\Feedbapp\Feedbapp\Feedbapp.Droid\bin\Debug\Xamarin.Forms.Xaml.xml
 F:\Feedbapp\Feedbapp\Feedbapp.Droid\obj\Debug\Feedbapp.Droid.csprojResolveAssemblyReference.cache

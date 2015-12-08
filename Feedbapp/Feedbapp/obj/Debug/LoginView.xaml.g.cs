@@ -18,9 +18,12 @@ namespace Feedbapp.Views {
         
         private Entry etyUsername;
         
+        private Entry etyPassword;
+        
         private void InitializeComponent() {
             this.LoadFromXaml(typeof(LoginView));
             etyUsername = this.FindByName<Entry>("etyUsername");
+            etyPassword = this.FindByName<Entry>("etyPassword");
         }
     }
 }

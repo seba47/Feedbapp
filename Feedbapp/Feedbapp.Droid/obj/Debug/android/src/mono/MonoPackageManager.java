@@ -82,6 +82,7 @@ class MonoPackageManager_Resources {
 		"Feedbapp.Droid.dll",
 		"Feedbapp.dll",
 		"FormsViewGroup.dll",
+		"Newtonsoft.Json.dll",
 		"Xamarin.Android.Support.v4.dll",
 		"Xamarin.Forms.Core.dll",
 		"Xamarin.Forms.Platform.Android.dll",

@@ -16,8 +16,11 @@ namespace Feedbapp.Views {
     
     public partial class RequestView : ContentPage {
         
+        private Picker pkrNombre;
+        
         private void InitializeComponent() {
             this.LoadFromXaml(typeof(RequestView));
+            pkrNombre = this.FindByName<Picker>("pkrNombre");
         }
     }
 }

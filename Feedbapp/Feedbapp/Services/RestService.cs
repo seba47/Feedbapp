@@ -4,13 +4,13 @@ using System.Linq;
 using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
+using Feedbapp.Models;
 
 namespace Feedbapp.Services
 {
-    public class RestService 
-    {
-        HttpClient client;
-        public async Task<string> GetUser(string username)
+    public class RestService
+    {        
+        public async Task<UserModel> GetUser(string username,string password)
         {
             HttpClient client = new HttpClient();
             
@@ -24,21 +24,16 @@ namespace Feedbapp.Services
                 content = await response.Content.ReadAsStringAsync().ConfigureAwait(false);
                 //JsonConvert.DeserializeObject<List<TodoItem>>(content);
             }
-            return content;
+            UserModel um = (UserModel)Newtonsoft.Json.JsonConvert.DeserializeObject(content, typeof(UserModel));
+            return um;
         }
 
         public string GetUser()
         {
-
             var client = new HttpRequestMessage(HttpMethod.Get, "http://localhost:8282/api/User/Get?username=sebaa");
-
-
-
             string response = client.ToString();
-
-        
             return response;
-
         }
+        
     }
 }
