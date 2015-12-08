@@ -62,8 +62,8 @@ namespace Feedbapp.Views
                     this.Detail = new ProfileView();
                 }
                 else if (selected.Name == "Home")
-                {                  
-                    RequestOfferView rov2 = new RequestOfferView();
+                {
+                    HomeView rov2 = new HomeView();
                     // Set the BindingContext of the detail page.
                     this.Detail = rov2;
                 }

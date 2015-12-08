@@ -14,13 +14,10 @@ namespace Feedbapp.Views {
     using Xamarin.Forms.Xaml;
     
     
-    public partial class RequestView : ContentPage {
-        
-        private Picker pkrNombre;
+    public partial class HomeView : ContentPage {
         
         private void InitializeComponent() {
-            this.LoadFromXaml(typeof(RequestView));
-            pkrNombre = this.FindByName<Picker>("pkrNombre");
+            this.LoadFromXaml(typeof(HomeView));
         }
     }
 }

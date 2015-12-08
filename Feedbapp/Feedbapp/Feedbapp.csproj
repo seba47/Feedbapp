@@ -43,6 +43,7 @@
     <Compile Include="Services\UserRepository.cs" />
     <Compile Include="Services\RestService.cs" />
     <Compile Include="Shared\BindablePicker.cs" />
+    <Compile Include="ViewModels\BaseReqOffViewModel.cs" />
     <Compile Include="ViewModels\OfferViewModel.cs" />
     <Compile Include="ViewModels\RequestViewModel.cs" />
     <Compile Include="ViewModels\LoginViewModel.cs" />
@@ -53,11 +54,11 @@
     <Compile Include="Views\ProfileView.xaml.cs">
       <DependentUpon>ProfileView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\HomeView.xaml.cs">
+      <DependentUpon>HomeView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\RequestOfferView.xaml.cs">
       <DependentUpon>RequestOfferView.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Views\RequestView.xaml.cs">
-      <DependentUpon>RequestView.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -100,7 +101,7 @@
     <Folder Include="Handlers\" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Views\RequestOfferView.xaml">
+    <EmbeddedResource Include="Views\HomeView.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
@@ -112,7 +113,7 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Views\RequestView.xaml">
+    <EmbeddedResource Include="Views\RequestOfferView.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
