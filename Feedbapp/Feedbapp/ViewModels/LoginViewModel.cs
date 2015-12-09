@@ -4,6 +4,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Feedbapp.Entities;
+
 
 
 namespace Feedbapp.ViewModels
@@ -42,13 +44,12 @@ namespace Feedbapp.ViewModels
 
         }
         
-        public async Task<UserModel> Login()
+        public async Task<User> Login()
         {
             if(!string.IsNullOrWhiteSpace(this.username) && !string.IsNullOrWhiteSpace(this.password)) {
-                Services.RestService rest = new Services.RestService();
-                //Services.RestService restService = new Services.RestService();
-                UserModel um = await rest.GetUser(username, password);
-                return um;
+                UserModel um = new UserModel();
+                User u= await um.GetUserByUsername(username);
+                return u;
             }
             return null;     
         }

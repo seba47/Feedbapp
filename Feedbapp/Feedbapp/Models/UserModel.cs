@@ -1,22 +1,24 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-
+using System.Text;
+using System.Threading.Tasks;
+using Feedbapp.Services;
+using Feedbapp.Entities;
 namespace Feedbapp.Models
 {
-
     public class UserModel
     {
-        public string FirstName { get; set; }
-        public string LastName { get; set; }
+        private IRepository<User> repository;
 
-        public string Username { get; set; }
+        public UserModel()
+        {            
+            this.repository = new UserRepository();
+        }
 
-        public string Password { get; set; }
-
-        public override string ToString()
+        public async Task<User> GetUserByUsername(string username)
         {
-            return string.Format("{0} {1}", this.FirstName, this.LastName); 
+            return await ((UserRepository)this.repository).GetUserByUsername(username);
         }
     }
 }

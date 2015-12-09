@@ -25,7 +25,7 @@ namespace WebAPI.Controllers
         // GET: User
         public UserController()
         {
-            
+
         }
 
 
@@ -38,15 +38,29 @@ namespace WebAPI.Controllers
             };
         }
 
-        public UserModel Get(string username)
+        public User Get(string id)
         {
-            return new UserModel
+            return new User
             {
-             FirstName="Pepito",
-             LastName="Rodriguez",
-             Password="seba",
-             Username=username 
+                FirstName = "Pepito",
+                LastName = "Rodriguez",
+                Password = "seba",
+                Username = "Usernamee",
+                Id = int.Parse(id)
             };
         }
+
+        public User GetByUsername(string username)
+        {
+            return new User
+            {
+                FirstName = "Pepito",
+                LastName = "GetByUsername",
+                Password = "seba",
+                Username = username,
+                Id = 1
+            };
+        }
+
     }
 }

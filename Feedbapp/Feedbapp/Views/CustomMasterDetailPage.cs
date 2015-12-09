@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 using Feedbapp.Models;
+using Feedbapp.Entities;
 
 namespace Feedbapp.Views
 {

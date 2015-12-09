@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Feedbapp.Entities;
 
 
 namespace Feedbapp.ViewModels
@@ -13,10 +14,10 @@ namespace Feedbapp.ViewModels
         public OfferViewModel():base()
         {
             this.namesList = new List<string>();
-            this.usersList = new List<UserModel>();
+            this.usersList = new List<User>();
             for (int i = 0; i < 10; i++)
             {
-                UserModel um = new UserModel() { FirstName = "Seba", LastName = i.ToString(), Password = "", Username = "" };
+                User um = new User() { FirstName = "Seba", LastName = i.ToString(), Password = "", Username = "" };
                 this.usersList.Add(um);
                 this.namesList.Add(um.ToString());
             }
@@ -26,7 +27,7 @@ namespace Feedbapp.ViewModels
         {
             int test = this.SelectedIndex;
             string comm = this.Comments;
-            UserModel selected = this.UsersList[this.SelectedIndex];
+            User selected = this.UsersList[this.SelectedIndex];
             bool x = true;
 
             return x;

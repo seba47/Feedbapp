@@ -1,7 +1,7 @@
 ﻿using System;
 using Xamarin.Forms;
 
-namespace Feedbapp.Models
+namespace Feedbapp.Entities
 {
     public class MasterDetailItem
     {

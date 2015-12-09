@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Feedbapp.ViewModels;
 using Xamarin.Forms;
+using Feedbapp.Entities;
 
 namespace Feedbapp.Views
 {
@@ -17,7 +18,7 @@ namespace Feedbapp.Views
         }
         public async void OnLoginClicked(object sender, EventArgs args)
         {
-            Models.UserModel u = await ((LoginViewModel)this.BindingContext).Login();
+            User u = await ((LoginViewModel)this.BindingContext).Login();
             if (u != null)
             {
                 Redirect();

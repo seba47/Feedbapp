@@ -1,48 +1,23 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
-using Feedbapp.Models;
+using Feedbapp.Entities;
 
 namespace Feedbapp.Services
 {
-    public class UserRepository<T> : IRepository<T> where T : class, new()
+    public class UserRepository: RemoteRepository<User>
     {
-        public Task<IEnumerable<T>> All()
-        {
-            throw new NotImplementedException();
+        public UserRepository() : base("user"){
+            
         }
 
-        public Task<IEnumerable<T>> FindAsync(Func<T, bool> predicatepredicate)
+        public async Task<User> GetUserByUsername(string username)
         {
-            throw new NotImplementedException();
-        }
-
-        public Task<T> Get(Func<T, bool> identifier)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task<T> Update(T item)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task Delete(T item)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task<T> Add(T item)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void Dispose()
-        {
-            throw new NotImplementedException();
+            UriString parameters = new UriString();
+            parameters.Add("username", username);
+            return await this.Get(parameters, "GetByUsername");
         }
     }
 }

@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Feedbapp.Entities;
 
 
 namespace Feedbapp.ViewModels
@@ -11,8 +12,8 @@ namespace Feedbapp.ViewModels
     public abstract class BaseReqOffViewModel
     {
         protected List<string> namesList;
-        protected List<UserModel> usersList;
-        protected UserModel selectedUser;
+        protected List<User> usersList;
+        protected User selectedUser;
         protected string comments;
         protected int selectedIndex;
 
@@ -40,7 +41,7 @@ namespace Feedbapp.ViewModels
             }
         }
 
-        public List<UserModel> UsersList
+        public List<User> UsersList
         {
             get
             {
@@ -56,14 +57,14 @@ namespace Feedbapp.ViewModels
         {
             int test = this.SelectedIndex;
             string comm = this.Comments;
-            UserModel selected = this.UsersList[this.SelectedIndex];
+            User selected = this.UsersList[this.SelectedIndex];
             bool x = true;
 
             return x;
 
         }
 
-        public UserModel SelectedUser
+        public User SelectedUser
         {
             get
             {
@@ -90,11 +91,11 @@ namespace Feedbapp.ViewModels
         public BaseReqOffViewModel()
         {
             this.namesList = new List<string>();
-            this.usersList = new List<UserModel>();
+            this.usersList = new List<User>();
             //this.usersList = new List<UserModel>();
             for (int i = 0; i < 10; i++)
             {
-                UserModel um = new UserModel() { FirstName = "Seba", LastName = i.ToString(), Password = "", Username = "" };
+                User um = new User() { FirstName = "Seba", LastName = i.ToString(), Password = "", Username = "" };
                 this.usersList.Add(um);
                 this.namesList.Add(um.ToString());
             }
