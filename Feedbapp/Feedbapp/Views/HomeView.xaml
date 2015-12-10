@@ -4,10 +4,10 @@
              x:Class="Feedbapp.Views.HomeView">
   <StackLayout VerticalOptions="Center" HorizontalOptions="Center" >
     <RelativeLayout  Padding="0,0,0,50">
-      <Button BackgroundColor="#1fd660" Text="Solicitar" WidthRequest="250" HeightRequest="100" Clicked="GoToRequestOrOfferView" Command="Request"></Button>
+      <Button BackgroundColor="#1fd660" Text="Solicitar" WidthRequest="250" HeightRequest="100" Clicked="GoToRequestView" ></Button>
     </RelativeLayout>
     <RelativeLayout >
-      <Button BackgroundColor="#1fd660" Text="Ofrecer" WidthRequest="250" HeightRequest="100" Clicked="GoToRequestOrOfferView" Command="Offer"></Button>
+      <Button BackgroundColor="#1fd660" Text="Ofrecer" WidthRequest="250" HeightRequest="100" Clicked="GoToOfferView" ></Button>
     </RelativeLayout>
   </StackLayout>
 </ContentPage>

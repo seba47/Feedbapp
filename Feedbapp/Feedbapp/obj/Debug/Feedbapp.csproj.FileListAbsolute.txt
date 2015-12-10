@@ -32,5 +32,5 @@ F:\Feedbapp\Feedbapp\Feedbapp\obj\Debug\RequestOfferView.xaml.g.cs
 F:\Feedbapp\Feedbapp\Feedbapp\obj\Debug\ProfileView.xaml.g.cs
 F:\Feedbapp\Feedbapp\Feedbapp\obj\Debug\Feedbapp.dll
 F:\Feedbapp\Feedbapp\Feedbapp\obj\Debug\Feedbapp.pdb
-F:\Feedbapp\Feedbapp\Feedbapp\obj\Debug\Feedbapp.csprojResolveAssemblyReference.cache
 F:\Feedbapp\Feedbapp\Feedbapp\obj\Debug\HomeView.xaml.g.cs
+F:\Feedbapp\Feedbapp\Feedbapp\obj\Debug\Feedbapp.csprojResolveAssemblyReference.cache

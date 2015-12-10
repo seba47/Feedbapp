@@ -11,7 +11,8 @@ namespace Feedbapp.ViewModels
     public class RequestViewModel: BaseReqOffViewModel
     {      
         public RequestViewModel():base()
-        {            
+        {
+            this.buttonText = "Solicitar Feedback";
             this.namesList = new List<string>();
             this.usersList = new List<User>();
             //this.usersList = new List<UserModel>();

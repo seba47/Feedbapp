@@ -20,17 +20,15 @@ namespace Feedbapp.Views
                 FontSize = Device.GetNamedSize(NamedSize.Large, typeof(Label)),
                 HorizontalOptions = LayoutOptions.Center
             };
-
-            // Assemble an array of NamedColor objects.
             
-           MasterDetailItem[] items =
-                {
-                    new MasterDetailItem("Home", ""),
-                    new MasterDetailItem("My Profile", ""),
-                    new MasterDetailItem("Historical feedback", ""),
-                    new MasterDetailItem("Settings", ""),
-                    new MasterDetailItem("About", "")               
-                };
+            MasterDetailItem[] items =
+            {
+                new MasterDetailItem("Home", ""),
+                new MasterDetailItem("My Profile", ""),
+                new MasterDetailItem("Historical feedback", ""),
+                new MasterDetailItem("Settings", ""),
+                new MasterDetailItem("About", "")               
+            };
 
             // Create ListView for the master page.
             ListView listView = new ListView
@@ -51,9 +49,9 @@ namespace Feedbapp.Views
                     }
                 }
             };
-                       
 
             // Define a selected handler for the ListView.
+
             listView.ItemSelected += (sender, args) =>
             {
                 MasterDetailItem selected = (MasterDetailItem)args.SelectedItem ;
@@ -79,19 +77,7 @@ namespace Feedbapp.Views
             };
 
             // Initialize the ListView selection.
-            listView.SelectedItem = items[0];
-            
-
-            //validateLogin();
-        }
-
-        async private void validateLogin()
-        {
-            bool logged = false;
-            if (!logged)
-            {
-                await Navigation.PushModalAsync(new LoginView());
-            }
+            listView.SelectedItem = items[0];            
         }
         
     }    

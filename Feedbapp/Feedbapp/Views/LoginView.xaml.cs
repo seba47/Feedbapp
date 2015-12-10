@@ -29,7 +29,7 @@ namespace Feedbapp.Views
         }
         public async void Redirect()
         {
-            var root = Navigation.NavigationStack[0];
+            var root = Navigation.NavigationStack[0];   
             Navigation.InsertPageBefore(new CustomMasterDetailPage(), root);
             await Navigation.PopAsync();
         }

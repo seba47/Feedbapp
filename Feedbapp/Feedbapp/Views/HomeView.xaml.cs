@@ -15,9 +15,14 @@ namespace Feedbapp.Views
             InitializeComponent();
         }
 
-        async void GoToRequestOrOfferView(object sender, EventArgs args)
+        async void GoToRequestView(object sender, EventArgs args)
         {
             await Navigation.PushAsync(new RequestOfferView(true));
         }
+        async void GoToOfferView(object sender, EventArgs args)
+        {
+            await Navigation.PushAsync(new RequestOfferView(false));
+        }
+        
     }
 }

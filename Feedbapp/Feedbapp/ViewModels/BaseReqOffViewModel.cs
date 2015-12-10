@@ -16,6 +16,7 @@ namespace Feedbapp.ViewModels
         protected User selectedUser;
         protected string comments;
         protected int selectedIndex;
+        protected string buttonText;
 
         public string Comments
         {
@@ -26,6 +27,18 @@ namespace Feedbapp.ViewModels
             set
             {
                 comments = value;
+            }
+        }
+
+        public string ButtonText
+        {
+            get
+            {
+                return buttonText;
+            }
+            set
+            {
+                buttonText = value;
             }
         }
 

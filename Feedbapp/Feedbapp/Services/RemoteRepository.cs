@@ -23,18 +23,34 @@ namespace Feedbapp.Services
         public string FullUrl(UriString parameters, string MethodName)
         {
             List<string> returnParams = new List<string>();
-            if (parameters != null)
+            if (string.IsNullOrWhiteSpace(MethodName))
             {
-                foreach (KeyValuePair<string, string> param in parameters._Params)
+                if (parameters != null)
                 {
-                    returnParams.Add(String.Format("{0}={1}", param.Key, param.Value));
+                    foreach (KeyValuePair<string, string> param in parameters._Params)
+                    {
+                        returnParams.Add(String.Format("{0}={1}", param.Key, param.Value));
+                    }
+                    var data = "?" + String.Join("&", returnParams.ToArray());
+                    return BaseUri + this.ControllerName + "/" + MethodName + data;
                 }
-                var data = "?" + String.Join("&", returnParams.ToArray());
-                return BaseUri + this.ControllerName + "/" + MethodName + data;
+                else
+                    return BaseUri + this.ControllerName + "/" + MethodName;
             }
             else
-                return BaseUri + this.ControllerName + "/" + MethodName;
-
+            {
+                if (parameters != null)
+                {
+                    foreach (KeyValuePair<string, string> param in parameters._Params)
+                    {
+                        returnParams.Add(String.Format("{0}/{1}", param.Key, param.Value));
+                    }
+                    var data = "/" + String.Join("/", returnParams.ToArray());
+                    return BaseUri + this.ControllerName + "/" + MethodName + data;
+                }
+                else
+                    return BaseUri + this.ControllerName + "/" + MethodName;
+            }
         }
 
         public async override Task<T> Add(T item)
@@ -57,7 +73,7 @@ namespace Feedbapp.Services
             uString.Add("id", identifier.ToString());
             return await this.Get(uString, "Get");
         }
-        
+
 
         public async override Task<T> Get(UriString parameters, string MethodName = null, string ControllerName = null)
         {

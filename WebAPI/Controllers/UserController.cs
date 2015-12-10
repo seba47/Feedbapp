@@ -50,6 +50,9 @@ namespace WebAPI.Controllers
             };
         }
 
+        //[ActionName("GetByUsername")]
+        [Route("getByUsername/username/{username}")]
+        
         public User GetByUsername(string username)
         {
             return new User

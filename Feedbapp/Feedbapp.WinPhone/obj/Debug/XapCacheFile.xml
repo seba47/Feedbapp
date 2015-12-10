@@ -1,5 +1,5 @@
-﻿<xapCache source="F:\Feedbapp\Feedbapp\Feedbapp.WinPhone\Bin\Debug\PhoneApp1_Debug_AnyCPU.xap" wasSigned="False" wasTritonized="False" certificateThumbprint="" TimeStampUrl="" signKeyFile="" signKeyPassword="" lastWriteTime="08/12/2015 11:06:26">
-  <file source="F:\Feedbapp\Feedbapp\Feedbapp.WinPhone\obj\Debug\Feedbapp.WinPhone.dll" archivePath="Feedbapp.WinPhone.dll" lastWriteTime="08/12/2015 11:06:22" />
+﻿<xapCache source="F:\Feedbapp\Feedbapp\Feedbapp.WinPhone\Bin\Debug\PhoneApp1_Debug_AnyCPU.xap" wasSigned="False" wasTritonized="False" certificateThumbprint="" TimeStampUrl="" signKeyFile="" signKeyPassword="" lastWriteTime="10/12/2015 11:26:55">
+  <file source="F:\Feedbapp\Feedbapp\Feedbapp.WinPhone\obj\Debug\Feedbapp.WinPhone.dll" archivePath="Feedbapp.WinPhone.dll" lastWriteTime="10/12/2015 11:26:50" />
   <file source="F:\Feedbapp\Feedbapp\Feedbapp.WinPhone\README_FIRST.txt" archivePath="README_FIRST.txt" lastWriteTime="01/12/2015 11:20:08" />
   <file source="F:\Feedbapp\Feedbapp\Feedbapp.WinPhone\SplashScreenImage.jpg" archivePath="SplashScreenImage.jpg" lastWriteTime="01/12/2015 11:20:00" />
   <file source="F:\Feedbapp\Feedbapp\Feedbapp.WinPhone\Assets\AlignmentGrid.png" archivePath="Assets\AlignmentGrid.png" lastWriteTime="01/12/2015 11:20:00" />
@@ -12,10 +12,10 @@
   <file source="F:\Feedbapp\Feedbapp\Feedbapp.WinPhone\Toolkit.Content\ApplicationBar.Check.png" archivePath="Toolkit.Content\ApplicationBar.Check.png" lastWriteTime="01/12/2015 11:20:08" />
   <file source="F:\Feedbapp\Feedbapp\Feedbapp.WinPhone\Toolkit.Content\ApplicationBar.Delete.png" archivePath="Toolkit.Content\ApplicationBar.Delete.png" lastWriteTime="01/12/2015 11:20:08" />
   <file source="F:\Feedbapp\Feedbapp\Feedbapp.WinPhone\Toolkit.Content\ApplicationBar.Select.png" archivePath="Toolkit.Content\ApplicationBar.Select.png" lastWriteTime="01/12/2015 11:20:07" />
-  <file source="F:\Feedbapp\Feedbapp\Feedbapp.WinPhone\Bin\Debug\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="08/12/2015 11:06:26" />
+  <file source="F:\Feedbapp\Feedbapp\Feedbapp.WinPhone\Bin\Debug\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="10/12/2015 11:26:53" />
   <file source="F:\Feedbapp\Feedbapp\Feedbapp.WinPhone\Bin\Debug\Assets\ApplicationIcon.png" archivePath="Assets\ApplicationIcon.png" lastWriteTime="01/12/2015 11:20:00" />
   <file source="F:\Feedbapp\Feedbapp\Feedbapp.WinPhone\Bin\Debug\Assets\Tiles\FlipCycleTileMedium.png" archivePath="Assets\Tiles\FlipCycleTileMedium.png" lastWriteTime="01/12/2015 11:20:00" />
-  <file source="F:\Feedbapp\Feedbapp\Feedbapp\bin\Debug\Feedbapp.dll" archivePath="Feedbapp.dll" lastWriteTime="08/12/2015 11:06:21" />
+  <file source="F:\Feedbapp\Feedbapp\Feedbapp\bin\Debug\Feedbapp.dll" archivePath="Feedbapp.dll" lastWriteTime="10/12/2015 11:26:27" />
   <file source="F:\Feedbapp\packages\WPtoolkit.4.2013.08.16\lib\wp8\Microsoft.Phone.Controls.Toolkit.dll" archivePath="Microsoft.Phone.Controls.Toolkit.dll" lastWriteTime="01/12/2015 11:20:07" />
   <file source="F:\Feedbapp\packages\Newtonsoft.Json.7.0.1\lib\portable-net45+wp80+win8+wpa81+dnxcore50\Newtonsoft.Json.dll" archivePath="Newtonsoft.Json.dll" lastWriteTime="07/12/2015 10:52:45" />
   <file source="F:\Feedbapp\packages\Xamarin.Forms.1.3.3.6323\lib\WP80\Xamarin.Forms.Core.dll" archivePath="Xamarin.Forms.Core.dll" lastWriteTime="01/12/2015 11:19:41" />
@@ -29,5 +29,5 @@
   <file source="F:\Feedbapp\packages\Xamarin.Forms.1.3.3.6323\lib\WP80\Xamarin.Forms.Xaml.xml" archivePath="Xamarin.Forms.Xaml.xml" lastWriteTime="01/12/2015 11:19:41" />
   <file source="F:\Feedbapp\Feedbapp\Feedbapp\bin\Debug\System.Net.Http.xml" archivePath="System.Net.Http.xml" lastWriteTime="03/12/2015 12:09:52" />
   <file source="F:\Feedbapp\Feedbapp\Feedbapp\bin\Debug\System.Net.Http.Primitives.xml" archivePath="System.Net.Http.Primitives.xml" lastWriteTime="03/12/2015 12:09:52" />
-  <file source="F:\Feedbapp\Feedbapp\Feedbapp.WinPhone\Bin\Debug\Properties\WMAppManifest.xml" archivePath="WMAppManifest.xml" lastWriteTime="08/12/2015 11:06:26" />
+  <file source="F:\Feedbapp\Feedbapp\Feedbapp.WinPhone\Bin\Debug\Properties\WMAppManifest.xml" archivePath="WMAppManifest.xml" lastWriteTime="10/12/2015 11:26:54" />
 </xapCache>

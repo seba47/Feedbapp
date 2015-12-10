@@ -33,7 +33,7 @@ namespace Feedbapp.Views
 
         public async void MainButtonClicked(object sender, EventArgs args)
         {
-            bool ret = await ((RequestViewModel)this.BindingContext).Send();
+            bool ret = await ((BaseReqOffViewModel)this.BindingContext).Send();
             if (ret)
             {
                 await DisplayAlert("Solicitar Feedback", "Feedback solicitado!", "Aceptar");
