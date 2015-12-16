@@ -18,7 +18,7 @@ namespace Feedbapp.Droid
 
             global::Xamarin.Forms.Forms.Init(this, bundle);
             LoadApplication(new App());
-            //this.ActionBar.SetIcon(Android.Resource.Color.Transparent);
+            this.ActionBar.SetIcon(Android.Resource.Color.Transparent);
         }
     }
 }

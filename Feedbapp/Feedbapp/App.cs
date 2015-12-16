@@ -1,4 +1,5 @@
-﻿using Xamarin.Forms;
+﻿using Feedbapp.Styles;
+using Xamarin.Forms;
 
 namespace Feedbapp
 {
@@ -8,8 +9,12 @@ namespace Feedbapp
         {
             // The root page of your application
 
-            MainPage = new NavigationPage(new Views.LoginView());
+            NavigationPage np = new NavigationPage(new Views.LoginView());
+            np.BackgroundColor = Color.FromHex(MainStyles.GetBackgroundColor(false));
+            np.BarBackgroundColor = Color.FromHex(MainStyles.GetBackgroundColor(false));
+            MainPage = np;
 
+            //MainPage = new Views.Notifications();
         }
 
         protected override void OnStart()

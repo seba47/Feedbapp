@@ -17,6 +17,7 @@ namespace Feedbapp.ViewModels
         protected string comments;
         protected int selectedIndex;
         protected string buttonText;
+        protected RequestOfferModel model;
 
         public string Comments
         {
@@ -103,8 +104,10 @@ namespace Feedbapp.ViewModels
 
         public BaseReqOffViewModel()
         {
+            model = new RequestOfferModel();
             this.namesList = new List<string>();
-            this.usersList = new List<User>();
+            this.usersList = model.GetUsersList();
+            
             //this.usersList = new List<UserModel>();
             for (int i = 0; i < 10; i++)
             {

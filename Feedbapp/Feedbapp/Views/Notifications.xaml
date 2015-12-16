@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Feedbapp.Views.Notifications" BackgroundColor="#212830">
+
+  <StackLayout Orientation="Vertical">
+    <!--<Label Text ="Solicitudes pendientes" VerticalOptions="Center" HorizontalOptions="Center" FontSize="24" TextColor="White" FontAttributes="Bold" />-->
+    <ListView x:Name="LvwPending" HasUnevenRows="True" HorizontalOptions="End" GroupDisplayBinding="{Binding Title}" GroupShortNameBinding="{Binding ShortName}" IsGroupingEnabled="true">
+      <ListView.GroupHeaderTemplate HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+        <DataTemplate>
+          <ViewCell>
+            <StackLayout HorizontalOptions="CenterAndExpand" Padding="20">
+              <Label Text="{Binding Title}" TextColor="White" FontSize="26" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"/>
+            </StackLayout>
+          </ViewCell>
+        </DataTemplate>
+      </ListView.GroupHeaderTemplate>
+
+      <ListView.ItemTemplate>
+        <DataTemplate>
+          <ViewCell Height="130">
+            <StackLayout BackgroundColor="#212830" Orientation="Horizontal">
+              <StackLayout VerticalOptions="Center">
+                <Image Source="{Binding Icon}" WidthRequest="80" HeightRequest="80" />
+              </StackLayout>
+
+              <StackLayout Orientation="Vertical" Padding="20">
+                <Label Text="{Binding Name}" TextColor="White" HorizontalOptions="StartAndExpand" FontSize="16" />
+                <Label Text="Solicitó Feedback" TextColor="White" HorizontalOptions="Start"/>
+
+                <StackLayout Orientation="Horizontal" HeightRequest="50">
+                  <Button BackgroundColor="#1fd660" Text="Aceptar" WidthRequest="100" HeightRequest="40"></Button>
+                  <Button BackgroundColor="#212830" Text="Rechazar" WidthRequest="100" HeightRequest="40" BorderColor="#1fd660" BorderWidth="1" ></Button>
+                </StackLayout>
+              </StackLayout>
+            </StackLayout>
+          </ViewCell>
+        </DataTemplate>
+      </ListView.ItemTemplate>
+
+
+
+    </ListView>
+
+
+    <!--<Label Text ="Solicitudes Aprobadas" VerticalOptions="Center" HorizontalOptions="Center" FontSize="24" TextColor="White" FontAttributes="Bold" />
+      <ListView x:Name="LvwApproved" RowHeight="130" HorizontalOptions="End">
+        <ListView.ItemTemplate>
+          <DataTemplate>
+            <ViewCell >
+              <StackLayout BackgroundColor="#212830" Orientation="Horizontal">
+
+                <StackLayout VerticalOptions="Center">
+                  <Image Source="{Binding Icon}" WidthRequest="80" HeightRequest="80" />
+                </StackLayout>
+
+                <StackLayout Orientation="Vertical" Padding="20">
+                  <Label Text="{Binding Name}" TextColor="White" HorizontalOptions="StartAndExpand" FontSize="16" />
+                  <Label Text="Solicitó Feedback" TextColor="White" HorizontalOptions="Start"/>
+
+                  <StackLayout Orientation="Horizontal" HeightRequest="50">
+                    <Button BackgroundColor="#1fd660" Text="Aceptar" WidthRequest="100" HeightRequest="40"></Button>
+                    <Button BackgroundColor="#212830" Text="Rechazar" WidthRequest="100" HeightRequest="40" BorderColor="#1fd660" BorderWidth="1" ></Button>
+                  </StackLayout>
+                </StackLayout>
+              </StackLayout>
+            </ViewCell>
+          </DataTemplate>
+        </ListView.ItemTemplate>
+      </ListView>-->
+  </StackLayout>
+
+</ContentPage>

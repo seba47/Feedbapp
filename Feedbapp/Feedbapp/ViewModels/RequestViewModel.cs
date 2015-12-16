@@ -13,15 +13,8 @@ namespace Feedbapp.ViewModels
         public RequestViewModel():base()
         {
             this.buttonText = "Solicitar Feedback";
-            this.namesList = new List<string>();
             this.usersList = new List<User>();
-            //this.usersList = new List<UserModel>();
-            for (int i = 0; i < 10; i++)
-            {
-                User um = new User() { FirstName = "Seba", LastName = i.ToString(), Password = "", Username = "" };
-                this.usersList.Add(um);
-                this.namesList.Add(um.ToString());
-            }
+            
         }
 
         internal override async Task<bool> Send()

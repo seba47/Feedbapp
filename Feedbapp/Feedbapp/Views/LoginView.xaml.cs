@@ -18,6 +18,9 @@ namespace Feedbapp.Views
         }
         public async void OnLoginClicked(object sender, EventArgs args)
         {
+            Redirect();
+            return;
+
             User u = await ((LoginViewModel)this.BindingContext).Login();
             if (u != null)
             {

@@ -102,6 +102,10 @@
     <AndroidResource Include="Resources\drawable\splashscreen.png" />
     <AndroidResource Include="Resources\values\Styles.xml" />
     <AndroidResource Include="Resources\drawable\uruit_logo.png" />
+    <AndroidResource Include="Resources\drawable\notifications.png" />
+    <AndroidResource Include="Resources\drawable\hamburguer.png" />
+    <AndroidResource Include="Resources\drawable\profile1.png" />
+    <AndroidResource Include="Resources\drawable\profile2.png" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Feedbapp\Feedbapp.csproj">

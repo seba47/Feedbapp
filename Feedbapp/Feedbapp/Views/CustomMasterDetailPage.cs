@@ -6,27 +6,33 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Feedbapp.Models;
 using Feedbapp.Entities;
+using Feedbapp.Styles;
+using Feedbapp.Shared;
 
 namespace Feedbapp.Views
 {
     public class CustomMasterDetailPage : MasterDetailPage 
     {
         public CustomMasterDetailPage()
-        {
-            this.Icon = "uruit_logo.png";
+        {                   
+            
+            this.BackgroundColor = Color.FromHex(MainStyles.GetBackgroundColor(false));
+            
             Label header = new Label
-            {
-                Text = "UruIT Menu",
+            {                
+                Text = "Feedbapp",
                 FontSize = Device.GetNamedSize(NamedSize.Large, typeof(Label)),
-                HorizontalOptions = LayoutOptions.Center
+                HorizontalOptions = LayoutOptions.Center,
+                BackgroundColor= Color.FromHex(MainStyles.GetBackgroundColor(false))
+
             };
             
             MasterDetailItem[] items =
             {
                 new MasterDetailItem("Home", ""),
-                new MasterDetailItem("My Profile", ""),
-                new MasterDetailItem("Historical feedback", ""),
-                new MasterDetailItem("Settings", ""),
+                //new MasterDetailItem("My Profile", ""),
+                new MasterDetailItem("Notificaciones", ""),
+                //new MasterDetailItem("Settings", ""),
                 new MasterDetailItem("About", "")               
             };
 
@@ -37,9 +43,11 @@ namespace Feedbapp.Views
             };
 
             // Create the master page with the ListView.
-            this.Master = new ContentPage
+            this.Master = new CustomContentPage
             {
                 Title = header.Text,
+                Icon= "hamburguer.png",
+                BackgroundColor = Color.FromHex(MainStyles.GetBackgroundColor(false)),
                 Content = new StackLayout
                 {                                         
                     Children =
@@ -55,16 +63,15 @@ namespace Feedbapp.Views
             listView.ItemSelected += (sender, args) =>
             {
                 MasterDetailItem selected = (MasterDetailItem)args.SelectedItem ;
-                if (selected.Name== "My Profile")
-                {
-                    // Set the BindingContext of the detail page.
-                    this.Detail = new ProfileView();
-                }
-                else if (selected.Name == "Home")
+                 if (selected.Name == "Home")
                 {
                     HomeView rov2 = new HomeView();
                     // Set the BindingContext of the detail page.
                     this.Detail = rov2;
+                }else if(selected.Name == "Notificaciones")
+                {
+                    Notifications not = new Notifications();
+                    this.Detail = not;
                 }
                 else
                 {

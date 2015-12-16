@@ -55,3 +55,7 @@ F:\Feedbapp\Feedbapp\Feedbapp.Droid\obj\Debug\res\drawable\splashscreen.png
 F:\Feedbapp\Feedbapp\Feedbapp.Droid\obj\Debug\res\drawable\uruit_logo.png
 F:\Feedbapp\Feedbapp\Feedbapp.Droid\obj\Debug\R.cs.flag
 F:\Feedbapp\Feedbapp\Feedbapp.Droid\obj\Debug\uploadflags.txt
+F:\Feedbapp\Feedbapp\Feedbapp.Droid\obj\Debug\res\drawable\notifications.png
+F:\Feedbapp\Feedbapp\Feedbapp.Droid\obj\Debug\res\drawable\hamburguer.png
+F:\Feedbapp\Feedbapp\Feedbapp.Droid\obj\Debug\res\drawable\profile1.png
+F:\Feedbapp\Feedbapp\Feedbapp.Droid\obj\Debug\res\drawable\profile2.png

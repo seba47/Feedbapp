@@ -36,12 +36,20 @@ namespace Feedbapp.Views
             bool ret = await ((BaseReqOffViewModel)this.BindingContext).Send();
             if (ret)
             {
-                await DisplayAlert("Solicitar Feedback", "Feedback solicitado!", "Aceptar");
-                await Navigation.PopAsync();
+                bool exit = await DisplayAlert("Solicitud de Feedback", "¡Gracias! Se le ha enviado una solicitud a " + pkrNombre.ToString() + " para agendar una instancia de feedback. Recibirás una notificación en cuanto responda.", "Salir", "Nueva Solicitud");
+                if(exit)
+                {
+                    await Navigation.PopAsync();                    
+                }
+                else
+                {
+                    //clean the view for a new request
+                }
+
             }
             else
             {
-                await DisplayAlert("Login incorrecto", "El usuario no existe", "Cancelar");
+                await DisplayAlert("No se pudo solicitar el feedback", "", "Aceptar");
             }
         }
     }

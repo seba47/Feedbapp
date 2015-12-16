@@ -2,10 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:Feedbapp.ViewModels;assembly=Feedbapp"
-             x:Class="Feedbapp.Views.RequestOfferView" BackgroundColor="#212830">
-  <!--<ContentPage.BindingContext>
-    <local:RequestViewModel />
-  </ContentPage.BindingContext>-->
+             x:Class="Feedbapp.Views.RequestOfferView" BackgroundColor="#212830">  
   <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
     <Picker Title="Nombre" x:Name="pkrNombre" SelectedIndex="{Binding SelectedIndex}"></Picker>
     <Editor Text="{Binding Comments}" HeightRequest="250"></Editor> 
