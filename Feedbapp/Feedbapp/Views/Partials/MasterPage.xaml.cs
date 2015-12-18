@@ -17,33 +17,28 @@ namespace Feedbapp.Views
 
         public MasterPage(MasterDetailPage main)
         {
+            this.BackgroundColor = BackgroundColor = MainStyles.GetBackgroundColor();
             if (main != null)
             {
                 this.root = main;
             }
 
             InitializeComponent();
-            BackgroundColor = Color.FromHex(MainStyles.GetBackgroundColor(false));
-
-            //lblHeader.Text = "Feedbapp Menu";
-            //lblHeader.FontSize = Device.GetNamedSize(NamedSize.Large, typeof(Label));
-            //lblHeader.HorizontalOptions = LayoutOptions.Center;
-            //lblHeader.BackgroundColor = Color.FromHex(MainStyles.GetBackgroundColor(false));
 
             MasterDetailItem[] items =
             {
                 new MasterDetailItem("Home", ""),
                 //new MasterDetailItem("My Profile", ""),
-                new MasterDetailItem("Notificaciones", ""),
+                new MasterDetailItem("Solicitudes", ""),
                 //new MasterDetailItem("Settings", ""),
                 new MasterDetailItem("About", "")
             };
 
-            //ToolbarItem tbi = new ToolbarItem();
-            //tbi.Icon = "notifications.png";
-            //tbi.Text = "Notificaciones";
-            //tbi.Clicked += GoToNotificationsPage;
-            //this.ToolbarItems.Add(tbi);
+            ToolbarItem tbi = new ToolbarItem();
+            tbi.Icon = "notifications.png";
+            tbi.Text = "Notificaciones";
+            tbi.Clicked += GoToNotificationsPage;
+            this.ToolbarItems.Add(tbi);
 
             listView.ItemsSource = items;
 
@@ -59,10 +54,15 @@ namespace Feedbapp.Views
                     // Set the BindingContext of the detail page.
                     root.Detail = rov2;
                 }
-                else if (selected.Name == "Notificaciones")
+                else if (selected.Name == "Solicitudes")
                 {
-                    Notifications not = new Notifications();
+                    RequestsAndOffersView not = new RequestsAndOffersView();
                     root.Detail = not;
+                }
+                else if (selected.Name == "About")
+                {
+                    AboutView about = new AboutView();
+                    root.Detail = about;
                 }
                 else
                 {
@@ -80,7 +80,7 @@ namespace Feedbapp.Views
 
         async void GoToNotificationsPage(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new Notifications());
+            await Navigation.PushAsync(new NotificationsView());
         }
     }
 }

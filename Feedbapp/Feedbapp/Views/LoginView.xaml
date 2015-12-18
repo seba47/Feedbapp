@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Feedbapp.Views.LoginView" BackgroundColor="#212830">
+             x:Class="Feedbapp.Views.LoginView">
   <StackLayout VerticalOptions="Center"  >
     <Entry Placeholder="username" WidthRequest="300" HorizontalOptions="Center" x:Name="etyUsername" Text="{Binding Username}"></Entry>
     <Entry IsPassword="True" Placeholder="password" WidthRequest="300" HorizontalOptions="Center" x:Name="etyPassword" Text="{Binding Password}"></Entry>

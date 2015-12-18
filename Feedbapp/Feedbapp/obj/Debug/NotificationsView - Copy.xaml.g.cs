@@ -14,12 +14,12 @@ namespace Feedbapp.Views {
     using Xamarin.Forms.Xaml;
     
     
-    public partial class Notifications : ContentPage {
+    public partial class NotificationsView : ContentPage {
         
         private ListView LvwPending;
         
         private void InitializeComponent() {
-            this.LoadFromXaml(typeof(Notifications));
+            this.LoadFromXaml(typeof(NotificationsView));
             LvwPending = this.FindByName<ListView>("LvwPending");
         }
     }

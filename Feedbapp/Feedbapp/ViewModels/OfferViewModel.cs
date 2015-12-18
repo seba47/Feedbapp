@@ -14,6 +14,7 @@ namespace Feedbapp.ViewModels
         public OfferViewModel():base()
         {
             this.buttonText="Ofrecer Feedback";
+            this.PageTitle = "Ofrecer Feedback";
             this.namesList = new List<string>();
             this.usersList = new List<User>();
             for (int i = 0; i < 10; i++)

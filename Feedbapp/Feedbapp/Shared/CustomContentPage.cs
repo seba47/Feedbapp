@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 using Feedbapp.Views;
+using Feedbapp.Styles;
 
 namespace Feedbapp.Shared
 {
@@ -12,17 +13,7 @@ namespace Feedbapp.Shared
     {
         public CustomContentPage()
         {
-            ToolbarItem tbi = new ToolbarItem();
-            tbi.Icon = "notifications.png";
-            tbi.Text = "Notificaciones";
-            tbi.Clicked += GoToNotificationsPage;
-            this.ToolbarItems.Add(tbi);   
-                
-        }
-
-        async void GoToNotificationsPage(object sender, EventArgs e)
-        {
-            await Navigation.PushAsync(new Notifications());
-        }
+            this.BackgroundColor = BackgroundColor = MainStyles.GetBackgroundColor();
+        }        
     }
 }

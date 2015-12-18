@@ -1,4 +1,5 @@
 ﻿using Feedbapp.Entities;
+using Feedbapp.Styles;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,11 +10,12 @@ using Xamarin.Forms;
 
 namespace Feedbapp.Views
 {
-    public partial class Notifications : ContentPage
+    public partial class RequestsAndOffersView : ContentPage
     {
-        public Notifications()
+        public RequestsAndOffersView()
         {
             InitializeComponent();
+            this.BackgroundColor = BackgroundColor = MainStyles.GetBackgroundColor();
 
             List<MasterDetailItem> list = new List<MasterDetailItem>();
             MasterDetailItem m = new MasterDetailItem("José Perez", "profile1.png");
@@ -24,7 +26,7 @@ namespace Feedbapp.Views
 
             MasterDetailItem m3 = new MasterDetailItem("test 3", "profile1.png");
             list.Add(m3);
-            
+
             MasterDetailItem m4 = new MasterDetailItem("José Perez", "profile1.png");
             list.Add(m4);
 
@@ -39,5 +41,11 @@ namespace Feedbapp.Views
 
             //LvwApproved.ItemsSource = list;
         }
+
+        public async void OnTapGestureRecognizerTapped(object sender, EventArgs args)
+        {
+            await Navigation.PushAsync(new FeedbackRequestView());
+        }
+
     }
 }

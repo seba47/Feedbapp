@@ -17,6 +17,7 @@ namespace Feedbapp.ViewModels
         protected string comments;
         protected int selectedIndex;
         protected string buttonText;
+        protected string pageTitle;
         protected RequestOfferModel model;
 
         public string Comments
@@ -28,6 +29,18 @@ namespace Feedbapp.ViewModels
             set
             {
                 comments = value;
+            }
+        }
+
+        public string PageTitle
+        {
+            get
+            {
+                return pageTitle;
+            }
+            set
+            {
+                pageTitle = value;
             }
         }
 

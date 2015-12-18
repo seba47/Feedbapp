@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Feedbapp.Views.FeedbackRequestView" Title="Solicitud de Feedback">
+  <StackLayout>
+    <Label Text="Feedback" VerticalOptions="Center" HorizontalOptions="Center" FontSize="24" TextColor="White"/>
+    <Image Source="profile1.png" HeightRequest="80" WidthRequest="80"></Image>
+    <Label Text="José Perez" VerticalOptions="Center" HorizontalOptions="Center" FontSize="18" TextColor="White"/>
+    <Label Text="simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original." VerticalOptions="Center" HorizontalOptions="CenterAndExpand" FontSize="12" TextColor="White"/>
+    <Button BackgroundColor="#1fd660" Text="Agendar" ></Button>
+    <Button BackgroundColor="#212830" Text="Rechazar" BorderColor="#1fd660" BorderWidth="1" ></Button>
+  </StackLayout>
+</ContentPage>

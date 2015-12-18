@@ -13,6 +13,7 @@ namespace Feedbapp.ViewModels
         public RequestViewModel():base()
         {
             this.buttonText = "Solicitar Feedback";
+            this.PageTitle = "Solicitar Feedback";
             this.usersList = new List<User>();
             
         }

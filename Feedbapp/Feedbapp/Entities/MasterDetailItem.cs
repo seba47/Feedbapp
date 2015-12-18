@@ -76,7 +76,7 @@ namespace Feedbapp.Entities
                 new MasterDetailItem("Ricardo A", "http://lorempixel.com/200/200/"),
                 new MasterDetailItem("José Fernandez", "http://lorempixel.com/200/200/")
             },
-            new PageTypeGroup ("Solicitudes Aprobadas", "B"){
+            new PageTypeGroup ("Enviadas", "B"){
                 new MasterDetailItem("José Perez", "http://lorempixel.com/200/200/"),
                 new MasterDetailItem("José Lalala", "http://lorempixel.com/200/200/"),
                 new MasterDetailItem("Ricardo A", "http://lorempixel.com/200/200/"),

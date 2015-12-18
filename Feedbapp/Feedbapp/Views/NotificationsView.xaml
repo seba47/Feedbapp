@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Feedbapp.Views.Notifications" BackgroundColor="#212830">
+             x:Class="Feedbapp.Views.NotificationsView" Title="Notificaciones">
 
   <StackLayout Orientation="Vertical">
-    <!--<Label Text ="Solicitudes pendientes" VerticalOptions="Center" HorizontalOptions="Center" FontSize="24" TextColor="White" FontAttributes="Bold" />-->
-    <ListView x:Name="LvwPending" HasUnevenRows="True" HorizontalOptions="End" GroupDisplayBinding="{Binding Title}" GroupShortNameBinding="{Binding ShortName}" IsGroupingEnabled="true">
-      <ListView.GroupHeaderTemplate HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+    
+    <ListView x:Name="LvwPending" HasUnevenRows="True" HorizontalOptions="End">
+      <!--<ListView.GroupHeaderTemplate HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
         <DataTemplate>
           <ViewCell>
             <StackLayout HorizontalOptions="CenterAndExpand" Padding="20">
@@ -14,7 +14,7 @@
             </StackLayout>
           </ViewCell>
         </DataTemplate>
-      </ListView.GroupHeaderTemplate>
+      </ListView.GroupHeaderTemplate>-->
 
       <ListView.ItemTemplate>
         <DataTemplate>

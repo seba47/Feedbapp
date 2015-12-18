@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Feedbapp.ViewModels;
 using Xamarin.Forms;
 using Feedbapp.Entities;
+using Feedbapp.Styles;
 
 namespace Feedbapp.Views
 {
@@ -14,6 +15,7 @@ namespace Feedbapp.Views
         public LoginView()
         {
             InitializeComponent();
+            this.BackgroundColor = BackgroundColor = MainStyles.GetBackgroundColor();
             this.BindingContext = new LoginViewModel();
         }
         public async void OnLoginClicked(object sender, EventArgs args)

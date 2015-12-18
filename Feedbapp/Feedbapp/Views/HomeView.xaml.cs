@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Feedbapp.Styles;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,6 +14,7 @@ namespace Feedbapp.Views
         public HomeView()
         {
             InitializeComponent();
+            this.BackgroundColor = BackgroundColor = MainStyles.GetBackgroundColor();
         }
 
         async void GoToRequestView(object sender, EventArgs args)

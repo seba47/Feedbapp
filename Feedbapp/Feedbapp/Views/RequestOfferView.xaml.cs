@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Feedbapp.ViewModels;
 
 using Xamarin.Forms;
+using Feedbapp.Styles;
 
 namespace Feedbapp.Views
 {
@@ -14,6 +15,7 @@ namespace Feedbapp.Views
         public RequestOfferView(bool requestMode)
         {
             InitializeComponent();
+            this.BackgroundColor = BackgroundColor = MainStyles.GetBackgroundColor();
             if (requestMode)
             {
                 this.BindingContext = new RequestViewModel();
@@ -33,7 +35,7 @@ namespace Feedbapp.Views
 
         public async void MainButtonClicked(object sender, EventArgs args)
         {
-            bool ret = await ((BaseReqOffViewModel)this.BindingContext).Send();
+            bool ret = true;// await ((BaseReqOffViewModel)this.BindingContext).Send();
             if (ret)
             {
                 bool exit = await DisplayAlert("Solicitud de Feedback", "¡Gracias! Se le ha enviado una solicitud a " + pkrNombre.ToString() + " para agendar una instancia de feedback. Recibirás una notificación en cuanto responda.", "Salir", "Nueva Solicitud");

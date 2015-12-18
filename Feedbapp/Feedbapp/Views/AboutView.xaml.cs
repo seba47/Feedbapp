@@ -9,9 +9,9 @@ using Xamarin.Forms;
 
 namespace Feedbapp.Views
 {
-    public partial class ProfileView : ContentPage
+    public partial class AboutView : ContentPage
     {
-        public ProfileView()
+        public AboutView()
         {
             InitializeComponent();
             this.BackgroundColor = BackgroundColor = MainStyles.GetBackgroundColor();
