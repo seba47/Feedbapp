@@ -28,8 +28,6 @@ C:\Users\scabrera\Documents\Visual Studio 2015\Projects\Feedbacker\Feedbapp\Feed
 F:\Feedbapp\Feedbapp\Feedbapp.Droid\bin\Debug\Feedbapp.Droid.dll.config
 F:\Feedbapp\Feedbapp\Feedbapp.Droid\bin\Debug\Feedbapp.Droid.dll
 F:\Feedbapp\Feedbapp\Feedbapp.Droid\bin\Debug\Feedbapp.Droid.pdb
-F:\Feedbapp\Feedbapp\Feedbapp.Droid\bin\Debug\Feedbapp.Droid.apk
-F:\Feedbapp\Feedbapp\Feedbapp.Droid\bin\Debug\Feedbapp.Droid-Signed.apk
 F:\Feedbapp\Feedbapp\Feedbapp.Droid\bin\Debug\Feedbapp.dll
 F:\Feedbapp\Feedbapp\Feedbapp.Droid\bin\Debug\FormsViewGroup.dll
 F:\Feedbapp\Feedbapp\Feedbapp.Droid\bin\Debug\Newtonsoft.Json.dll
@@ -46,7 +44,6 @@ F:\Feedbapp\Feedbapp\Feedbapp.Droid\obj\Debug\res\drawable\monoandroidsplash.png
 F:\Feedbapp\Feedbapp\Feedbapp.Droid\obj\Debug\res\values\styles.xml
 F:\Feedbapp\Feedbapp\Feedbapp.Droid\obj\Debug\Feedbapp.Droid.dll
 F:\Feedbapp\Feedbapp\Feedbapp.Droid\obj\Debug\Feedbapp.Droid.pdb
-F:\Feedbapp\Feedbapp\Feedbapp.Droid\obj\Debug\android\bin\Feedbapp.Droid.apk
 F:\Feedbapp\Feedbapp\Feedbapp.Droid\obj\Debug\res\drawable\icon.png
 F:\Feedbapp\Feedbapp\Feedbapp.Droid\obj\Debug\res\drawable-hdpi\icon.png
 F:\Feedbapp\Feedbapp\Feedbapp.Droid\obj\Debug\res\drawable-xhdpi\icon.png
@@ -59,3 +56,6 @@ F:\Feedbapp\Feedbapp\Feedbapp.Droid\obj\Debug\res\drawable\notifications.png
 F:\Feedbapp\Feedbapp\Feedbapp.Droid\obj\Debug\res\drawable\hamburguer.png
 F:\Feedbapp\Feedbapp\Feedbapp.Droid\obj\Debug\res\drawable\profile1.png
 F:\Feedbapp\Feedbapp\Feedbapp.Droid\obj\Debug\res\drawable\profile2.png
+F:\Feedbapp\Feedbapp\Feedbapp.Droid\bin\Debug\FeedbappPkg.FeedbappPkg.apk
+F:\Feedbapp\Feedbapp\Feedbapp.Droid\bin\Debug\FeedbappPkg.FeedbappPkg-Signed.apk
+F:\Feedbapp\Feedbapp\Feedbapp.Droid\obj\Debug\android\bin\FeedbappPkg.FeedbappPkg.apk

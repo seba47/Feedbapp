@@ -35,3 +35,5 @@ F:\Feedbapp\Feedbapp\Feedbapp\obj\Debug\Feedbapp.pdb
 F:\Feedbapp\Feedbapp\Feedbapp\obj\Debug\HomeView.xaml.g.cs
 F:\Feedbapp\Feedbapp\Feedbapp\obj\Debug\Feedbapp.csprojResolveAssemblyReference.cache
 F:\Feedbapp\Feedbapp\Feedbapp\obj\Debug\Notifications.xaml.g.cs
+F:\Feedbapp\Feedbapp\Feedbapp\obj\Debug\MainMenuView.xaml.g.cs
+F:\Feedbapp\Feedbapp\Feedbapp\obj\Debug\MasterPage.xaml.g.cs

@@ -6,6 +6,9 @@ namespace Feedbapp.Entities
 {
     public class MasterDetailItem
     {
+        public MasterDetailItem()
+        {
+        }
         public MasterDetailItem(string n, string icon)
         {
             this.name = n;
@@ -64,16 +67,25 @@ namespace Feedbapp.Entities
         {
             List<PageTypeGroup> Groups = new List<PageTypeGroup> {
             new PageTypeGroup ("Solicitudes Pendientes", "A"){
-                new MasterDetailItem("José Perez", "profile1.png"),
-                new MasterDetailItem("Ale Rodriguez", "profile1.png"),
-                new MasterDetailItem("GMaria Perez", "profile2.png"),
-                new MasterDetailItem("Seba Cabrera", "profile1.png")
+                new MasterDetailItem("José Perez", "http://lorempixel.com/200/200/"),
+                new MasterDetailItem("Ale Rodriguez", "http://lorempixel.com/200/200/"),
+                new MasterDetailItem("GMaria Perez", "http://lorempixel.com/200/200/"),
+                new MasterDetailItem("Seba Cabrera", "http://lorempixel.com/200/200/"),
+                new MasterDetailItem("José Perez", "http://lorempixel.com/200/200/"),
+                new MasterDetailItem("José Lalala", "http://lorempixel.com/200/200/"),
+                new MasterDetailItem("Ricardo A", "http://lorempixel.com/200/200/"),
+                new MasterDetailItem("José Fernandez", "http://lorempixel.com/200/200/")
             },
             new PageTypeGroup ("Solicitudes Aprobadas", "B"){
-                new MasterDetailItem("José Perez", "profile1.png"),
-                new MasterDetailItem("José Lalala", "profile1.png"),
-                new MasterDetailItem("Ricardo A", "profile1.png"),
-                new MasterDetailItem("José Fernandez", "profile1.png")
+                new MasterDetailItem("José Perez", "http://lorempixel.com/200/200/"),
+                new MasterDetailItem("José Lalala", "http://lorempixel.com/200/200/"),
+                new MasterDetailItem("Ricardo A", "http://lorempixel.com/200/200/"),
+                new MasterDetailItem("José Fernandez", "http://lorempixel.com/200/200/"),
+                new MasterDetailItem("José Perez", "http://lorempixel.com/200/200/"),
+                new MasterDetailItem("Ale Rodriguez", "http://lorempixel.com/200/200/"),
+                new MasterDetailItem("GMaria Perez", "http://lorempixel.com/200/200/"),
+                new MasterDetailItem("Seba Cabrera", "http://lorempixel.com/200/200/")
+
             }
         };
             All = Groups; //set the publicly accessible list

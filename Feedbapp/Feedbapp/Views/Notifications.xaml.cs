@@ -24,8 +24,7 @@ namespace Feedbapp.Views
 
             MasterDetailItem m3 = new MasterDetailItem("test 3", "profile1.png");
             list.Add(m3);
-
-
+            
             MasterDetailItem m4 = new MasterDetailItem("José Perez", "profile1.png");
             list.Add(m4);
 
@@ -34,8 +33,6 @@ namespace Feedbapp.Views
 
             MasterDetailItem m6 = new MasterDetailItem("test 3", "profile1.png");
             list.Add(m6);
-
-            
 
             LvwPending.ItemsSource = PageTypeGroup.All;
 
