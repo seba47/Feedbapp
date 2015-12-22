@@ -40,3 +40,5 @@ F:\Feedbapp\Feedbapp\Feedbapp\obj\Debug\NotificationsView.xaml.g.cs
 F:\Feedbapp\Feedbapp\Feedbapp\obj\Debug\AboutView.xaml.g.cs
 F:\Feedbapp\Feedbapp\Feedbapp\obj\Debug\RequestsAndOffersView.xaml.g.cs
 F:\Feedbapp\Feedbapp\Feedbapp\obj\Debug\FeedbackRequestView.xaml.g.cs
+F:\Feedbapp\Feedbapp\Feedbapp\bin\Debug\SQLite-net.dll
+F:\Feedbapp\Feedbapp\Feedbapp\bin\Debug\SQLitePCL.raw.dll

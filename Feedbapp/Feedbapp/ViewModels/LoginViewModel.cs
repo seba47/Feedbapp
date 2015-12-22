@@ -48,7 +48,7 @@ namespace Feedbapp.ViewModels
         {
             if(!string.IsNullOrWhiteSpace(this.username) && !string.IsNullOrWhiteSpace(this.password)) {
                 UserModel um = new UserModel();
-                User u= await um.GetUserByUsername(username);
+                User u= await um.IsLogged(username,password);
                 return u;
             }
             return null;     

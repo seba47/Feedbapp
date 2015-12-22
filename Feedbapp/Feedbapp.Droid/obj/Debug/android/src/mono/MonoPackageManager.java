@@ -83,6 +83,8 @@ class MonoPackageManager_Resources {
 		"Feedbapp.dll",
 		"FormsViewGroup.dll",
 		"Newtonsoft.Json.dll",
+		"SQLite-net.dll",
+		"SQLitePCL.raw.dll",
 		"Xamarin.Android.Support.v4.dll",
 		"Xamarin.Forms.Core.dll",
 		"Xamarin.Forms.Platform.Android.dll",

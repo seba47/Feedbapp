@@ -20,21 +20,22 @@ namespace Feedbapp.Views
         }
         public async void OnLoginClicked(object sender, EventArgs args)
         {
-            Redirect();
-            return;
-
+            //Redirect();
+            //return;
+            
             User u = await ((LoginViewModel)this.BindingContext).Login();
             if (u != null)
             {
                 Redirect();
-            }else
+            }
+            else
             {
                 await DisplayAlert("Login incorrecto", "El usuario no existe", "Cancelar");
             }
         }
         public async void Redirect()
         {
-            var root = Navigation.NavigationStack[0];   
+            var root = Navigation.NavigationStack[0];
             Navigation.InsertPageBefore(new CustomMasterDetailPage(), root);
             await Navigation.PopAsync();
         }

@@ -53,11 +53,12 @@ namespace Feedbapp.Services
             }
         }
 
-        public async override Task<T> Add(T item)
+        public async override Task<int> Add(T item)
         {
             UriString uString = new UriString();
             uString.Add("id", item.Id);
-            return await this.Get(uString, "Create");
+            //return await this.Get(uString, "Create");
+            return 1;
         }
 
         public async override Task Delete(T item)
@@ -75,7 +76,7 @@ namespace Feedbapp.Services
         }
 
 
-        public async override Task<T> Get(UriString parameters, string MethodName = null, string ControllerName = null)
+        public async Task<T> Get(UriString parameters, string MethodName = null, string ControllerName = null)
         {
             var result = await this.httpClient.GetAsync(this.FullUrl(parameters, MethodName));
             if (result.IsSuccessStatusCode)
@@ -89,6 +90,11 @@ namespace Feedbapp.Services
         }
 
         public override Task<T> Update(T item)
+        {
+            throw new NotImplementedException();
+        }
+
+        public override Task<List<T>> Get()
         {
             throw new NotImplementedException();
         }

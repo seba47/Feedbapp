@@ -13,7 +13,7 @@ namespace Feedbapp.Models
 
         public RequestOfferModel()
         {            
-            this.repository = new UserRepository();
+            this.repository = new RemoteRepository_User();
         }
 
         public List<User> GetUsersList()

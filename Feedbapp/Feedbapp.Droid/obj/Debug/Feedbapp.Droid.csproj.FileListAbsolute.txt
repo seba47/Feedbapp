@@ -59,3 +59,6 @@ F:\Feedbapp\Feedbapp\Feedbapp.Droid\obj\Debug\res\drawable\profile2.png
 F:\Feedbapp\Feedbapp\Feedbapp.Droid\bin\Debug\FeedbappPkg.FeedbappPkg.apk
 F:\Feedbapp\Feedbapp\Feedbapp.Droid\bin\Debug\FeedbappPkg.FeedbappPkg-Signed.apk
 F:\Feedbapp\Feedbapp\Feedbapp.Droid\obj\Debug\android\bin\FeedbappPkg.FeedbappPkg.apk
+F:\Feedbapp\Feedbapp\Feedbapp.Droid\bin\Debug\SQLite-net.dll
+F:\Feedbapp\Feedbapp\Feedbapp.Droid\bin\Debug\SQLitePCL.raw.dll
+F:\Feedbapp\Feedbapp\Feedbapp.Droid\bin\Debug\SQLite-net.dll.mdb

@@ -2,6 +2,11 @@
 {
     public class TEntity
     {
-        public string Id;
+        public string Id { get; set; }
+
+        public TEntity()
+        {
+
+        }
     }
 }

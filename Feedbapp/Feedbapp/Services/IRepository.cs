@@ -12,6 +12,6 @@ namespace Feedbapp.Services
         Task<T> Get(int identifier);
         Task<T> Update(T item);
         Task Delete(T item);
-        Task<T> Add(T item);
+        Task<int> Add(T item);
     }
 }

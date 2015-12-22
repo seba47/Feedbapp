@@ -10,14 +10,14 @@ namespace Feedbapp.Services
 {
     public abstract class BaseRepository<T> : IRepository<T> where T : TEntity
     {
-        public abstract Task<T> Get(UriString parameters, string MethodName = null, string ControllerName = null);
-
         public abstract Task<T> Get(int identifier);
 
         public abstract Task<T> Update(T item);
         public abstract Task Delete(T item);
 
-        public abstract Task<T> Add(T item);
+        public abstract Task<int> Add(T item);
+
+        public abstract Task<List<T>> Get();
 
         public BaseRepository(string BaseAddress)
         {
