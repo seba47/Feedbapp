@@ -17,21 +17,18 @@ namespace Feedbapp.Views
             InitializeComponent();
             this.BackgroundColor = BackgroundColor = MainStyles.GetBackgroundColor();
             this.BindingContext = new LoginViewModel();
-        }
-        public async void OnLoginClicked(object sender, EventArgs args)
-        {
-            //Redirect();
-            //return;
-            
-            User u = await ((LoginViewModel)this.BindingContext).Login();
-            if (u != null)
+            if (((LoginViewModel)this.BindingContext).IsLogged())
             {
                 Redirect();
             }
+        }
+        public async void OnLoginClicked(object sender, EventArgs args)
+        {
+            bool logged = await ((LoginViewModel)this.BindingContext).Login();
+            if (logged)
+                Redirect();
             else
-            {
                 await DisplayAlert("Login incorrecto", "El usuario no existe", "Cancelar");
-            }
         }
         public async void Redirect()
         {

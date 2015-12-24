@@ -14,13 +14,18 @@ namespace Feedbapp.Services
 
         }
 
-        public async Task<User> getUser(string username, string password)
+        public User getUser()
         {
-            //List<User> userList = database.Query<User>("SELECT * FROM [User] WHERE [Username] = '" + username + "' AND [Password] " + password + "'");
+            var u = database.Table<User>().FirstOrDefault<User>();
+            return u;
+        }
+
+        public User getUser(string username, string password)
+        {
             var u = database.Table<User>().FirstOrDefault<User>(x => x.Username == username && x.Password == password);
             List<User> userList = new List<User>();
             userList.Add(u);
-            return await Task.Run(() => userList.First<User>());
+            return userList.First<User>();
         }
 
     }

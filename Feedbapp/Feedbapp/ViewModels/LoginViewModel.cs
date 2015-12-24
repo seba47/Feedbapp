@@ -14,16 +14,17 @@ namespace Feedbapp.ViewModels
     {
         private string username;
         private string password;
-        
+        private UserModel um;
+
         public string Username
         {
             get
             {
-                return username ;
+                return username;
             }
             set
             {
-                username= value;
+                username = value;
             }
         }
 
@@ -38,20 +39,25 @@ namespace Feedbapp.ViewModels
                 password = value;
             }
         }
-        
+
         public LoginViewModel()
         {
-
+            um = new UserModel();
         }
-        
-        public async Task<User> Login()
+
+        public bool IsLogged()
         {
-            if(!string.IsNullOrWhiteSpace(this.username) && !string.IsNullOrWhiteSpace(this.password)) {
-                UserModel um = new UserModel();
-                User u= await um.IsLogged(username,password);
+            return um.IsLogged();
+        }
+
+        public async Task<bool> Login()
+        {
+            if (!string.IsNullOrWhiteSpace(this.username) && !string.IsNullOrWhiteSpace(this.password))
+            {
+                bool u= await um.Login(username,password);
                 return u;
             }
-            return null;     
+            return false;
         }
     }
 }

@@ -9,39 +9,30 @@ namespace Feedbapp.Models
 {
     public class UserModel
     {
-        private IRepository<User> repository;
+        private IRepository<User> local_repository;
+        private IRepository<User> remote_repository;
 
         public UserModel()
         {
-            this.repository = new RemoteRepository_User();
+            remote_repository = new RemoteRepository_User();
+            local_repository = new LocalRepository_User();
         }
 
+        #region "Remote methods"
         public async Task<User> GetUserByUsername(string username)
         {
-            return await ((RemoteRepository_User)this.repository).GetUserByUsername(username);
+            return await ((RemoteRepository_User)this.remote_repository).GetUserByUsername(username);
         }
+        #endregion
 
-        public async Task<User> IsLogged(string username, string password)
+
+        #region "Local methods"
+        public User Local_CheckLogin()
         {
-
-            LocalRepository_User localRepo = new LocalRepository_User();
-
-            //User u = new User();
-            //u.Id = "1";
-            //u.FirstName = "Seba";
-            //u.LastName = "Cabrera";
-            //u.Username = "seba47";
-            //u.Password = "seba";
-
-            //await localRepo.Add(u);
-
-
-
-            User localUser = await localRepo.getUser(username, password);
-            return await CreateUser(localUser, localRepo, username, password);
+            return ((LocalRepository_User)this.local_repository).getUser();
         }
 
-        public async Task<User> CreateUser(User localUser,LocalRepository_User localRepo, string username, string password)
+        public async Task<User> Local_CreateUser(User localUser, LocalRepository_User localRepo, string username, string password)
         {
             if (localUser == null)
             {
@@ -51,11 +42,44 @@ namespace Feedbapp.Models
                 u.LastName = "Cabrera";
                 u.Username = username;
                 u.Password = password;
-
                 await localRepo.Add(u);
                 return null;
             }
             return localUser;
+        }
+        #endregion
+
+        /// <summary>
+        /// Method which get the local stored user (if exist) and after that It is checked in the database (by the webapi)
+        /// </summary>
+        /// <returns></returns>
+        public bool IsLogged()
+        {
+            var storedUser = Local_CheckLogin();
+            if (storedUser != null)
+            {
+                var user = ((RemoteRepository_User)remote_repository).GetUserByUsername(storedUser.Username);
+                   
+                if (user.Result != null && user.Result.Password.Equals(storedUser.Password))
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        public async Task<bool> Login(string username, string password)
+        {
+            User u= await ((RemoteRepository_User)remote_repository).GetUserByUsername(username);
+            if (u != null && u.Password.Equals(password))
+            {
+                //Persist the user data in device
+                await local_repository.Add(u);
+                return true;
+            }                
+            else
+                return false;
+
         }
     }
 }

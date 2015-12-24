@@ -17,7 +17,7 @@ namespace Feedbapp.Services
         {
             UriString parameters = new UriString();
             parameters.Add("username", username);
-            return await this.Get(parameters, "GetByUsername");
+            return await Get(parameters, "GetByUsername");
         }
     }
 }
