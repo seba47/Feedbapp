@@ -36,7 +36,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="App.cs" />
+    <Compile Include="Entities\Feedback.cs" />
     <Compile Include="Entities\MasterDetailItem.cs" />
+    <Compile Include="Entities\Offered.cs" />
+    <Compile Include="Entities\Requested.cs" />
     <Compile Include="Entities\User.cs" />
     <Compile Include="Models\RequestOfferModel.cs" />
     <Compile Include="Models\UserModel.cs" />

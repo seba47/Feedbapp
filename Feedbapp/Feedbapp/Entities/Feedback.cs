@@ -8,8 +8,9 @@ namespace Feedbapp.Entities
 {
     public abstract class Feedback
     {
-        private int senderId { get; set; }
-        private int recipientId { get; set; }
+        private int feedbackId { get; set; }
+        private User sender { get; set; }
+        private User recipient { get; set; }
         private DateTime date { get; set; }
         private string comments { get; set; }
         private bool accepted { get; set; }

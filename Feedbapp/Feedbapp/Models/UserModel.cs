@@ -38,10 +38,10 @@ namespace Feedbapp.Models
             {
                 User u = new User();
                 u.Id = "1";
-                u.FirstName = "Seba";
-                u.LastName = "Cabrera";
-                u.Username = username;
-                u.Password = password;
+                u.firstName = "Seba";
+                u.lastName = "Cabrera";
+                u.username = username;
+                u.password = password;
                 await localRepo.Add(u);
                 return null;
             }
@@ -58,8 +58,8 @@ namespace Feedbapp.Models
             var storedUser = Local_CheckLogin();
             if (storedUser != null)
             {
-                var user = ((RemoteRepository_User)remote_repository).GetUserByUsername(storedUser.Username);                   
-                if (user.Result != null && user.Result.Password.Equals(storedUser.Password))
+                var user = ((RemoteRepository_User)remote_repository).GetUserByUsername(storedUser.username);                   
+                if (user.Result != null && user.Result.password.Equals(storedUser.password))
                 {
                     return true;
                 }
@@ -70,7 +70,7 @@ namespace Feedbapp.Models
         public async Task<bool> Login(string username, string password)
         {
             User u= await ((RemoteRepository_User)remote_repository).GetUserByUsername(username);
-            if (u != null && u.Password.Equals(password))
+            if (u != null && u.password.Equals(password))
             {
                 //Persist the user data in device
                 await local_repository.Add(u);

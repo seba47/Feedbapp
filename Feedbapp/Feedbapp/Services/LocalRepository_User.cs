@@ -22,7 +22,7 @@ namespace Feedbapp.Services
 
         public User getUser(string username, string password)
         {
-            var u = database.Table<User>().FirstOrDefault<User>(x => x.Username == username && x.Password == password);
+            var u = database.Table<User>().FirstOrDefault<User>(x => x.username == username && x.password == password);
             List<User> userList = new List<User>();
             userList.Add(u);
             return userList.First<User>();

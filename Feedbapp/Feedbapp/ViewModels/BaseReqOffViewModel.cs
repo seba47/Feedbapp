@@ -124,7 +124,7 @@ namespace Feedbapp.ViewModels
             //this.usersList = new List<UserModel>();
             for (int i = 0; i < 10; i++)
             {
-                User um = new User() { FirstName = "Seba", LastName = i.ToString(), Password = "", Username = "" };
+                User um = new User() { firstName = "Seba", lastName = i.ToString(), password = "", username = "" };
                 this.usersList.Add(um);
                 this.namesList.Add(um.ToString());
             }

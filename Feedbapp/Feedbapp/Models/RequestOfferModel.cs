@@ -21,7 +21,7 @@ namespace Feedbapp.Models
             List<User> usersList = new List<User>();
             for (int i = 0; i < 10; i++)
             {
-                User um = new User() { FirstName = "Seba", LastName = i.ToString(), Password = "", Username = "" };
+                User um = new User() { firstName = "Seba", lastName = i.ToString(), password = "", username = "" };
                 usersList.Add(um);
             }
             return usersList;
