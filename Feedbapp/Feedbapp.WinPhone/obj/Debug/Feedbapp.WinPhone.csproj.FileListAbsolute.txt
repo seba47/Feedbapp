@@ -184,3 +184,5 @@ F:\Feedbapp\Feedbapp\Feedbapp.WinPhone\obj\Debug\Feedbapp.WinPhone.csproj.Genera
 F:\Feedbapp\Feedbapp\Feedbapp.WinPhone\obj\Debug\Feedbapp.WinPhone.dll
 F:\Feedbapp\Feedbapp\Feedbapp.WinPhone\obj\Debug\Feedbapp.WinPhone.pdb
 F:\Feedbapp\Feedbapp\Feedbapp.WinPhone\obj\Debug\XapCacheFile.xml
+F:\Feedbapp\Feedbapp\Feedbapp.WinPhone\Bin\Debug\SQLite-net.dll
+F:\Feedbapp\Feedbapp\Feedbapp.WinPhone\Bin\Debug\SQLitePCL.raw.dll

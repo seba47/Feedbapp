@@ -58,8 +58,7 @@ namespace Feedbapp.Models
             var storedUser = Local_CheckLogin();
             if (storedUser != null)
             {
-                var user = ((RemoteRepository_User)remote_repository).GetUserByUsername(storedUser.Username);
-                   
+                var user = ((RemoteRepository_User)remote_repository).GetUserByUsername(storedUser.Username);                   
                 if (user.Result != null && user.Result.Password.Equals(storedUser.Password))
                 {
                     return true;
