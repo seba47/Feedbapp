@@ -10,6 +10,7 @@ namespace Feedbapp.Services
     public interface IRepository<T> where T : TEntity
     {
         Task<T> Get(int identifier);
+        Task<List<T>> Get();
         Task<T> Update(T item);
         Task Delete(T item);
         Task<int> Add(T item);

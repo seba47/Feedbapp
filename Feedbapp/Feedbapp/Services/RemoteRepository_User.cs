@@ -9,7 +9,7 @@ namespace Feedbapp.Services
 {
     public class RemoteRepository_User: RemoteRepository<User>
     {
-        public RemoteRepository_User() : base("user"){
+        public RemoteRepository_User() : base("User"){
             
         }
 

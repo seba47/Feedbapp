@@ -51,19 +51,22 @@ namespace Feedbapp.Droid
 			public const int icon = 2130837505;
 			
 			// aapt resource value: 0x7f020002
-			public const int notifications = 2130837506;
+			public const int monoandroidsplash = 2130837506;
 			
 			// aapt resource value: 0x7f020003
-			public const int profile1 = 2130837507;
+			public const int notifications = 2130837507;
 			
 			// aapt resource value: 0x7f020004
-			public const int profile2 = 2130837508;
+			public const int profile1 = 2130837508;
 			
 			// aapt resource value: 0x7f020005
-			public const int splashscreen = 2130837509;
+			public const int profile2 = 2130837509;
 			
 			// aapt resource value: 0x7f020006
-			public const int uruit_logo = 2130837510;
+			public const int splashscreen = 2130837510;
+			
+			// aapt resource value: 0x7f020007
+			public const int uruit_logo = 2130837511;
 			
 			static Drawable()
 			{
@@ -77,6 +80,9 @@ namespace Feedbapp.Droid
 		
 		public partial class Style
 		{
+			
+			// aapt resource value: 0x7f030001
+			public const int Mono_Android_Theme_Splash = 2130903041;
 			
 			// aapt resource value: 0x7f030000
 			public const int Theme_Splash = 2130903040;

@@ -61,3 +61,4 @@ F:\Feedbapp\Feedbapp\Feedbapp.Droid\obj\Debug\android\bin\FeedbappPkg.FeedbappPk
 F:\Feedbapp\Feedbapp\Feedbapp.Droid\bin\Debug\SQLite-net.dll
 F:\Feedbapp\Feedbapp\Feedbapp.Droid\bin\Debug\SQLitePCL.raw.dll
 F:\Feedbapp\Feedbapp\Feedbapp.Droid\bin\Debug\SQLite-net.dll.mdb
+F:\Feedbapp\Feedbapp\Feedbapp.Droid\obj\Debug\res\drawable\monoandroidsplash.png

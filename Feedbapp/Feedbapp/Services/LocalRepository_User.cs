@@ -16,6 +16,8 @@ namespace Feedbapp.Services
 
         public User getUser()
         {
+            var list = database.Table<User>().All(t => t.userId > 0);
+            int countt = database.Table<User>().Count();
             var u = database.Table<User>().FirstOrDefault<User>();
             return u;
         }

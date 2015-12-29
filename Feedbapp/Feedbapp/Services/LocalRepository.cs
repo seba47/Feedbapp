@@ -16,7 +16,6 @@ namespace Feedbapp.Services
         
         public LocalRepository()
         {
-
             database = DependencyService.Get<ISQLite>().GetConnection();
             database.CreateTable<T>();
         }

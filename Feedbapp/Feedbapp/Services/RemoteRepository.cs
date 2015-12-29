@@ -75,8 +75,17 @@ namespace Feedbapp.Services
             return await this.Get(uString, "Get");
         }
 
+        public async override Task<List<T>> Get()
+        {
+            var result = await this.httpClient.GetAsync(this.FullUrl(null, ""));
+            if (result.IsSuccessStatusCode)
+            {
+                return Newtonsoft.Json.JsonConvert.DeserializeObject<List<T>>(await result.Content.ReadAsStringAsync());
+            }
+            return null;
+        }
 
-        public async Task<T> Get(UriString parameters, string MethodName = null, string ControllerName = null)
+        protected async Task<T> Get(UriString parameters, string MethodName = null, string ControllerName = null)
         {
             var result = await this.httpClient.GetAsync(this.FullUrl(parameters, MethodName));
             if (result.IsSuccessStatusCode)
@@ -93,10 +102,6 @@ namespace Feedbapp.Services
         {
             throw new NotImplementedException();
         }
-
-        public override Task<List<T>> Get()
-        {
-            throw new NotImplementedException();
-        }
+        
     }
 }

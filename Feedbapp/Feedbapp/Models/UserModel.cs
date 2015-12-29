@@ -56,7 +56,7 @@ namespace Feedbapp.Models
         public bool IsLogged()
         {
             var storedUser = Local_CheckLogin();
-            if (storedUser != null)
+            if (storedUser != null && storedUser.userId != 0)
             {
                 var user = ((RemoteRepository_User)remote_repository).GetUserByUsername(storedUser.username);                   
                 if (user.Result != null && user.Result.password.Equals(storedUser.password))
@@ -70,6 +70,9 @@ namespace Feedbapp.Models
         public async Task<bool> Login(string username, string password)
         {
             User u= await ((RemoteRepository_User)remote_repository).GetUserByUsername(username);
+
+            //List<User> userList = await ((RemoteRepository_User)remote_repository).Get();
+
             if (u != null && u.password.Equals(password))
             {
                 //Persist the user data in device
