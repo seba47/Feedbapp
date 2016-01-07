@@ -23,35 +23,44 @@ namespace Feedbapp.Views
             else
             {
                 this.BindingContext = new OfferViewModel();
-            }            
+            }
 
             //** Main Binding context on the XAML file **
             List<string> users = ((BaseReqOffViewModel)this.BindingContext).NamesList;
             foreach (var item in users)
             {
-                pkrNombre.Items.Add(item);
+                pkrSender.Items.Add(item);
+                pkrRecipient.Items.Add(item);
             }
         }
 
         public async void MainButtonClicked(object sender, EventArgs args)
         {
-            bool ret = true;// await ((BaseReqOffViewModel)this.BindingContext).Send();
-            if (ret)
+            if (pkrRecipient.SelectedIndex != pkrSender.SelectedIndex)
             {
-                bool exit = await DisplayAlert("Solicitud de Feedback", "¡Gracias! Se le ha enviado una solicitud a " + pkrNombre.ToString() + " para agendar una instancia de feedback. Recibirás una notificación en cuanto responda.", "Salir", "Nueva Solicitud");
-                if(exit)
+                bool ret = true;// await ((BaseReqOffViewModel)this.BindingContext).Send();
+                if (ret)
                 {
-                    await Navigation.PopAsync();                    
+                    //bool exit = await DisplayAlert("Solicitud de Feedback", "¡Gracias! Se le ha enviado una solicitud a " + pkrRecipient.ToString() + " para agendar una instancia de feedback. Recibirás una notificación en cuanto responda.", "Salir", "Nueva Solicitud");
+                    bool exit = await DisplayAlert("Solicitud de Feedback", "¡Gracias! Se le ha enviado una solicitud a " + pkrRecipient.Items[pkrRecipient.SelectedIndex] + " para agendar una instancia de feedback. Recibirás un mail de confirmación.", "Salir", "Nueva Solicitud");
+                    if (exit)
+                    {
+                        await Navigation.PopAsync();
+                    }
+                    else
+                    {
+                        //clean the view for a new request
+                        editorComments.Text = string.Empty;
+                    }
                 }
                 else
                 {
-                    //clean the view for a new request
+                    await DisplayAlert("No se pudo solicitar el feedback", "", "Aceptar");
                 }
-
             }
             else
             {
-                await DisplayAlert("No se pudo solicitar el feedback", "", "Aceptar");
+                await DisplayAlert("El solicitante y el solicitado no pueden ser la misma persona", "", "Aceptar");
             }
         }
     }

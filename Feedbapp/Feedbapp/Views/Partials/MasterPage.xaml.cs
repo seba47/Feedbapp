@@ -13,7 +13,6 @@ namespace Feedbapp.Views
     public partial class MasterPage : ContentPage
     {
         public MasterDetailPage root { get; set; }
-        public ListView ListView { get { return listView; } }
 
         public MasterPage(MasterDetailPage main)
         {
@@ -22,29 +21,23 @@ namespace Feedbapp.Views
             {
                 this.root = main;
             }
-
             InitializeComponent();
+            //AddNotificationsBadge();
+            LoadDetailPages();            
+        }
 
+        private void LoadDetailPages()
+        {
             MasterDetailItem[] items =
             {
                 new MasterDetailItem("Home", ""),
                 //new MasterDetailItem("My Profile", ""),
-                new MasterDetailItem("Solicitudes", ""),
+                //new MasterDetailItem("Solicitudes", ""),
                 //new MasterDetailItem("Settings", ""),
                 new MasterDetailItem("About", "")
             };
-
-            ToolbarItem tbi = new ToolbarItem();
-            tbi.Icon = "notifications.png";
-            tbi.Text = "Notificaciones";
-            tbi.Clicked += GoToNotificationsPage;
-            this.ToolbarItems.Add(tbi);
-
             listView.ItemsSource = items;
-
-
             // Define a selected handler for the ListView.
-
             listView.ItemSelected += (sender, args) =>
             {
                 MasterDetailItem selected = (MasterDetailItem)args.SelectedItem;
@@ -76,6 +69,15 @@ namespace Feedbapp.Views
 
             // Initialize the ListView selection.
             listView.SelectedItem = items[0];
+        }
+
+        private void AddNotificationsBadge()
+        {
+            ToolbarItem tbi = new ToolbarItem();
+            tbi.Icon = "notifications.png";
+            tbi.Text = "Notificaciones";
+            tbi.Clicked += GoToNotificationsPage;
+            this.ToolbarItems.Add(tbi);            
         }
 
         async void GoToNotificationsPage(object sender, EventArgs e)

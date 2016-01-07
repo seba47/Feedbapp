@@ -4,7 +4,7 @@
              x:Class="Feedbapp.Views.MasterPage"
              Padding="0,40,0,0"
              Icon="hamburguer.png"
-             Title="Personal Organiser">
+             Title="-">
   <ContentPage.Content>    
     <ListView x:Name="listView" VerticalOptions="FillAndExpand">
       <ListView.ItemTemplate>

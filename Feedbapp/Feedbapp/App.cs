@@ -8,13 +8,22 @@ namespace Feedbapp
         public App()
         {
             // The root page of your application
+            //NavigationPage np = new NavigationPage(new Views.LoginView());      
+            //np.BackgroundColor = Color.FromHex(MainStyles.GetBackgroundColor(false));
+            //np.BarBackgroundColor = Color.FromHex(MainStyles.GetBackgroundColor(false));
+            //MainPage = np;     
+            InitMVPApp();
+        }
 
-            NavigationPage np = new NavigationPage(new Views.LoginView());
+        /// <summary>
+        /// Method used for the first release as MVP app (without: login, notifications and neither history)
+        /// </summary>
+        protected void InitMVPApp()
+        {
+            NavigationPage np = new NavigationPage(new Views.CustomMasterDetailPage());
             np.BackgroundColor = Color.FromHex(MainStyles.GetBackgroundColor(false));
             np.BarBackgroundColor = Color.FromHex(MainStyles.GetBackgroundColor(false));
             MainPage = np;
-
-            //MainPage = new Views.Notifications();
         }
 
         protected override void OnStart()
