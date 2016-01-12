@@ -68,6 +68,9 @@ namespace Feedbapp.Droid
 			// aapt resource value: 0x7f020007
 			public const int uruit_logo = 2130837511;
 			
+			// aapt resource value: 0x7f020008
+			public const int whiteHamb = 2130837512;
+			
 			static Drawable()
 			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();

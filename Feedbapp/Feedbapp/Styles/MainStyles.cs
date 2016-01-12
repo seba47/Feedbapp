@@ -9,7 +9,8 @@ namespace Feedbapp.Styles
 {
     public class MainStyles
     {
-        private const string backgroundColor = "212830" ;
+        private const string backgroundColor = "FFFFFF";
+        private const string secondBackgroundColor = "212830";
 
         public static string GetBackgroundColor(bool withSimbol)
         {
@@ -20,5 +21,12 @@ namespace Feedbapp.Styles
         {            
             return Color.FromHex(backgroundColor);
         }
+
+        public static Color GetSecondBackgroundColor()
+        {
+            return Color.FromHex(secondBackgroundColor);
+        }
+
+
     }
 }

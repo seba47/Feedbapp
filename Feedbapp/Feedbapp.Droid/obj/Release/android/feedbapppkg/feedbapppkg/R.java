@@ -19,6 +19,7 @@ public final class R {
         public static final int profile2=0x7f020005;
         public static final int splashscreen=0x7f020006;
         public static final int uruit_logo=0x7f020007;
+        public static final int whitehamb=0x7f020008;
     }
     public static final class style {
         public static final int Mono_Android_Theme_Splash=0x7f030001;

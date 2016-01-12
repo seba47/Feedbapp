@@ -12,5 +12,10 @@ namespace WebAPI.DataAccess
         public DbSet<User> Users { get; set; }
         public DbSet<Offered> Offered { get; set; }
         public DbSet<Requested> Requested { get; set; }
+
+        //static WebAPIDbContext()
+        //{
+        //    Database.SetInitializer<WebAPIDbContext>(new DropCreateDatabaseAlways<WebAPIDbContext>());
+        //}
     }
 }

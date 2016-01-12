@@ -13,12 +13,15 @@ namespace Feedbapp.ViewModels
     {
         protected List<string> namesList;
         protected List<User> usersList;
-        protected User selectedUser;
+        protected User selectedSender;
+        protected User selectedRecipient;
         protected string comments;
-        protected int selectedIndex;
+        protected int selectedIndexSender;
+        protected int selectedIndexRecipient;
         protected string buttonText;
         protected string pageTitle;
         protected RequestOfferModel model;
+        protected UserModel um;
 
         public string Comments
         {
@@ -81,53 +84,67 @@ namespace Feedbapp.ViewModels
         }
 
         internal virtual async Task<bool> Send()
-        {
-            int test = this.SelectedIndex;
-            string comm = this.Comments;
-            User selected = this.UsersList[this.SelectedIndex];
-            bool x = true;
-
-            return x;
-
+        {            
+            return false;
         }
 
-        public User SelectedUser
+        public User SelectedSender
         {
             get
             {
-                return selectedUser;
+                return selectedSender;
             }
             set
             {
-                selectedUser = value;
+                selectedSender = value;
             }
         }
-
-        public int SelectedIndex
+        public User SelectedRecipient
         {
             get
             {
-                return selectedIndex;
+                return selectedRecipient;
             }
             set
             {
-                selectedIndex = value;
+                selectedRecipient = value;
+            }
+        }
+
+        public int SelectedIndexSender
+        {
+            get
+            {
+                return selectedIndexSender;
+            }
+            set
+            {
+                selectedIndexSender = value;
+            }
+        }
+
+        public int SelectedIndexRecipient
+        {
+            get
+            {
+                return selectedIndexRecipient;
+            }
+            set
+            {
+                selectedIndexRecipient = value;
             }
         }
 
         public BaseReqOffViewModel()
         {
-            model = new RequestOfferModel();
-            this.namesList = new List<string>();
-            this.usersList = model.GetUsersList();
-            
-            //this.usersList = new List<UserModel>();
-            for (int i = 0; i < 10; i++)
+            this.um = new UserModel();
+            this.model = new RequestOfferModel();
+            this.UsersList = um.GetUsers();
+            this.NamesList = new List<string>();
+            foreach (User u in this.UsersList)
             {
-                User um = new User() { firstName = "Seba", lastName = i.ToString(), password = "", username = "" };
-                this.usersList.Add(um);
-                this.namesList.Add(um.ToString());
-            }
+                this.NamesList.Add(u.ToString());
+            }       
         }
     }
 }

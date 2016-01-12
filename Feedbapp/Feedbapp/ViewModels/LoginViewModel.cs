@@ -45,9 +45,9 @@ namespace Feedbapp.ViewModels
             um = new UserModel();
         }
 
-        public bool IsLogged()
+        public async Task<bool> IsLogged()
         {
-            return um.IsLogged();
+            return await um.IsLogged();            
         }
 
         public async Task<bool> Login()

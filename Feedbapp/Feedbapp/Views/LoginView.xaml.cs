@@ -15,26 +15,39 @@ namespace Feedbapp.Views
         public LoginView()
         {
             InitializeComponent();
-            this.BackgroundColor = BackgroundColor = MainStyles.GetBackgroundColor();
-            this.BindingContext = new LoginViewModel();
-            if (((LoginViewModel)this.BindingContext).IsLogged())
-            {
-                Redirect();
-            }
+            BackgroundColor = BackgroundColor = MainStyles.GetBackgroundColor();
+            BindingContext = new LoginViewModel();
+
+            //http://blog.stephencleary.com/2013/01/async-oop-2-constructors.html
+            //var isLogged = ((LoginViewModel)this.BindingContext).IsLogged().GetAwaiter().GetResult();            
+
+            //if (isLogged)
+            //{
+            //    RedirectToHomePage(true);
+            //}
         }
         public async void OnLoginClicked(object sender, EventArgs args)
         {
+
             bool logged = await ((LoginViewModel)this.BindingContext).Login();
             if (logged)
-                Redirect();
+                RedirectToHomePage(false);
             else
-                await DisplayAlert("Login incorrecto", "El usuario no existe", "Cancelar");
+                await DisplayAlert("Login incorrecto", "El usuario no existe", "Aceptar");
         }
-        public async void Redirect()
+        public async void RedirectToHomePage(bool onInit)
         {
-            var root = Navigation.NavigationStack[0];
-            Navigation.InsertPageBefore(new CustomMasterDetailPage(), root);
-            await Navigation.PopAsync();
+            if (onInit)
+            {
+                await Navigation.PushAsync(new CustomMasterDetailPage());
+            }
+            else
+            {
+                var root = Navigation.NavigationStack[0];
+                Navigation.InsertPageBefore(new CustomMasterDetailPage(), root);
+                await Navigation.PopAsync();
+            }
+            
         }
     }
 }

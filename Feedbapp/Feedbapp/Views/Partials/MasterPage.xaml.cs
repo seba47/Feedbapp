@@ -16,7 +16,7 @@ namespace Feedbapp.Views
 
         public MasterPage(MasterDetailPage main)
         {
-            this.BackgroundColor = BackgroundColor = MainStyles.GetBackgroundColor();
+            this.BackgroundColor = MainStyles.GetSecondBackgroundColor();
             if (main != null)
             {
                 this.root = main;
@@ -73,11 +73,11 @@ namespace Feedbapp.Views
 
         private void AddNotificationsBadge()
         {
-            ToolbarItem tbi = new ToolbarItem();
+            ToolbarItem tbi = new ToolbarItem();            
             tbi.Icon = "notifications.png";
             tbi.Text = "Notificaciones";
             tbi.Clicked += GoToNotificationsPage;
-            this.ToolbarItems.Add(tbi);            
+            this.ToolbarItems.Add(tbi);                 
         }
 
         async void GoToNotificationsPage(object sender, EventArgs e)

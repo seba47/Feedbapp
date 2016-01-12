@@ -6,14 +6,16 @@ using System.Threading.Tasks;
 
 namespace Feedbapp.Entities
 {
-    public abstract class Feedback
+    public abstract class Feedback: TEntity
     {
-        private int feedbackId { get; set; }
-        private User sender { get; set; }
-        private User recipient { get; set; }
-        private DateTime date { get; set; }
-        private string comments { get; set; }
-        private bool accepted { get; set; }
-        private bool isComplete { get; set; }
+        public int feedbackId { get; set; }
+        public User sender { get; set; }
+        public User recipient { get; set; }
+        public int? senderId { get; set; }
+        public int? recipientId { get; set; }
+        public DateTime date { get; set; }
+        public string comments { get; set; }
+        public bool accepted { get; set; }
+        public bool isComplete { get; set; }
     }
 }

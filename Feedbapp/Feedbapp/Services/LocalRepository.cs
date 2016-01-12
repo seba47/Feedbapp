@@ -13,7 +13,7 @@ namespace Feedbapp.Services
     public class LocalRepository<T> : BaseRepository<T> where T : TEntity, new()
     {
         protected SQLiteConnection database;
-        
+
         public LocalRepository()
         {
             database = DependencyService.Get<ISQLite>().GetConnection();
@@ -42,7 +42,7 @@ namespace Feedbapp.Services
         {
             TableQuery<T> tb = database.Table<T>();
             var first = tb.FirstOrDefault(x => x.Id == identifier.ToString());
-            return await Task.Run(()=> first);      
+            return await Task.Run(() => first);
         }
 
 

@@ -16,11 +16,17 @@ namespace Feedbapp.Views {
     
     public partial class RequestOfferView : ContentPage {
         
-        private Picker pkrNombre;
+        private Picker pkrSender;
+        
+        private Picker pkrRecipient;
+        
+        private Editor editorComments;
         
         private void InitializeComponent() {
             this.LoadFromXaml(typeof(RequestOfferView));
-            pkrNombre = this.FindByName<Picker>("pkrNombre");
+            pkrSender = this.FindByName<Picker>("pkrSender");
+            pkrRecipient = this.FindByName<Picker>("pkrRecipient");
+            editorComments = this.FindByName<Editor>("editorComments");
         }
     }
 }

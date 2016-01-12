@@ -106,8 +106,10 @@ F:\Feedbapp\Feedbapp\Feedbapp.WinPhone\Bin\Debug\Newtonsoft.Json.dll
 F:\Feedbapp\Feedbapp\Feedbapp.WinPhone\Bin\Debug\Xamarin.Forms.Core.dll
 F:\Feedbapp\Feedbapp\Feedbapp.WinPhone\Bin\Debug\Xamarin.Forms.Platform.WP8.dll
 F:\Feedbapp\Feedbapp\Feedbapp.WinPhone\Bin\Debug\Xamarin.Forms.Xaml.dll
+F:\Feedbapp\Feedbapp\Feedbapp.WinPhone\Bin\Debug\SQLite-net.dll
 F:\Feedbapp\Feedbapp\Feedbapp.WinPhone\Bin\Debug\System.Net.Http.dll
 F:\Feedbapp\Feedbapp\Feedbapp.WinPhone\Bin\Debug\System.Windows.Interactivity.dll
+F:\Feedbapp\Feedbapp\Feedbapp.WinPhone\Bin\Debug\SQLitePCL.raw.dll
 F:\Feedbapp\Feedbapp\Feedbapp.WinPhone\Bin\Debug\System.Net.Http.Primitives.dll
 F:\Feedbapp\Feedbapp\Feedbapp.WinPhone\Bin\Debug\Feedbapp.pdb
 F:\Feedbapp\Feedbapp\Feedbapp.WinPhone\Bin\Debug\Newtonsoft.Json.xml
@@ -184,5 +186,3 @@ F:\Feedbapp\Feedbapp\Feedbapp.WinPhone\obj\Debug\Feedbapp.WinPhone.csproj.Genera
 F:\Feedbapp\Feedbapp\Feedbapp.WinPhone\obj\Debug\Feedbapp.WinPhone.dll
 F:\Feedbapp\Feedbapp\Feedbapp.WinPhone\obj\Debug\Feedbapp.WinPhone.pdb
 F:\Feedbapp\Feedbapp\Feedbapp.WinPhone\obj\Debug\XapCacheFile.xml
-F:\Feedbapp\Feedbapp\Feedbapp.WinPhone\Bin\Debug\SQLite-net.dll
-F:\Feedbapp\Feedbapp\Feedbapp.WinPhone\Bin\Debug\SQLitePCL.raw.dll

@@ -51,7 +51,7 @@
     <Compile Include="Services\LocalRepository.cs" />
     <Compile Include="Services\LocalRepository_User.cs" />
     <Compile Include="Services\RemoteRepository.cs" />
-    <Compile Include="Services\RestService.cs" />
+    <Compile Include="Services\RemoteRepository_Requested.cs" />
     <Compile Include="Services\RemoteRepository_User.cs" />
     <Compile Include="Shared\BindablePicker.cs" />
     <Compile Include="Shared\CustomContentPage.cs" />

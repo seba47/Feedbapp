@@ -4,7 +4,7 @@
              xmlns:local="clr-namespace:Feedbapp.ViewModels;assembly=Feedbapp"
              x:Class="Feedbapp.Views.RequestOfferView" Title="{Binding PageTitle}">  
   <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
-    <Picker Title="Tu nombre" x:Name="pkrSender" SelectedIndex="{Binding SelectedIndex}"></Picker>
+    <Picker Title="Tu nombre" x:Name="pkrSender" SelectedIndex="{Binding SelectedIndexSender}"></Picker>
     <Picker Title="¿A quien?" x:Name="pkrRecipient" SelectedIndex="{Binding SelectedIndexRecipient}"></Picker>
     <Editor x:Name="editorComments" Text="{Binding Comments}" HeightRequest="250" ></Editor> 
     <Button BackgroundColor="#1fd660" Text="{Binding ButtonText}" WidthRequest="250" HeightRequest="70" HorizontalOptions="Center" Clicked="MainButtonClicked"></Button>

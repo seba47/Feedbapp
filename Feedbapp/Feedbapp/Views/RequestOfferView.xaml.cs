@@ -7,6 +7,7 @@ using Feedbapp.ViewModels;
 
 using Xamarin.Forms;
 using Feedbapp.Styles;
+using Feedbapp.Entities;
 
 namespace Feedbapp.Views
 {
@@ -36,9 +37,13 @@ namespace Feedbapp.Views
 
         public async void MainButtonClicked(object sender, EventArgs args)
         {
+                        
             if (pkrRecipient.SelectedIndex != pkrSender.SelectedIndex)
             {
-                bool ret = true;// await ((BaseReqOffViewModel)this.BindingContext).Send();
+                BaseReqOffViewModel context = ((BaseReqOffViewModel)this.BindingContext);                
+                context.SelectedSender = context.UsersList[pkrSender.SelectedIndex];
+                context.SelectedRecipient = context.UsersList[pkrRecipient.SelectedIndex];
+                bool ret = await context.Send();
                 if (ret)
                 {
                     //bool exit = await DisplayAlert("Solicitud de Feedback", "¡Gracias! Se le ha enviado una solicitud a " + pkrRecipient.ToString() + " para agendar una instancia de feedback. Recibirás una notificación en cuanto responda.", "Salir", "Nueva Solicitud");

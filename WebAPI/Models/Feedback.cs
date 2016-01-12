@@ -12,14 +12,17 @@ namespace WebAPI.Models
     {
         [Key]
         public int feedbackId { get; set; }
-        
-        public virtual User sender { get; set; }
-        
-        public virtual User recipient { get; set; }
 
+        [ForeignKey("senderId")]
+        public virtual User sender { get; set; }
+
+        [ForeignKey("recipientId")]
+        public virtual User recipient { get; set; }
+        public int? senderId { get; set; }
+        public int? recipientId { get; set; }
         public DateTime date { get; set; }
         public string comments { get; set; }
         public bool accepted { get; set; }
-        public bool isComplete { get; set; }        
+        public bool isComplete { get; set; }
     }
 }

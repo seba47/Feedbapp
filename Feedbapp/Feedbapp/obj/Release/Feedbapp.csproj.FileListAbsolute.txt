@@ -19,6 +19,13 @@ F:\Feedbapp\Feedbapp\Feedbapp\obj\Release\LoginView.xaml.g.cs
 F:\Feedbapp\Feedbapp\Feedbapp\obj\Release\HomeView.xaml.g.cs
 F:\Feedbapp\Feedbapp\Feedbapp\obj\Release\ProfileView.xaml.g.cs
 F:\Feedbapp\Feedbapp\Feedbapp\obj\Release\RequestOfferView.xaml.g.cs
-F:\Feedbapp\Feedbapp\Feedbapp\obj\Release\Notifications.xaml.g.cs
 F:\Feedbapp\Feedbapp\Feedbapp\obj\Release\Feedbapp.dll
 F:\Feedbapp\Feedbapp\Feedbapp\obj\Release\Feedbapp.pdb
+F:\Feedbapp\Feedbapp\Feedbapp\bin\Release\SQLite-net.dll
+F:\Feedbapp\Feedbapp\Feedbapp\bin\Release\SQLitePCL.raw.dll
+F:\Feedbapp\Feedbapp\Feedbapp\obj\Release\NotificationsView.xaml.g.cs
+F:\Feedbapp\Feedbapp\Feedbapp\obj\Release\MainMenuView.xaml.g.cs
+F:\Feedbapp\Feedbapp\Feedbapp\obj\Release\MasterPage.xaml.g.cs
+F:\Feedbapp\Feedbapp\Feedbapp\obj\Release\AboutView.xaml.g.cs
+F:\Feedbapp\Feedbapp\Feedbapp\obj\Release\RequestsAndOffersView.xaml.g.cs
+F:\Feedbapp\Feedbapp\Feedbapp\obj\Release\FeedbackRequestView.xaml.g.cs

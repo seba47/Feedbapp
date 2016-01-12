@@ -53,13 +53,13 @@ namespace Feedbapp.Models
         /// Method which get the local stored user (if exist) and after that It is checked in the database (by the webapi)
         /// </summary>
         /// <returns></returns>
-        public bool IsLogged()
+        public async Task<bool> IsLogged()
         {
             var storedUser = Local_CheckLogin();
             if (storedUser != null && storedUser.userId != 0)
             {
-                var user = ((RemoteRepository_User)remote_repository).GetUserByUsername(storedUser.username);                   
-                if (user.Result != null && user.Result.password.Equals(storedUser.password))
+                var user = await ((RemoteRepository_User)remote_repository).GetUserByUsername(storedUser.username);                   
+                if (user != null && user.password.Equals(storedUser.password))
                 {
                     return true;
                 }
@@ -82,6 +82,22 @@ namespace Feedbapp.Models
             else
                 return false;
 
+        }
+
+
+        public List<User> GetUsers()
+        {
+            List<User> users =  Task.Run(()=>((RemoteRepository_User)remote_repository).Get()).Result;
+
+            //List<User> users = new List<User>();
+
+            ////this.usersList = new List<UserModel>();
+            //for (int i = 0; i < 10; i++)
+            //{
+            //    User um = new User() { firstName = "Seba", lastName = i.ToString(), password = "", username = "" };
+            //    users.Add(um);
+            //}
+            return users;
         }
     }
 }

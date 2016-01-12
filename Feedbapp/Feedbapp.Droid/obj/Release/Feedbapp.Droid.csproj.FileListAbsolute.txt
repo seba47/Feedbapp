@@ -32,3 +32,7 @@ F:\Feedbapp\Feedbapp\Feedbapp.Droid\obj\Release\uploadflags.txt
 F:\Feedbapp\Feedbapp\Feedbapp.Droid\bin\Release\FeedbappPkg.FeedbappPkg.apk
 F:\Feedbapp\Feedbapp\Feedbapp.Droid\bin\Release\FeedbappPkg.FeedbappPkg-Signed.apk
 F:\Feedbapp\Feedbapp\Feedbapp.Droid\obj\Release\android\bin\FeedbappPkg.FeedbappPkg.apk
+F:\Feedbapp\Feedbapp\Feedbapp.Droid\bin\Release\SQLite-net.dll
+F:\Feedbapp\Feedbapp\Feedbapp.Droid\bin\Release\SQLitePCL.raw.dll
+F:\Feedbapp\Feedbapp\Feedbapp.Droid\bin\Release\SQLite-net.dll.mdb
+F:\Feedbapp\Feedbapp\Feedbapp.Droid\obj\Release\res\drawable\whitehamb.png

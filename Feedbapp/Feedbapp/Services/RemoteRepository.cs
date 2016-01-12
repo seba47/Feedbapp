@@ -55,10 +55,7 @@ namespace Feedbapp.Services
 
         public async override Task<int> Add(T item)
         {
-            UriString uString = new UriString();
-            uString.Add("id", item.Id);
-            //return await this.Get(uString, "Create");
-            return 1;
+            return await this.Post(item);            
         }
 
         public async override Task Delete(T item)
@@ -85,9 +82,10 @@ namespace Feedbapp.Services
             return null;
         }
 
-        protected async Task<T> Get(UriString parameters, string MethodName = null, string ControllerName = null)
+        protected async Task<T> Get(UriString parameters, string MethodName = null)
         {
-            var result = await this.httpClient.GetAsync(this.FullUrl(parameters, MethodName));
+            string url = FullUrl(parameters, MethodName);
+            var result = await httpClient.GetAsync(url);
             if (result.IsSuccessStatusCode)
             {
                 return Newtonsoft.Json.JsonConvert.DeserializeObject<T>(await result.Content.ReadAsStringAsync());
@@ -98,10 +96,27 @@ namespace Feedbapp.Services
             }
         }
 
+        protected async Task<int> Post(object obj)
+        {
+            string url = BaseUri + ControllerName;
+            string json = Newtonsoft.Json.JsonConvert.SerializeObject(obj);
+
+            var result = await httpClient.PostAsync(url, new StringContent(json, Encoding.UTF8,"application/json"));
+
+            if (result.IsSuccessStatusCode)
+            {
+                return 1;
+            }
+            else
+            {
+                return -1;
+            }
+        }
+
         public override Task<T> Update(T item)
         {
             throw new NotImplementedException();
         }
-        
+
     }
 }

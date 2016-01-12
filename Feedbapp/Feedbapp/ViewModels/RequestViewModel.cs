@@ -13,19 +13,19 @@ namespace Feedbapp.ViewModels
         public RequestViewModel():base()
         {
             this.buttonText = "Solicitar Feedback";
-            this.PageTitle = "Solicitar Feedback";
-            this.usersList = new List<User>();
-            
+            this.PageTitle = "Solicitar Feedback";            
         }
 
         internal override async Task<bool> Send()
         {
-            int test = this.SelectedIndex;
+            int senderId = this.SelectedIndexSender;
+            int recipientId = this.SelectedIndexRecipient;
             string comm = this.Comments;
-            User selected = this.UsersList[this.SelectedIndex];
-            bool x = true;
-
-            return x;
+            //User selected = this.UsersList[this.SelectedIndex];
+            Services.RemoteRepository_Requested req = new Services.RemoteRepository_Requested();
+            Requested r = new Requested() { sender = this.SelectedSender, recipient = this.SelectedRecipient, comments = comm, isComplete = false, date= DateTime.Now};
+            int ret = await req.Add(r);
+            return ret == 1;
 
         }
     }
