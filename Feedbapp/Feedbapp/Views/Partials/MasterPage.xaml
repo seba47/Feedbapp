@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Feedbapp.Views.MasterPage"
              Padding="0,40,0,0"
-             Icon="whiteHamb.png"
+             Icon="greenHamb.png"
              Title="-">
   <ContentPage.Content>    
     <ListView x:Name="listView" VerticalOptions="FillAndExpand">

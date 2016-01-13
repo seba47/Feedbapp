@@ -9,7 +9,7 @@ namespace Feedbapp.Styles
 {
     public class MainStyles
     {
-        private const string backgroundColor = "FFFFFF";
+        private const string backgroundColor = "212830"; //"FFFFFF";
         private const string secondBackgroundColor = "212830";
 
         public static string GetBackgroundColor(bool withSimbol)

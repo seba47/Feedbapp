@@ -129,6 +129,7 @@
     <AndroidResource Include="Resources\drawable\profile1.png" />
     <AndroidResource Include="Resources\drawable\profile2.png" />
     <AndroidResource Include="Resources\drawable\whiteHamb.png" />
+    <AndroidResource Include="Resources\drawable\greenHamb.png" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Feedbapp\Feedbapp.csproj">
