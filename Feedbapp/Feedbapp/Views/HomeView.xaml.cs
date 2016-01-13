@@ -14,7 +14,7 @@ namespace Feedbapp.Views
         public HomeView()
         {
             InitializeComponent();
-            this.BackgroundColor = BackgroundColor = MainStyles.GetBackgroundColor();
+            BackgroundColor = MainStyles.GetBackgroundColor();
         }
 
         async void GoToRequestView(object sender, EventArgs args)

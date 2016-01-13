@@ -29,3 +29,12 @@ F:\Feedbapp\Feedbapp\Feedbapp\obj\Release\MasterPage.xaml.g.cs
 F:\Feedbapp\Feedbapp\Feedbapp\obj\Release\AboutView.xaml.g.cs
 F:\Feedbapp\Feedbapp\Feedbapp\obj\Release\RequestsAndOffersView.xaml.g.cs
 F:\Feedbapp\Feedbapp\Feedbapp\obj\Release\FeedbackRequestView.xaml.g.cs
+F:\FeedbappTest\Feedbapp.dll.config
+F:\FeedbappTest\Feedbapp.dll
+F:\FeedbappTest\Feedbapp.pdb
+F:\out\Feedbapp.dll.config
+F:\out\Feedbapp.dll
+F:\out\Feedbapp.pdb
+F:\Deployment\Feedbapp\Feedbapp.dll.config
+F:\Deployment\Feedbapp\Feedbapp.dll
+F:\Deployment\Feedbapp\Feedbapp.pdb
