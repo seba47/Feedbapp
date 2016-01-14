@@ -41,4 +41,3 @@ F:\Feedbapp\Feedbapp\Feedbapp\obj\Debug\RequestsAndOffersView.xaml.g.cs
 F:\Feedbapp\Feedbapp\Feedbapp\obj\Debug\FeedbackRequestView.xaml.g.cs
 F:\Feedbapp\Feedbapp\Feedbapp\obj\Debug\Feedbapp.dll
 F:\Feedbapp\Feedbapp\Feedbapp\obj\Debug\Feedbapp.pdb
-F:\Feedbapp\Feedbapp\Feedbapp\obj\Debug\Feedbapp.csprojResolveAssemblyReference.cache

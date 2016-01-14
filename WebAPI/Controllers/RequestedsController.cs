@@ -9,6 +9,7 @@ using System.Net;
 using System.Net.Http;
 using System.Net.Mail;
 using System.Net.Mime;
+using System.Threading.Tasks;
 using System.Web.Http;
 using System.Web.Http.Description;
 using WebAPI.DataAccess;
@@ -82,82 +83,22 @@ namespace WebAPI.Controllers
             {
                 return BadRequest(ModelState);
             }
-
             db.Requested.Add(requested);
             if (db.SaveChanges() > 0)
             {
-                //int sId = requested.senderId != null ? (int)requested.senderId : 0;
-                //int rId = requested.recipientId != null ? (int)requested.recipientId : 0;
-                //requested.sender = (User)new UserController().GetUser(sId);
-                //requested.recipient = (User)new UserController().GetUser(rId);
-                //SendEmails(requested.sender.email, requested.recipient.email, requested.comments);
-                SendEmails("cabrera_sebastian@hotmail.com", "sergio.cabrera@uruit.com", requested.comments);
+                SendEmails(requested);
             }
-
             return CreatedAtRoute("DefaultApi", new { id = requested.feedbackId }, requested);
         }
 
-        private void SendEmails(string senderEmail, string recipientEmail, string feedbackComment)
+        protected void SendEmails(Requested requested)
         {
-            // Specify the file to be attached and sent.
-            // This example assumes that a file named Data.xls exists in the
-            // current working directory.
-            //string file = "data.xls";
-            // Create a message and set up the recipients.
-            MailMessage message = new MailMessage(
-               senderEmail, recipientEmail,
-               "Pedido de Feedback!",
-               feedbackComment);
-            string p = "41297206a";
-            // Create  the file attachment for this e-mail message.
-            //Attachment data = new Attachment(file, MediaTypeNames.Application.Octet);
-            // Add time stamp information for the file.
-            //ContentDisposition disposition = data.ContentDisposition;
-            //disposition.CreationDate = System.IO.File.GetCreationTime(file);
-            //disposition.ModificationDate = System.IO.File.GetLastWriteTime(file);
-            //disposition.ReadDate = System.IO.File.GetLastAccessTime(file);
-            //// Add the file attachment to this e-mail message.
-            //message.Attachments.Add(data);
-
-            //Send the message.
-            SmtpClient client = new SmtpClient();
-            client.Host = "smtp.mail.yahoo.com";
-            client.EnableSsl = true;
-            client.Port = 25;            
-            client.UseDefaultCredentials = false;
-            client.DeliveryMethod =  SmtpDeliveryMethod.Network;
-            client.Credentials = new NetworkCredential("cabrera_sebastian8@yahoo.com", p);
-            
-            // Add credentials if the SMTP server requires them.
-            //client.Credentials = CredentialCache.DefaultNetworkCredentials;
-
-            try
-            {
-                client.Send(message);
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine("Exception caught in CreateMessageWithAttachment(): {0}",
-                            ex.ToString());
-            }
-            //data.Dispose();
-
-
-
-            MailMessage message2 = new MailMessage(
-               "feedbapp@uruit.com", senderEmail,
-               "Su pedido de feedback fue enviado!",
-               "En breve la persona a la que le solicitaste feedback se contactara contigo.");         
-
-            try
-            {
-                client.Send(message2);
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine("Exception caught in CreateMessageWithAttachment(): {0}",
-                            ex.ToString());
-            }
+            int sId = requested.senderId != null ? (int)requested.senderId : 0;
+            int rId = requested.recipientId != null ? (int)requested.recipientId : 0;
+            requested.sender = db.Users.Find(sId);
+            requested.recipient = db.Users.Find(rId);
+            Shared.EmailService.SendEmail(requested.recipient.email, "Pedido de Feedback!", requested.comments + ". Responder a: " + requested.sender.email);
+            Shared.EmailService.SendEmail(requested.sender.email, "Notificación FeedbApp", "Se ha enviado un mail a la persona que le solicitaste feedback");
         }
 
         // DELETE: api/Requesteds/5

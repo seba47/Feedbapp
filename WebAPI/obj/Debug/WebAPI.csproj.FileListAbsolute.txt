@@ -153,5 +153,4 @@ F:\Feedbapp\WebAPI\obj\Debug\WebAPI.dll
 F:\Feedbapp\WebAPI\obj\Debug\WebAPI.pdb
 F:\Feedbapp\WebAPI\obj\Debug\WebAPI.Migrations.Initial.resources
 F:\Feedbapp\WebAPI\obj\Debug\WebAPI.csproj.GenerateResource.Cache
-F:\Feedbapp\WebAPI\obj\Debug\WebAPI.csprojResolveAssemblyReference.cache
 F:\Feedbapp\WebAPI\obj\Debug\WebAPI.Migrations.InitialMigrations.resources
