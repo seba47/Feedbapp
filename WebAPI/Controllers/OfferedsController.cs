@@ -85,7 +85,6 @@ namespace WebAPI.Controllers
             {
                 SendEmails(offered);
             }
-
             return CreatedAtRoute("DefaultApi", new { id = offered.feedbackId }, offered);
         }
 
