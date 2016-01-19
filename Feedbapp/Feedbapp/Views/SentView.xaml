@@ -2,5 +2,17 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Feedbapp.Views.SentView">
-  <Label x:Name="LblMain" VerticalOptions="Center" HorizontalOptions="Center" />
+  <StackLayout VerticalOptions="CenterAndExpand" Padding="2">
+    <Label Text="¡Gracias!" VerticalOptions="Center" HorizontalOptions="Center" FontSize="50" ></Label>
+    <Label x:Name="LblMain" VerticalOptions="Center" HorizontalOptions="Center" FontSize="20" />
+
+    <StackLayout>
+      <Button BackgroundColor="#1fd660" Text="Nueva Solicitud" Clicked="NewRequestClicked"></Button>      
+    </StackLayout>
+
+    <StackLayout>      
+      <Button BackgroundColor="#1fd660" Text="Salir"  Clicked="ExitClicked" ></Button>
+    </StackLayout>
+
+  </StackLayout>
 </ContentPage>

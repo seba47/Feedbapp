@@ -21,6 +21,7 @@ namespace Feedbapp
         /// </summary>
         protected void InitMVPApp()
         {
+            //NavigationPage np = new NavigationPage(new Views.SentView("Se le ha enviado una solicitud a Pepito para agendar una instancia."));
             NavigationPage np = new NavigationPage(new Views.CustomMasterDetailPage());
             np.BackgroundColor = Color.FromHex(MainStyles.GetBackgroundColor(false));
             np.BarBackgroundColor = Color.FromHex(MainStyles.GetBackgroundColor(false));

@@ -46,10 +46,18 @@ namespace Feedbapp.Views
                 bool ret = await context.Send();
                 if (ret)
                 {
+                    pkrSender.SelectedIndex = -1;
+                    pkrRecipient.SelectedIndex = -1;
+                    editorComments.Text = "";
                     //bool exit = await DisplayAlert("Solicitud de Feedback", "¡Gracias! Se le ha enviado una solicitud a " + pkrRecipient.ToString() + " para agendar una instancia de feedback. Recibirás una notificación en cuanto responda.", "Salir", "Nueva Solicitud");
                     //bool exit = await DisplayAlert("Solicitud de Feedback", "¡Gracias! Se le ha enviado una solicitud a " + pkrRecipient.Items[pkrRecipient.SelectedIndex] + " para agendar una instancia de feedback. Recibirás un mail de confirmación.", "Salir", "Nueva Solicitud");
                     string mainText = "¡Gracias! Se le ha enviado una solicitud a " + pkrRecipient.ToString() + " para agendar una instancia de feedback. Recibirás una notificación en cuanto responda.";
-                    await Navigation.PushAsync(new SentView(mainText));
+                    SentView sView = new SentView(mainText);
+
+                    await Navigation.PushAsync(sView);
+
+
+                    NavigationPage.SetHasBackButton(sView, false);
 
                     //if (exit)
                     //{

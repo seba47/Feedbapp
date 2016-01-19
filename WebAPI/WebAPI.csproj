@@ -210,17 +210,13 @@
     <Compile Include="Controllers\OfferedsController.cs" />
     <Compile Include="Controllers\RequestedsController.cs" />
     <Compile Include="Controllers\UserController.cs" />
-    <Compile Include="DataAccess\WebAPIDbContext.cs" />
+    <Compile Include="DataAccess\FeedbappContext.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201601061930346_Initial.cs" />
-    <Compile Include="Migrations\201601061930346_Initial.Designer.cs">
-      <DependentUpon>201601061930346_Initial.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201601062005327_InitialMigrations.cs" />
-    <Compile Include="Migrations\201601062005327_InitialMigrations.Designer.cs">
-      <DependentUpon>201601062005327_InitialMigrations.cs</DependentUpon>
+    <Compile Include="Migrations\201601191410226_Initial.cs" />
+    <Compile Include="Migrations\201601191410226_Initial.Designer.cs">
+      <DependentUpon>201601191410226_Initial.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountBindingModels.cs" />
@@ -276,6 +272,7 @@
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
+    <Content Include="SQLScripts\InitialLoading.sql" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -307,11 +304,8 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201601061930346_Initial.resx">
-      <DependentUpon>201601061930346_Initial.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201601062005327_InitialMigrations.resx">
-      <DependentUpon>201601062005327_InitialMigrations.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201601191410226_Initial.resx">
+      <DependentUpon>201601191410226_Initial.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
@@ -349,6 +343,11 @@
     <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
     <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
   </Target>
+  <Import Project="$(SQLDBExtensionsRefPath)\Microsoft.Data.Tools.Schema.Sql.UnitTesting.targets" Condition="'$(SQLDBExtensionsRefPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.Sql.UnitTesting.targets" Condition="'$(SQLDBExtensionsRefPath)' == ''" />
+  <PropertyGroup>
+    <SsdtUnitTestVersion>2.0</SsdtUnitTestVersion>
+  </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

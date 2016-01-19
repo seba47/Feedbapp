@@ -15,7 +15,7 @@ namespace WebAPI.Controllers
 {
     public class UserController : ApiController
     {
-        private WebAPIDbContext db = new WebAPIDbContext();
+        private FeedbappContext db = new FeedbappContext();
 
         // GET: api/Users
         public IQueryable<User> GetUsers()

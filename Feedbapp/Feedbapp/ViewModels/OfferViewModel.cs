@@ -14,7 +14,8 @@ namespace Feedbapp.ViewModels
         public OfferViewModel():base()
         {
             this.buttonText="Ofrecer Feedback";
-            this.PageTitle = "Ofrecer Feedback";           
+            this.PageTitle = "Ofrecer Feedback";
+            this.comments = "Me gustaría ofrecerte feedback!";
         }
 
         internal override async Task<bool> Send()

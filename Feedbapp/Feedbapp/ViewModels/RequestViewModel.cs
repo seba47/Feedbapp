@@ -13,7 +13,8 @@ namespace Feedbapp.ViewModels
         public RequestViewModel():base()
         {
             this.buttonText = "Solicitar Feedback";
-            this.PageTitle = "Solicitar Feedback";            
+            this.PageTitle = "Solicitar Feedback";
+            this.comments = "Me gustaría pedirte feedback!";
         }
 
         internal override async Task<bool> Send()

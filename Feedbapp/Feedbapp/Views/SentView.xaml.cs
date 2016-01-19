@@ -16,5 +16,19 @@ namespace Feedbapp.Views
             BackgroundColor = Styles.MainStyles.GetBackgroundColor();
             LblMain.Text = successfullyText;
         }
+
+
+        public async void NewRequestClicked(object sender, EventArgs args)
+        {
+            await Navigation.PopAsync();
+        }
+        public async void ExitClicked(object sender, EventArgs args)
+        {
+            await Navigation.PopToRootAsync();
+        }
+
     }
+
+    
+
 }

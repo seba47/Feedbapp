@@ -19,7 +19,7 @@ namespace WebAPI.Controllers
 {
     public class RequestedsController : ApiController
     {
-        private WebAPIDbContext db = new WebAPIDbContext();
+        private FeedbappContext db = new FeedbappContext();
 
         // GET: api/Requesteds
         public IQueryable<Requested> GetRequested()

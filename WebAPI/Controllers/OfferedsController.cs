@@ -15,7 +15,7 @@ namespace WebAPI.Controllers
 {
     public class OfferedsController : ApiController
     {
-        private WebAPIDbContext db = new WebAPIDbContext();
+        private FeedbappContext db = new FeedbappContext();
 
         // GET: api/Offereds
         public IQueryable<Offered> GetOffered()
