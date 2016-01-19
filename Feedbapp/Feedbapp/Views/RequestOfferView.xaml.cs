@@ -47,16 +47,19 @@ namespace Feedbapp.Views
                 if (ret)
                 {
                     //bool exit = await DisplayAlert("Solicitud de Feedback", "¡Gracias! Se le ha enviado una solicitud a " + pkrRecipient.ToString() + " para agendar una instancia de feedback. Recibirás una notificación en cuanto responda.", "Salir", "Nueva Solicitud");
-                    bool exit = await DisplayAlert("Solicitud de Feedback", "¡Gracias! Se le ha enviado una solicitud a " + pkrRecipient.Items[pkrRecipient.SelectedIndex] + " para agendar una instancia de feedback. Recibirás un mail de confirmación.", "Salir", "Nueva Solicitud");
-                    if (exit)
-                    {
-                        await Navigation.PopAsync();
-                    }
-                    else
-                    {
-                        //clean the view for a new request
-                        editorComments.Text = string.Empty;
-                    }
+                    //bool exit = await DisplayAlert("Solicitud de Feedback", "¡Gracias! Se le ha enviado una solicitud a " + pkrRecipient.Items[pkrRecipient.SelectedIndex] + " para agendar una instancia de feedback. Recibirás un mail de confirmación.", "Salir", "Nueva Solicitud");
+                    string mainText = "¡Gracias! Se le ha enviado una solicitud a " + pkrRecipient.ToString() + " para agendar una instancia de feedback. Recibirás una notificación en cuanto responda.";
+                    await Navigation.PushAsync(new SentView(mainText));
+
+                    //if (exit)
+                    //{
+                    //    await Navigation.PopAsync();
+                    //}
+                    //else
+                    //{
+                    //    //clean the view for a new request
+                    //    editorComments.Text = string.Empty;
+                    //}
                 }
                 else
                 {

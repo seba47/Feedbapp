@@ -19,13 +19,14 @@ namespace Feedbapp.ViewModels
 
         internal override async Task<bool> Send()
         {
-            int test = this.selectedIndexSender;
+            int senderId = this.SelectedIndexSender;
+            int recipientId = this.SelectedIndexRecipient;
             string comm = this.Comments;
-            User selected = this.UsersList[this.selectedIndexSender];
-            bool x = true;
-
-            return x;
-
+            //User selected = this.UsersList[this.SelectedIndex];
+            Services.RemoteRepository_Offered req = new Services.RemoteRepository_Offered();
+            Offered r = new Offered() { sender = this.SelectedSender, recipient = this.SelectedRecipient, comments = comm, isComplete = false, date = DateTime.Now };
+            int ret = await req.Add(r);
+            return ret == 1;
         }
     }
 }
