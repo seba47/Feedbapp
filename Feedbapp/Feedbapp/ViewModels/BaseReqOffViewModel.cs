@@ -59,6 +59,7 @@ namespace Feedbapp.ViewModels
             }
         }
 
+        
         public List<string> NamesList
         {
             get
@@ -84,7 +85,7 @@ namespace Feedbapp.ViewModels
         }
 
         internal virtual async Task<bool> Send()
-        {            
+        {
             return false;
         }
 
@@ -144,7 +145,9 @@ namespace Feedbapp.ViewModels
             foreach (User u in this.UsersList)
             {
                 this.NamesList.Add(u.ToString());
-            }       
+            }
         }
+
+        public abstract string getSentText();
     }
 }

@@ -14,7 +14,16 @@ namespace Feedbapp.ViewModels
         {
             this.buttonText = "Solicitar Feedback";
             this.PageTitle = "Solicitar Feedback";
-            this.comments = "Me gustaría pedirte feedback!";
+            this.comments = "Me gustaría pedirte feedback!";            
+        }
+
+        public override string getSentText()
+        {
+            if(this.SelectedRecipient != null)
+            {
+                return "Se le ha enviado una solicitud a " + this.SelectedRecipient.firstName + " " + this.SelectedRecipient.lastName + " para agendar una instancia de feedback. Recibirás una notificación por mail.";
+            }
+            return string.Empty;
         }
 
         internal override async Task<bool> Send()
@@ -29,5 +38,7 @@ namespace Feedbapp.ViewModels
             return ret == 1;
 
         }
+
+
     }
 }

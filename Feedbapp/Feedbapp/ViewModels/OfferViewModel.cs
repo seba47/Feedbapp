@@ -29,5 +29,14 @@ namespace Feedbapp.ViewModels
             int ret = await req.Add(r);
             return ret == 1;
         }
+
+        public override string getSentText()
+        {
+            if (this.SelectedRecipient != null)
+            {
+                return "Se le ha enviado una ofrecimiento de feedback a " + this.SelectedRecipient.firstName + " " + this.SelectedRecipient.lastName + ". Recibirás una notificación por mail.";
+            }
+            return string.Empty;
+        }
     }
 }
