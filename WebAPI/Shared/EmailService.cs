@@ -15,7 +15,7 @@ namespace WebAPI.Shared
 
         public static bool SendEmail(string to , string subject, string body)
         {
-            Configuration config = WebConfigurationManager.OpenWebConfiguration(HttpContext.Current.Request.ApplicationPath);
+            Configuration config = WebConfigurationManager.OpenWebConfiguration("/"/*HttpContext.Current.Request.ApplicationPath*/);
             SmtpSection smtp = ((MailSettingsSectionGroup)config.GetSectionGroup("system.net/mailSettings")).Smtp;
             MailMessage message = new MailMessage(smtp.From, to, subject, body);
             SmtpClient client = CreateSmtpClient(smtp);

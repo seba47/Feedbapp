@@ -54,12 +54,12 @@ namespace Feedbapp.Views
                 }
                 else
                 {
-                    await DisplayAlert("No se pudo solicitar el feedback", "", "Aceptar");
+                    await DisplayAlert("Error", "No se pudo solicitar el feedback", "Aceptar");
                 }
             }
             else
             {
-                await DisplayAlert("El solicitante y el solicitado no pueden ser la misma persona", "", "Aceptar");
+                await DisplayAlert("Error", "El solicitante y el solicitado no pueden ser la misma persona", "Aceptar");
             }
         }
     }

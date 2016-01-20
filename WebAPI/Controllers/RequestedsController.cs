@@ -4,11 +4,13 @@ using System.Collections.Generic;
 using System.Data;
 using System.Data.Entity;
 using System.Data.Entity.Infrastructure;
+using System.Diagnostics;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Net.Mail;
 using System.Net.Mime;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Web.Http;
 using System.Web.Http.Description;
@@ -79,14 +81,24 @@ namespace WebAPI.Controllers
         [ResponseType(typeof(Requested))]
         public IHttpActionResult PostRequested(Requested requested)
         {
+            //Stopwatch timer = new Stopwatch();
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
             }
+            //timer.Start();
             db.Requested.Add(requested);
             if (db.SaveChanges() > 0)
             {
+                //timer.Stop();
+                //Console.WriteLine(timer.ElapsedTicks);
+                //timer.Reset();
+
+                //timer.Start();
                 SendEmails(requested);
+                
+                //timer.Stop();
+                //Console.WriteLine(timer.ElapsedTicks);
             }
             return CreatedAtRoute("DefaultApi", new { id = requested.feedbackId }, requested);
         }
@@ -97,9 +109,16 @@ namespace WebAPI.Controllers
             int rId = requested.recipientId != null ? (int)requested.recipientId : 0;
             requested.sender = db.Users.Find(sId);
             requested.recipient = db.Users.Find(rId);
-            Shared.EmailService.SendEmail(requested.recipient.email, "Pedido de Feedback!", requested.comments + ". Responder a: " + requested.sender.email);
-            Shared.EmailService.SendEmail(requested.sender.email, "Notificación FeedbApp", "Se ha enviado un mail a la persona que le solicitaste feedback");
+            
+            ThreadStart threadStart = delegate () {
+                Shared.EmailService.SendEmail(requested.recipient.email, "Pedido de Feedback!", requested.comments + ". Responder a: " + requested.sender.email);
+                Shared.EmailService.SendEmail(requested.sender.email, "Notificación FeedbApp", "Se ha enviado un mail a la persona que le solicitaste feedback");
+            };
+            Thread thread = new Thread(threadStart);
+            thread.Start();
         }
+
+
 
         // DELETE: api/Requesteds/5
         [ResponseType(typeof(Requested))]
