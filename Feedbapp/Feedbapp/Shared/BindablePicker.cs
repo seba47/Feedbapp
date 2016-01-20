@@ -8,7 +8,7 @@ using Xamarin.Forms;
 
 namespace Feedbapp.Shared
 {
-    public class BindablePicker: Picker
+    public class BindablePicker : Picker
     {
         public BindablePicker()
         {
@@ -20,7 +20,6 @@ namespace Feedbapp.Shared
 
         public static BindableProperty SelectedItemProperty =
             BindableProperty.Create<BindablePicker, object>(o => o.SelectedItem, default(object));
-
 
         public string DisplayMember { get; set; }
 
@@ -57,8 +56,7 @@ namespace Feedbapp.Shared
 
                         //var prop = type.GetProperty(picker.DisplayMember);
 
-
-                        //var value = 
+                        //var value =
                         //picker.Items.Add(prop.GetValue(item).ToString());
                     }
                 }

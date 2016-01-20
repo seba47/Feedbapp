@@ -12,6 +12,7 @@ namespace Feedbapp.Services
     {
         protected HttpClient httpClient = new HttpClient();
         protected string ControllerName;
+
         //Change this line if you want to reference to another URL for VideoApp.Services
         private const string BaseUri = "http://172.20.2.76:8282/api/"; //this needs to be changed to the URI of your Service URL
 
@@ -55,7 +56,7 @@ namespace Feedbapp.Services
 
         public async override Task<int> Add(T item)
         {
-            return await this.Post(item);            
+            return await this.Post(item);
         }
 
         public async override Task Delete(T item)
@@ -101,7 +102,7 @@ namespace Feedbapp.Services
             string url = BaseUri + ControllerName;
             string json = Newtonsoft.Json.JsonConvert.SerializeObject(obj);
 
-            var result = await httpClient.PostAsync(url, new StringContent(json, Encoding.UTF8,"application/json"));
+            var result = await httpClient.PostAsync(url, new StringContent(json, Encoding.UTF8, "application/json"));
 
             if (result.IsSuccessStatusCode)
             {
@@ -117,6 +118,5 @@ namespace Feedbapp.Services
         {
             throw new NotImplementedException();
         }
-
     }
 }

@@ -1,10 +1,11 @@
-﻿using System;
+﻿using Feedbapp.Entities;
+using Feedbapp.Services;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Feedbapp.Services;
-using Feedbapp.Entities;
+
 namespace Feedbapp.Models
 {
     public class UserModel
@@ -19,14 +20,16 @@ namespace Feedbapp.Models
         }
 
         #region "Remote methods"
+
         public async Task<User> GetUserByUsername(string username)
         {
             return await ((RemoteRepository_User)this.remote_repository).GetUserByUsername(username);
         }
-        #endregion
 
+        #endregion "Remote methods"
 
         #region "Local methods"
+
         public User Local_CheckLogin()
         {
             return ((LocalRepository_User)this.local_repository).getUser();
@@ -47,7 +50,10 @@ namespace Feedbapp.Models
             }
             return localUser;
         }
-        #endregion
+
+        #endregion "Local methods"
+
+        #region Login Methods
 
         /// <summary>
         /// Method which get the local stored user (if exist) and after that It is checked in the database (by the webapi)
@@ -58,7 +64,7 @@ namespace Feedbapp.Models
             var storedUser = Local_CheckLogin();
             if (storedUser != null && storedUser.userId != 0)
             {
-                var user = await ((RemoteRepository_User)remote_repository).GetUserByUsername(storedUser.username);                   
+                var user = await ((RemoteRepository_User)remote_repository).GetUserByUsername(storedUser.username);
                 if (user != null && user.password.Equals(storedUser.password))
                 {
                     return true;
@@ -69,34 +75,22 @@ namespace Feedbapp.Models
 
         public async Task<bool> Login(string username, string password)
         {
-            User u= await ((RemoteRepository_User)remote_repository).GetUserByUsername(username);
-
-            //List<User> userList = await ((RemoteRepository_User)remote_repository).Get();
-
+            User u = await ((RemoteRepository_User)remote_repository).GetUserByUsername(username);
             if (u != null && u.password.Equals(password))
             {
                 //Persist the user data in device
                 await local_repository.Add(u);
                 return true;
-            }                
+            }
             else
                 return false;
-
         }
 
+        #endregion Login Methods
 
         public List<User> GetUsers()
         {
-            List<User> users =  Task.Run(()=>((RemoteRepository_User)remote_repository).Get()).Result;
-
-            //List<User> users = new List<User>();
-
-            ////this.usersList = new List<UserModel>();
-            //for (int i = 0; i < 10; i++)
-            //{
-            //    User um = new User() { firstName = "Seba", lastName = i.ToString(), password = "", username = "" };
-            //    users.Add(um);
-            //}
+            List<User> users = Task.Run(() => ((RemoteRepository_User)remote_repository).Get()).Result;
             return users;
         }
     }

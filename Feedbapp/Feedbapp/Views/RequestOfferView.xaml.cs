@@ -18,13 +18,9 @@ namespace Feedbapp.Views
             InitializeComponent();
             this.BackgroundColor = BackgroundColor = MainStyles.GetBackgroundColor();
             if (requestMode)
-            {
                 this.BindingContext = new RequestViewModel();
-            }
             else
-            {
                 this.BindingContext = new OfferViewModel();
-            }
 
             //** Main Binding context on the XAML file **
             List<string> users = ((BaseReqOffViewModel)this.BindingContext).NamesList;
@@ -42,15 +38,11 @@ namespace Feedbapp.Views
                 BaseReqOffViewModel context = ((BaseReqOffViewModel)this.BindingContext);                
                 context.SelectedSender = context.UsersList[pkrSender.SelectedIndex];
                 context.SelectedRecipient = context.UsersList[pkrRecipient.SelectedIndex];
-                bool ret = await context.Send();
-                if (ret)
+                bool sentOk = await context.Send();
+                if (sentOk)
                 {
-                    pkrSender.SelectedIndex = -1;
-                    pkrRecipient.SelectedIndex = -1;
-                    editorComments.Text = "";
-                    SentView sView = new SentView(context.getSentText());
-                    await Navigation.PushAsync(sView);
-                    NavigationPage.SetHasBackButton(sView, false);                    
+                    ResetControls();
+                    GoToSuccessfullPage(context);                    
                 }
                 else
                 {
@@ -61,6 +53,20 @@ namespace Feedbapp.Views
             {
                 await DisplayAlert("Error", "El solicitante y el solicitado no pueden ser la misma persona", "Aceptar");
             }
+        }
+
+        private async void GoToSuccessfullPage(BaseReqOffViewModel context)
+        {
+            SentView sView = new SentView(context.getSentText());
+            await Navigation.PushAsync(sView);
+            NavigationPage.SetHasBackButton(sView, false);
+        }
+
+        private void ResetControls()
+        {
+            pkrSender.SelectedIndex = -1;
+            pkrRecipient.SelectedIndex = -1;
+            editorComments.Text = "";
         }
     }
 }

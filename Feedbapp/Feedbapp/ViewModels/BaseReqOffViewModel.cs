@@ -1,11 +1,10 @@
-﻿using Feedbapp.Models;
+﻿using Feedbapp.Entities;
+using Feedbapp.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Feedbapp.Entities;
-
 
 namespace Feedbapp.ViewModels
 {
@@ -22,6 +21,8 @@ namespace Feedbapp.ViewModels
         protected string pageTitle;
         protected RequestOfferModel model;
         protected UserModel um;
+
+        #region Properties
 
         public string Comments
         {
@@ -59,7 +60,6 @@ namespace Feedbapp.ViewModels
             }
         }
 
-        
         public List<string> NamesList
         {
             get
@@ -100,6 +100,7 @@ namespace Feedbapp.ViewModels
                 selectedSender = value;
             }
         }
+
         public User SelectedRecipient
         {
             get
@@ -135,6 +136,8 @@ namespace Feedbapp.ViewModels
                 selectedIndexRecipient = value;
             }
         }
+
+        #endregion Properties
 
         public BaseReqOffViewModel()
         {

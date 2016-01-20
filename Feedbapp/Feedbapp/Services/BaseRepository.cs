@@ -1,10 +1,10 @@
-﻿using System;
+﻿using Feedbapp.Entities;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
-using Feedbapp.Entities;
 
 namespace Feedbapp.Services
 {
@@ -13,6 +13,7 @@ namespace Feedbapp.Services
         public abstract Task<T> Get(int identifier);
 
         public abstract Task<T> Update(T item);
+
         public abstract Task Delete(T item);
 
         public abstract Task<int> Add(T item);
@@ -36,8 +37,8 @@ namespace Feedbapp.Services
             //httpClient.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
             //httpClient.DefaultRequestHeaders.TryAddWithoutValidation("User-Agent", "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.146 Safari/537.36");
         }
-
     }
+
     public class UriString : Dictionary<string, string>
     {
         public Dictionary<string, string> _Params
@@ -47,6 +48,5 @@ namespace Feedbapp.Services
                 return this;
             }
         }
-
     }
 }

@@ -1,9 +1,9 @@
-﻿using System;
+﻿using Feedbapp.Entities;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Feedbapp.Entities;
 
 namespace Feedbapp.Services
 {
@@ -11,7 +11,6 @@ namespace Feedbapp.Services
     {
         public RemoteRepository_User() : base("User")
         {
-
         }
 
         public async Task<User> GetUserByUsername(string username)

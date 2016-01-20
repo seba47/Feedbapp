@@ -9,9 +9,8 @@ namespace Feedbapp.Services
 {
     public class LocalRepository_User : LocalRepository<User>
     {
-        public LocalRepository_User():base()
+        public LocalRepository_User() : base()
         {
-
         }
 
         public User getUser()
@@ -27,6 +26,5 @@ namespace Feedbapp.Services
             userList.Add(u);
             return userList.First<User>();
         }
-
     }
 }

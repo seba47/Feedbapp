@@ -18,7 +18,7 @@ namespace Feedbapp.Styles
         }
 
         public static Color GetBackgroundColor()
-        {            
+        {
             return Color.FromHex(backgroundColor);
         }
 
@@ -26,7 +26,5 @@ namespace Feedbapp.Styles
         {
             return Color.FromHex(secondBackgroundColor);
         }
-
-
     }
 }

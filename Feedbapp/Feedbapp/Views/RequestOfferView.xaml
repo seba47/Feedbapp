@@ -2,11 +2,11 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:Feedbapp.ViewModels;assembly=Feedbapp"
-             x:Class="Feedbapp.Views.RequestOfferView" Title="{Binding PageTitle}">  
+             x:Class="Feedbapp.Views.RequestOfferView" Title="{Binding PageTitle}">
   <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
     <Picker Title="¿Quién sos?" x:Name="pkrSender" SelectedIndex="{Binding SelectedIndexSender}"></Picker>
     <Picker Title="¿A quién?" x:Name="pkrRecipient" SelectedIndex="{Binding SelectedIndexRecipient}"></Picker>
-    <Editor x:Name="editorComments" Text="{Binding Comments}" HeightRequest="250"></Editor> 
+    <Editor x:Name="editorComments" Text="{Binding Comments}" HeightRequest="250"></Editor>
     <Button BackgroundColor="#1fd660" Text="{Binding ButtonText}" WidthRequest="250" HeightRequest="70" HorizontalOptions="Center" Clicked="MainButtonClicked"></Button>
   </StackLayout>
 </ContentPage>

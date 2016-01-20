@@ -1,9 +1,9 @@
 ﻿using Feedbapp.Entities;
+using SQLite;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using SQLite;
 using Xamarin.Forms;
 
 namespace Feedbapp.Services
@@ -42,7 +42,6 @@ namespace Feedbapp.Services
             var first = tb.FirstOrDefault(x => x.Id == identifier.ToString());
             return await Task.Run(() => first);
         }
-
 
         public override Task<T> Update(T item)
         {
