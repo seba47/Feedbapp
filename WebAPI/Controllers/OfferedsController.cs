@@ -6,6 +6,7 @@ using System.Data.Entity.Infrastructure;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
+using System.Threading;
 using System.Web.Http;
 using System.Web.Http.Description;
 using WebAPI.DataAccess;
@@ -94,8 +95,13 @@ namespace WebAPI.Controllers
             int rId = offered.recipientId != null ? (int)offered.recipientId : 0;
             offered.sender = db.Users.Find(sId);
             offered.recipient = db.Users.Find(rId);
-            Shared.EmailService.SendEmail(offered.recipient.email, "Ofrecimiento de Feedback!", offered.comments + ". Responder a: " + offered.sender.email);
-            Shared.EmailService.SendEmail(offered.sender.email, "Notificación FeedbApp", "Se ha enviado un mail a la persona que le ofreciste feedback");
+
+            ThreadStart threadStart = delegate () {
+                Shared.EmailService.SendEmail(offered.recipient.email, "Ofrecimiento de Feedback!", offered.comments + ". Responder a: " + offered.sender.email);
+                Shared.EmailService.SendEmail(offered.sender.email, "Notificación FeedbApp", "Se ha enviado un mail a la persona que le ofreciste feedback");
+            };
+            Thread thread = new Thread(threadStart);
+            thread.Start();
         }
 
         // DELETE: api/Offereds/5
