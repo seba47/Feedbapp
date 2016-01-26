@@ -14,10 +14,8 @@ namespace WebAPI.Shared
     {
         public static bool SendEmail(string from, string to, string subject, string body)
         {
-            Configuration config = WebConfigurationManager.OpenWebConfiguration("/"/*HttpContext.Current.Request.ApplicationPath*/);
-            SmtpSection smtp = ((MailSettingsSectionGroup)config.GetSectionGroup("system.net/mailSettings")).Smtp;
             MailMessage message = new MailMessage(from, to, subject, body);
-            SmtpClient client = new SmtpClient(); //CreateSmtpClient(smtp);
+            SmtpClient client = new SmtpClient();
             try
             {
                 client.Send(message);
@@ -29,19 +27,5 @@ namespace WebAPI.Shared
             }
             return true;
         }
-
-        //protected static SmtpClient CreateSmtpClient(SmtpSection smtp)
-        //{
-        //    var netConfig = smtp.Network;
-        //    //Send the message.
-        //    SmtpClient client = new SmtpClient();
-        //    client.Host = netConfig.Host;
-        //    client.EnableSsl = netConfig.EnableSsl;
-        //    client.Port = netConfig.Port;
-        //    client.DeliveryMethod = smtp.DeliveryMethod;
-        //    client.UseDefaultCredentials = netConfig.DefaultCredentials;
-        //    client.Credentials = new NetworkCredential(netConfig.UserName, netConfig.Password);
-        //    return client;
-        //}
     }
 }
