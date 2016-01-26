@@ -81,24 +81,14 @@ namespace WebAPI.Controllers
         [ResponseType(typeof(Requested))]
         public IHttpActionResult PostRequested(Requested requested)
         {
-            //Stopwatch timer = new Stopwatch();
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
             }
-            //timer.Start();
             db.Requested.Add(requested);
             if (db.SaveChanges() > 0)
             {
-                //timer.Stop();
-                //Console.WriteLine(timer.ElapsedTicks);
-                //timer.Reset();
-
-                //timer.Start();
                 SendEmails(requested);
-
-                //timer.Stop();
-                //Console.WriteLine(timer.ElapsedTicks);
             }
             return CreatedAtRoute("DefaultApi", new { id = requested.feedbackId }, requested);
         }
@@ -110,18 +100,17 @@ namespace WebAPI.Controllers
             requested.sender = db.Users.Find(sId);
             requested.recipient = db.Users.Find(rId);
 
-            //ThreadStart threadStart = delegate ()
-            //{
-            //    Shared.EmailService.SendEmail(requested.recipient.email, "Pedido de Feedback!", requested.comments + ". Responder a: " + requested.sender.email);
-            //    Shared.EmailService.SendEmail(requested.sender.email, "Notificación FeedbApp", "Se ha enviado un mail a la persona que le solicitaste feedback");
-            //};
-            //Thread thread = new Thread(threadStart);
-            //thread.Start();
+            ThreadStart threadStart = delegate ()
+            {
+                Shared.EmailService.SendEmail(requested.sender.email, requested.recipient.email, "Pedido de Feedback!", requested.comments + ". Responder a: " + requested.sender.email);
+                Shared.EmailService.SendEmail("hello.feedbapp@gmail.com", requested.sender.email, "Notificación FeedbApp", "Se ha enviado un mail a la persona que le solicitaste feedback");
+            };
+            Thread thread = new Thread(threadStart);
+            thread.Start();
 
-            var taskEmail1 = Task.Run(() => Shared.EmailService.SendEmail(requested.recipient.email, "Pedido de Feedback!", requested.comments + ". Responder a: " + requested.sender.email));
-            var taskEmail2 = Task.Run(() => Shared.EmailService.SendEmail(requested.sender.email, "Notificación FeedbApp", "Se ha enviado un mail a la persona que le solicitaste feedback"));
-
-            Task.WaitAll(taskEmail1, taskEmail2);
+            //var taskEmail1 = Task.Run(() => Shared.EmailService.SendEmail(requested.recipient.email, "Pedido de Feedback!", requested.comments + ". Responder a: " + requested.sender.email));
+            //var taskEmail2 = Task.Run(() => Shared.EmailService.SendEmail(requested.sender.email, "Notificación FeedbApp", "Se ha enviado un mail a la persona que le solicitaste feedback"));
+            //Task.WaitAll(taskEmail1, taskEmail2);
         }
 
         // DELETE: api/Requesteds/5

@@ -7,8 +7,10 @@
     <AssemblyPart x:Name="Xamarin.Forms.Core" Source="Xamarin.Forms.Core.dll" />
     <AssemblyPart x:Name="Xamarin.Forms.Platform.WP8" Source="Xamarin.Forms.Platform.WP8.dll" />
     <AssemblyPart x:Name="Xamarin.Forms.Xaml" Source="Xamarin.Forms.Xaml.dll" />
+    <AssemblyPart x:Name="SQLite-net" Source="SQLite-net.dll" />
     <AssemblyPart x:Name="System.Net.Http" Source="System.Net.Http.dll" />
     <AssemblyPart x:Name="System.Windows.Interactivity" Source="System.Windows.Interactivity.dll" />
+    <AssemblyPart x:Name="SQLitePCL.raw" Source="SQLitePCL.raw.dll" />
     <AssemblyPart x:Name="System.Net.Http.Primitives" Source="System.Net.Http.Primitives.dll" />
   </Deployment.Parts>
 </Deployment>

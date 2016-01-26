@@ -14,7 +14,7 @@ namespace Feedbapp.Services
         protected string ControllerName;
 
         //Change this line if you want to reference to another URL for VideoApp.Services
-        private const string BaseUri = "http://172.20.2.76:8282/api/"; //this needs to be changed to the URI of your Service URL
+        private const string BaseUri = "http://feedbapp.carrasco.uruit.com/api/"; //"http://172.20.2.76:8282/api/"; //this needs to be changed to the URI of your Service URL
 
         public RemoteRepository(string controller)
         {

@@ -94,3 +94,5 @@ F:\Feedbapp\Feedbapp\Feedbapp.WinPhone\obj\Release\Feedbapp.WinPhone.csproj.Gene
 F:\Feedbapp\Feedbapp\Feedbapp.WinPhone\obj\Release\Feedbapp.WinPhone.dll
 F:\Feedbapp\Feedbapp\Feedbapp.WinPhone\obj\Release\Feedbapp.WinPhone.pdb
 F:\Feedbapp\Feedbapp\Feedbapp.WinPhone\obj\Release\XapCacheFile.xml
+F:\Feedbapp\Feedbapp\Feedbapp.WinPhone\Bin\Release\SQLite-net.dll
+F:\Feedbapp\Feedbapp\Feedbapp.WinPhone\Bin\Release\SQLitePCL.raw.dll
