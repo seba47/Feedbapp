@@ -5,7 +5,7 @@
              Padding="0,40,0,0"
              Icon="greenHamb.png"
              Title="-">
-  <ContentPage.Content>    
+  <ContentPage.Content>
     <ListView x:Name="listView" VerticalOptions="FillAndExpand">
       <ListView.ItemTemplate>
         <DataTemplate>

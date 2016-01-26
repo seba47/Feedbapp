@@ -3,8 +3,10 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Feedbapp.Views.AboutView">
   <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
-    <Label Text="FeedbApp" />
-    <Label Text="Version 1.0" />
-    <Label Text="uruit.com" />
+    <Label Text="FeedbApp MVP" FontSize="30" HorizontalOptions="CenterAndExpand" TextColor="White" />
+    <StackLayout Padding="50">
+      <Image Source="xamarin_logo.png"></Image>
+      <Image Source="webapi_logo.png"></Image>
+    </StackLayout>
   </StackLayout>
 </ContentPage>

@@ -16,6 +16,7 @@ using System.Web.Http;
 using System.Web.Http.Description;
 using WebAPI.DataAccess;
 using WebAPI.Models;
+using WebAPI.Shared;
 
 namespace WebAPI.Controllers
 {
@@ -102,8 +103,8 @@ namespace WebAPI.Controllers
 
             ThreadStart threadStart = delegate ()
             {
-                Shared.EmailService.SendEmail(requested.sender.email, requested.recipient.email, "Pedido de Feedback!", requested.comments + ". Responder a: " + requested.sender.email);
-                Shared.EmailService.SendEmail("hello.feedbapp@gmail.com", requested.sender.email, "Notificación FeedbApp", "Se ha enviado un mail a la persona que le solicitaste feedback");
+                EmailService.SendEmail(requested.sender.email, requested.recipient.email, EmailService.requestSubject, requested.comments);
+                EmailService.SendEmail(EmailService.appEmail, requested.sender.email, EmailService.notificationSubject, EmailService.notificationBody);
             };
             Thread thread = new Thread(threadStart);
             thread.Start();

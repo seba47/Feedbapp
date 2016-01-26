@@ -140,6 +140,8 @@
     <AndroidResource Include="Resources\drawable\profile2.png" />
     <AndroidResource Include="Resources\drawable\whiteHamb.png" />
     <AndroidResource Include="Resources\drawable\greenHamb.png" />
+    <AndroidResource Include="Resources\drawable\xamarin_logo.png" />
+    <AndroidResource Include="Resources\drawable\webapi_logo.png" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Feedbapp\Feedbapp.csproj">

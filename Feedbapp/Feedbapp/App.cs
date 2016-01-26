@@ -9,10 +9,10 @@ namespace Feedbapp
         {
             LoadStyles();
             // The root page of your application
-            //NavigationPage np = new NavigationPage(new Views.LoginView());      
+            //NavigationPage np = new NavigationPage(new Views.LoginView());
             //np.BackgroundColor = Color.FromHex(MainStyles.GetBackgroundColor(false));
             //np.BarBackgroundColor = Color.FromHex(MainStyles.GetBackgroundColor(false));
-            //MainPage = np;     
+            //MainPage = np;
             InitMVPApp();
         }
 
@@ -43,7 +43,6 @@ namespace Feedbapp
             // no Key specified, becomes an implicit style for ALL boxviews
             Application.Current.Resources.Add(buttonStyle);
 
-
             //PICKERS
             var pickerStyle = new Style(typeof(Picker))
             {
@@ -53,7 +52,6 @@ namespace Feedbapp
             };
             // no Key specified, becomes an implicit style for ALL boxviews
             Application.Current.Resources.Add(pickerStyle);
-
         }
 
         protected override void OnStart()

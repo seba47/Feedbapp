@@ -69,7 +69,13 @@ namespace Feedbapp.Droid
 			public const int uruit_logo = 2130837511;
 			
 			// aapt resource value: 0x7f020008
-			public const int whiteHamb = 2130837512;
+			public const int webapi_logo = 2130837512;
+			
+			// aapt resource value: 0x7f020009
+			public const int whiteHamb = 2130837513;
+			
+			// aapt resource value: 0x7f02000a
+			public const int xamarin_logo = 2130837514;
 			
 			static Drawable()
 			{
