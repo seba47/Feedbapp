@@ -2,11 +2,11 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Feedbapp.Views.HomeView">
-  <StackLayout VerticalOptions="Center" HorizontalOptions="Center" >
+  <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
     <RelativeLayout  Padding="0,0,0,70">
       <Button BackgroundColor="#1fd660" Text="Solicitar Feedback" WidthRequest="250" HeightRequest="100" Clicked="GoToRequestView" FontSize="24"></Button>
     </RelativeLayout>
-    <RelativeLayout >
+    <RelativeLayout>
       <Button BackgroundColor="#1fd660" Text="Ofrecer Feedback" WidthRequest="250" HeightRequest="100" Clicked="GoToOfferView" FontSize="24"></Button>
     </RelativeLayout>
   </StackLayout>

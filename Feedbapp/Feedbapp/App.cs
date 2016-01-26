@@ -37,7 +37,8 @@ namespace Feedbapp
             {
                 Setters = {
                     new Setter { Property = Button.TextColorProperty, Value = Color.White},
-                    new Setter { Property = Button.FontAttributesProperty, Value = FontAttributes.Bold}
+                    new Setter { Property = Button.FontAttributesProperty, Value = FontAttributes.Bold},
+                    new Setter { Property = Button.BorderRadiusProperty, Value = 0}
                 }
             };
             // no Key specified, becomes an implicit style for ALL boxviews

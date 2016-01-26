@@ -1,13 +1,12 @@
-﻿using System;
+﻿using Feedbapp.Entities;
+using Feedbapp.Styles;
+using Feedbapp.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Feedbapp.ViewModels;
-
 using Xamarin.Forms;
-using Feedbapp.Styles;
-using Feedbapp.Entities;
 
 namespace Feedbapp.Views
 {
@@ -16,6 +15,7 @@ namespace Feedbapp.Views
         public RequestOfferView(bool requestMode)
         {
             InitializeComponent();
+
             this.BackgroundColor = BackgroundColor = MainStyles.GetBackgroundColor();
             if (requestMode)
                 this.BindingContext = new RequestViewModel();
@@ -32,17 +32,17 @@ namespace Feedbapp.Views
         }
 
         public async void MainButtonClicked(object sender, EventArgs args)
-        {                        
+        {
             if (pkrRecipient.SelectedIndex != pkrSender.SelectedIndex)
             {
-                BaseReqOffViewModel context = ((BaseReqOffViewModel)this.BindingContext);                
+                BaseReqOffViewModel context = ((BaseReqOffViewModel)this.BindingContext);
                 context.SelectedSender = context.UsersList[pkrSender.SelectedIndex];
                 context.SelectedRecipient = context.UsersList[pkrRecipient.SelectedIndex];
                 bool sentOk = await context.Send();
                 if (sentOk)
                 {
                     ResetControls();
-                    GoToSuccessfullPage(context);                    
+                    GoToSuccessfullPage(context);
                 }
                 else
                 {

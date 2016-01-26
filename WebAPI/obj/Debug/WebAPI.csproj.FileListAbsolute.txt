@@ -75,6 +75,8 @@ C:\Users\scabrera\Documents\Visual Studio 2015\Projects\Feedbacker\Feedbapp\WebA
 C:\Users\scabrera\Documents\Visual Studio 2015\Projects\Feedbacker\Feedbapp\WebAPI\obj\Debug\WebAPI.csprojResolveAssemblyReference.cache
 C:\Users\scabrera\Documents\Visual Studio 2015\Projects\Feedbacker\Feedbapp\WebAPI\obj\Debug\WebAPI.dll
 C:\Users\scabrera\Documents\Visual Studio 2015\Projects\Feedbacker\Feedbapp\WebAPI\obj\Debug\WebAPI.pdb
+F:\Feedbapp\WebAPI\bin\System.Net.Http.Formatting.dll
+F:\Feedbapp\WebAPI\bin\System.Web.Helpers.dll
 F:\Feedbapp\WebAPI\bin\roslyn\csc.exe
 F:\Feedbapp\WebAPI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
 F:\Feedbapp\WebAPI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
@@ -109,8 +111,6 @@ F:\Feedbapp\WebAPI\bin\Microsoft.Owin.Security.Twitter.dll
 F:\Feedbapp\WebAPI\bin\Microsoft.Web.Infrastructure.dll
 F:\Feedbapp\WebAPI\bin\Newtonsoft.Json.dll
 F:\Feedbapp\WebAPI\bin\Owin.dll
-F:\Feedbapp\WebAPI\bin\System.Net.Http.Formatting.dll
-F:\Feedbapp\WebAPI\bin\System.Web.Helpers.dll
 F:\Feedbapp\WebAPI\bin\System.Web.Http.dll
 F:\Feedbapp\WebAPI\bin\System.Web.Http.Owin.dll
 F:\Feedbapp\WebAPI\bin\System.Web.Http.WebHost.dll
@@ -121,6 +121,7 @@ F:\Feedbapp\WebAPI\bin\System.Web.WebPages.Deployment.dll
 F:\Feedbapp\WebAPI\bin\System.Web.WebPages.dll
 F:\Feedbapp\WebAPI\bin\System.Web.WebPages.Razor.dll
 F:\Feedbapp\WebAPI\bin\WebGrease.dll
+F:\Feedbapp\WebAPI\bin\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
 F:\Feedbapp\WebAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 F:\Feedbapp\WebAPI\bin\Newtonsoft.Json.xml
 F:\Feedbapp\WebAPI\bin\System.Net.Http.Formatting.xml
@@ -149,9 +150,8 @@ F:\Feedbapp\WebAPI\bin\Microsoft.Owin.Security.Google.xml
 F:\Feedbapp\WebAPI\bin\Microsoft.Owin.Security.Twitter.xml
 F:\Feedbapp\WebAPI\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 F:\Feedbapp\WebAPI\bin\System.Web.Http.Owin.xml
-F:\Feedbapp\WebAPI\obj\Debug\WebAPI.dll
-F:\Feedbapp\WebAPI\obj\Debug\WebAPI.pdb
 F:\Feedbapp\WebAPI\obj\Debug\WebAPI.Migrations.Initial.resources
 F:\Feedbapp\WebAPI\obj\Debug\WebAPI.csproj.GenerateResource.Cache
-F:\Feedbapp\WebAPI\bin\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+F:\Feedbapp\WebAPI\obj\Debug\WebAPI.dll
+F:\Feedbapp\WebAPI\obj\Debug\WebAPI.pdb
 F:\Feedbapp\WebAPI\obj\Debug\WebAPI.csprojResolveAssemblyReference.cache

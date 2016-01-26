@@ -45,7 +45,6 @@ F:\Feedbapp\Feedbapp\Feedbapp.Droid\bin\Debug\SQLite-net.dll.mdb
 F:\Feedbapp\Feedbapp\Feedbapp.Droid\bin\Debug\Xamarin.Forms.Core.xml
 F:\Feedbapp\Feedbapp\Feedbapp.Droid\bin\Debug\Xamarin.Forms.Xaml.xml
 F:\Feedbapp\Feedbapp\Feedbapp.Droid\obj\Debug\Feedbapp.Droid.csprojResolveAssemblyReference.cache
-F:\Feedbapp\Feedbapp\Feedbapp.Droid\obj\Debug\res\values\styles.xml
 F:\Feedbapp\Feedbapp\Feedbapp.Droid\obj\Debug\Feedbapp.Droid.dll
 F:\Feedbapp\Feedbapp\Feedbapp.Droid\obj\Debug\Feedbapp.Droid.pdb
 F:\Feedbapp\Feedbapp\Feedbapp.Droid\obj\Debug\android\bin\FeedbappPkg.FeedbappPkg.apk
@@ -65,3 +64,4 @@ F:\Feedbapp\Feedbapp\Feedbapp.Droid\obj\Debug\res\drawable\whitehamb.png
 F:\Feedbapp\Feedbapp\Feedbapp.Droid\obj\Debug\res\drawable\greenhamb.png
 F:\Feedbapp\Feedbapp\Feedbapp.Droid\obj\Debug\res\drawable\xamarin_logo.png
 F:\Feedbapp\Feedbapp\Feedbapp.Droid\obj\Debug\res\drawable\webapi_logo.png
+F:\Feedbapp\Feedbapp\Feedbapp.Droid\obj\Debug\res\values\styles.xml

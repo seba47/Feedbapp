@@ -71,6 +71,9 @@
     <Compile Include="Views\LoginView.xaml.cs">
       <DependentUpon>LoginView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\PlayGround_controls.xaml.cs">
+      <DependentUpon>PlayGround_controls.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\RequestsAndOffersView.xaml.cs">
       <DependentUpon>RequestsAndOffersView.xaml</DependentUpon>
     </Compile>
@@ -202,6 +205,12 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Views\SentView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\PlayGround_controls.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

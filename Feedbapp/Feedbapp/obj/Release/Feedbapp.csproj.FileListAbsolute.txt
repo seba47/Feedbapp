@@ -38,3 +38,4 @@ F:\Deployment\Feedbapp\Feedbapp.dll.config
 F:\Deployment\Feedbapp\Feedbapp.dll
 F:\Deployment\Feedbapp\Feedbapp.pdb
 F:\Feedbapp\Feedbapp\Feedbapp\obj\Release\SentView.xaml.g.cs
+F:\Feedbapp\Feedbapp\Feedbapp\obj\Release\PlayGround_controls.xaml.g.cs
