@@ -20,7 +20,7 @@ namespace WebAPI.Controllers
         // GET: api/Users
         public IQueryable<User> GetUsers()
         {
-            return db.Users;
+            return db.Users.OrderBy(item => item.firstName);
         }
 
         // GET: api/Users/5
