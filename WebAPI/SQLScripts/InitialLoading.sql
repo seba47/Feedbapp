@@ -1,32 +1,29 @@
 ﻿
+-- delete Offereds 
+-- delete users
+--DBCC CHECKIDENT (Users, NORESEED)
+--DBCC CHECKIDENT (Users, RESEED, 1)
+
+
 INSERT INTO Users VALUES ('Adrián Claveri','',	'aclaveri','','adrian.claveri@uruit.com');
 INSERT INTO Users VALUES ('Agustina Secco','',	'asecco','','agustina.secco@uruit.com');
-INSERT INTO Users VALUES ('Alejandro Reyes','',	'areyes','','alejandro.reyes@uruit.com');
 INSERT INTO Users VALUES ('Ana Curbelo','',	'acurbelo','','ana.curbelo@uruit.com');
 INSERT INTO Users VALUES ('Ana Paula Jorcín','',	'ajorcin','','ana.jorcin@uruit.com');
 INSERT INTO Users VALUES ('Andrés Baez','',	'abaez','','andres.baez@uruit.com');
-INSERT INTO Users VALUES ('Ariel Ron ','',	'aron','','ariel.ron@uruit.com');
-INSERT INTO Users VALUES ('Augusto Barreto','',	'abarreto','','augusto.barreto@uruit.com');
 INSERT INTO Users VALUES ('Bruno Hartmann','',	'bhartmann','','bruno.hartmann@uruit.com');
 INSERT INTO Users VALUES ('Carlos Lorenzo','',	'clorenzo','','carlos.lorenzo@uruit.com');
 INSERT INTO Users VALUES ('Esperanza García','',	'egarcia','','esperanza.garcia@uruit.com');
 INSERT INTO Users VALUES ('Fabián Lewkowicz','',	'flewkowicz','','fabian.lewkowicz@uruit.com');
-INSERT INTO Users VALUES ('Gimena Cassola','',	'gcassola','','gimena.cassola@uruit.com');
 INSERT INTO Users VALUES ('Gonzalo Barbitta','',	'gbarbitta','','gonzalo.barbitta@uruit.com');
 INSERT INTO Users VALUES ('Gonzalo Mesorio','',	'gmesorio','','gonzalo.mesorio@uruit.com');
 INSERT INTO Users VALUES ('Ignacio Jorcin','',	'ijorcin','','ignacio.jorcin@uruit.com');
-INSERT INTO Users VALUES ('Ignacio Villaverde','',	'ivillaverde','','ignacio.villaverde@uruit.com');
-INSERT INTO Users VALUES ('Irán Reyes','',	'ireyes','','iran.reyes@uruit.com');
-INSERT INTO Users VALUES ('Jen Cesarkas','',	'jcesarkas','','jen.cesarkas@uruit.com');
 INSERT INTO Users VALUES ('Joaquín Sosa','',	'jsosa','','joaquin.sosa@uruit.com');
 INSERT INTO Users VALUES ('Juan Pablo Turielli','',	'jpturielli','','juan.turielli@uruit.com');
-INSERT INTO Users VALUES ('Marcelo Ávalos','',	'mavalos','','marcelo.avalos@uruit.com');
 INSERT INTO Users VALUES ('Marcelo Leonetti','',	'mleonetti','','marcelo.leonetti@uruit.com');
 INSERT INTO Users VALUES ('Marcos Bacelo','',	'mbacelo','','marcos.bacelo@uruit.com');
 INSERT INTO Users VALUES ('Martín Ferreira','',	'mferreira','','martin.ferreira@uruit.com');
 INSERT INTO Users VALUES ('Martín Mari ','',	'mmari','','martin.mari@uruit.com');
 INSERT INTO Users VALUES ('Matías Delgado','',	'matiasd','','matias.delgado@uruit.com');
-INSERT INTO Users VALUES ('Matías Varini','',	'mvarini','','matias.varini@uruit.com');
 INSERT INTO Users VALUES ('Mauricio Repetto','',	'mrepetto','','mauricio.repetto@uruit.com');
 INSERT INTO Users VALUES ('Milton Rodríguez','',	'mrodriguez','','milton.rodriguez@uruit.com');
 INSERT INTO Users VALUES ('Nicolás Brandl','',	'nbrandl','','nicolas.brandl@uruit.com');
@@ -35,7 +32,6 @@ INSERT INTO Users VALUES ('Pablo Piriz','',	'ppiriz','','pablo.piriz@uruit.com')
 INSERT INTO Users VALUES ('Rodrigo Rivera','',	'rrivera','','rodrigo.rivera@uruit.com');
 INSERT INTO Users VALUES ('Rolando Larrainci','',	'rlarrainci','','rolando.larrainci@uruit.com');
 INSERT INTO Users VALUES ('Santiago González','',	'sgonzalez','','santiago.gonzalez@uruit.com');
-INSERT INTO Users VALUES ('Sebastián Machado','',	'emachado','','sebastian.machado@uruit.com');
 INSERT INTO Users VALUES ('Sebastián Mastrogiovanni','',	'smastrogiovanni','','sebastian.mastrogiovanni@uruit.com');
 INSERT INTO Users VALUES ('Sebastián Rodríguez','',	'srodriguez','','sebastian.rodriguez@uruit.com');
 INSERT INTO Users VALUES ('Sergio Cabrera','',	'scabrera','','sergio.cabrera@uruit.com');
@@ -56,3 +52,4 @@ INSERT INTO Users VALUES ('Maria Jose Sanguinetti','',	'mjsanguinetti','','majo@
 INSERT INTO Users VALUES ('Giuliana Corbo','',	'gcorbo','','giuliana.corbo@uruit.com');
 INSERT INTO Users VALUES ('Saul Mizrahi','',	'smizrahi','','saul.mizrahi@crmgamified.com');
 INSERT INTO Users VALUES ('Camila Giménez','',	'cgimenez','','camila.gimenez@uruit.com');
+INSERT INTO Users VALUES ('Andrea Ubilla','',	'cgimenez','','andrea.ubilla@uruit.com');

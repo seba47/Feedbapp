@@ -25,6 +25,11 @@ C:\Users\scabrera\Documents\Visual Studio 2015\Projects\Feedbacker\Feedbapp\Feed
 C:\Users\scabrera\Documents\Visual Studio 2015\Projects\Feedbacker\Feedbapp\Feedbapp\Feedbapp.Droid\obj\Debug\R.cs.flag
 C:\Users\scabrera\Documents\Visual Studio 2015\Projects\Feedbacker\Feedbapp\Feedbapp\Feedbapp.Droid\obj\Debug\uploadflags.txt
 C:\Users\scabrera\Documents\Visual Studio 2015\Projects\Feedbacker\Feedbapp\Feedbapp\Feedbapp.Droid\obj\Debug\res\drawable\uruit_logo.png
+F:\Deployment\Feedbapp\Feedbapp.Droid.dll.config
+F:\Deployment\Feedbapp\Feedbapp.Droid.dll
+F:\Deployment\Feedbapp\Feedbapp.Droid.pdb
+F:\Deployment\Feedbapp\FeedbappPkg.FeedbappPkg.apk
+F:\Deployment\Feedbapp\FeedbappPkg.FeedbappPkg-Signed.apk
 F:\Feedbapp\Feedbapp\Feedbapp.Droid\bin\Debug\Feedbapp.Droid.dll.config
 F:\Feedbapp\Feedbapp\Feedbapp.Droid\bin\Debug\Feedbapp.Droid.dll
 F:\Feedbapp\Feedbapp\Feedbapp.Droid\bin\Debug\Feedbapp.Droid.pdb
@@ -52,16 +57,18 @@ F:\Feedbapp\Feedbapp\Feedbapp.Droid\obj\Debug\res\drawable\icon.png
 F:\Feedbapp\Feedbapp\Feedbapp.Droid\obj\Debug\res\drawable-hdpi\icon.png
 F:\Feedbapp\Feedbapp\Feedbapp.Droid\obj\Debug\res\drawable-xhdpi\icon.png
 F:\Feedbapp\Feedbapp\Feedbapp.Droid\obj\Debug\res\drawable-xxhdpi\icon.png
+F:\Feedbapp\Feedbapp\Feedbapp.Droid\obj\Debug\res\values\styles.xml
 F:\Feedbapp\Feedbapp\Feedbapp.Droid\obj\Debug\res\drawable\splashscreen.png
 F:\Feedbapp\Feedbapp\Feedbapp.Droid\obj\Debug\res\drawable\uruit_logo.png
 F:\Feedbapp\Feedbapp\Feedbapp.Droid\obj\Debug\res\drawable\notifications.png
 F:\Feedbapp\Feedbapp\Feedbapp.Droid\obj\Debug\res\drawable\hamburguer.png
 F:\Feedbapp\Feedbapp\Feedbapp.Droid\obj\Debug\res\drawable\profile1.png
 F:\Feedbapp\Feedbapp\Feedbapp.Droid\obj\Debug\res\drawable\profile2.png
-F:\Feedbapp\Feedbapp\Feedbapp.Droid\obj\Debug\R.cs.flag
-F:\Feedbapp\Feedbapp\Feedbapp.Droid\obj\Debug\uploadflags.txt
 F:\Feedbapp\Feedbapp\Feedbapp.Droid\obj\Debug\res\drawable\whitehamb.png
 F:\Feedbapp\Feedbapp\Feedbapp.Droid\obj\Debug\res\drawable\greenhamb.png
 F:\Feedbapp\Feedbapp\Feedbapp.Droid\obj\Debug\res\drawable\xamarin_logo.png
 F:\Feedbapp\Feedbapp\Feedbapp.Droid\obj\Debug\res\drawable\webapi_logo.png
-F:\Feedbapp\Feedbapp\Feedbapp.Droid\obj\Debug\res\values\styles.xml
+F:\Feedbapp\Feedbapp\Feedbapp.Droid\obj\Debug\res\drawable\home1.png
+F:\Feedbapp\Feedbapp\Feedbapp.Droid\obj\Debug\res\drawable\home2.png
+F:\Feedbapp\Feedbapp\Feedbapp.Droid\obj\Debug\R.cs.flag
+F:\Feedbapp\Feedbapp\Feedbapp.Droid\obj\Debug\uploadflags.txt

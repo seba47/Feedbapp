@@ -5,7 +5,7 @@
   <StackLayout>
     <StackLayout VerticalOptions="CenterAndExpand" Padding="20">
       <Label Text="¡Gracias!" VerticalOptions="Center" HorizontalOptions="Center" FontSize="50" ></Label>
-      <Label x:Name="LblMain" VerticalOptions="Center" HorizontalOptions="Center" FontSize="20" />
+      <Label x:Name="LblMain" VerticalOptions="Center" HorizontalOptions="Center" FontSize="20" XAlign="Center" />
 
       <StackLayout HorizontalOptions="FillAndExpand" Orientation="Horizontal" Padding="30">
         <Button BackgroundColor="#1fd660" Text="Nueva Solicitud" Clicked="NewRequestClicked" HorizontalOptions="FillAndExpand"></Button>
