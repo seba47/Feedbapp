@@ -54,6 +54,7 @@
     <Compile Include="Services\RemoteRepository_Offered.cs" />
     <Compile Include="Services\RemoteRepository_Requested.cs" />
     <Compile Include="Services\RemoteRepository_User.cs" />
+    <Compile Include="Shared\AutoCompleteView.cs" />
     <Compile Include="Shared\BindablePicker.cs" />
     <Compile Include="Shared\CustomContentPage.cs" />
     <Compile Include="Styles\MainStyles.cs" />

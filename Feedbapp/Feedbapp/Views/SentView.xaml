@@ -9,7 +9,7 @@
 
       <StackLayout HorizontalOptions="FillAndExpand" Orientation="Horizontal" Padding="30">
         <Button BackgroundColor="#1fd660" Text="Nueva Solicitud" Clicked="NewRequestClicked" HorizontalOptions="FillAndExpand"></Button>
-        <Button BackgroundColor="#1fd660" Text="Salir"  Clicked="ExitClicked" HorizontalOptions="FillAndExpand"></Button>
+        <Button BackgroundColor="#1fd660" Text="Home"  Clicked="ExitClicked" HorizontalOptions="FillAndExpand"></Button>
       </StackLayout>
     </StackLayout>
   </StackLayout>

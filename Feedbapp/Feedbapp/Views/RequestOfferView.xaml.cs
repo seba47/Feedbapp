@@ -24,34 +24,64 @@ namespace Feedbapp.Views
 
             //** Main Binding context on the XAML file **
             List<string> users = ((BaseReqOffViewModel)this.BindingContext).NamesList;
-            foreach (var item in users)
-            {
-                pkrSender.Items.Add(item);
-                pkrRecipient.Items.Add(item);
-            }
+
+            Shared.AutoCompleteView autoSender = new Shared.AutoCompleteView();
+            autoSender.Suggestions = users;
+            autoSender.Placeholder = "¿Quién sos?";
+            autoSender.TextColor = Color.White;
+            autoSender.SearchTextColor = Styles.MainStyles.GetMainColor();
+            autoSender.ShowSearchButton = false;
+            entryLayout.Children.Add(autoSender);
+
+            Shared.AutoCompleteView autoRecipient = new Shared.AutoCompleteView();
+            autoRecipient.Suggestions = users;
+            autoRecipient.Placeholder = "¿A quién?";
+            autoRecipient.TextColor = Color.White;
+            autoRecipient.SearchTextColor = Styles.MainStyles.GetMainColor();
+            autoRecipient.ShowSearchButton = false;
+            entryLayout.Children.Add(autoRecipient);
         }
 
         public async void MainButtonClicked(object sender, EventArgs args)
         {
-            if (pkrRecipient.SelectedIndex != pkrSender.SelectedIndex)
+            string senderName = string.Empty;
+            string recipientName = string.Empty;
+
+            IList<View> entries = entryLayout.Children;
+
+            if (((Shared.AutoCompleteView)entries[0]).SelectedItem != null && ((Shared.AutoCompleteView)entries[1]).SelectedItem != null)
             {
+                senderName = ((Shared.AutoCompleteView)entries[0]).SelectedItem.ToString();
+                recipientName = ((Shared.AutoCompleteView)entries[1]).SelectedItem.ToString();
+
                 BaseReqOffViewModel context = ((BaseReqOffViewModel)this.BindingContext);
-                context.SelectedSender = context.UsersList[pkrSender.SelectedIndex];
-                context.SelectedRecipient = context.UsersList[pkrRecipient.SelectedIndex];
-                bool sentOk = await context.Send();
-                if (sentOk)
+                if (!senderName.Equals(recipientName))
                 {
-                    ResetControls();
-                    GoToSuccessfullPage(context);
+                    context.SelectedSender = context.UsersList.FirstOrDefault(item => item.ToString().Equals(senderName));
+                    context.SelectedRecipient = context.UsersList.FirstOrDefault(item => item.ToString().Equals(recipientName));
+
+                    if (context.SelectedSender != null && context.SelectedRecipient != null)
+                    {
+                        bool sentOk = await context.Send();
+                        if (sentOk)
+                        {
+                            ResetControls();
+                            GoToSuccessfullPage(context);
+                        }
+                        else
+                        {
+                            await DisplayAlert("Error", "No se pudo solicitar el feedback", "Aceptar");
+                        }
+                    }
                 }
                 else
                 {
-                    await DisplayAlert("Error", "No se pudo solicitar el feedback", "Aceptar");
+                    await DisplayAlert("Error", "El solicitante y el solicitado no pueden ser la misma persona", "Aceptar");
                 }
             }
             else
             {
-                await DisplayAlert("Error", "El solicitante y el solicitado no pueden ser la misma persona", "Aceptar");
+                await DisplayAlert("Error", "El o los usuarios ingresados no existen en el sistema.", "Aceptar");
             }
         }
 
@@ -64,8 +94,8 @@ namespace Feedbapp.Views
 
         private void ResetControls()
         {
-            pkrSender.SelectedIndex = -1;
-            pkrRecipient.SelectedIndex = -1;
+            //pkrSender.SelectedIndex = -1;
+            //pkrRecipient.SelectedIndex = -1;
             editorComments.Text = "";
         }
     }

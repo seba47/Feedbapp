@@ -31,7 +31,7 @@ namespace WebAPI.Shared
             sb.AppendFormat("Estimad@ {0}, <br /><br /> ", to);
             sb.AppendFormat("{0} {1} feedback mediante FeedbApp, la nueva aplicación de UruIT para facilitar las instancias de feedback.<br/><br/> ", from, variableText);
             sb.AppendFormat("Mensaje de {0}: <br/><span style='font-family:Calibri;font-style:italic;'>\"{1}\"</span><br /><br />", from, comments);
-            sb.Append("<a href='Outlook:calendar'>Agendate una reunión!</a><br/><br/>");
+            sb.Append("Agendate una reunión!<br/><br/>");
             sb.Append("El equipo de FeedbApp");
             return sb.ToString();
         }
