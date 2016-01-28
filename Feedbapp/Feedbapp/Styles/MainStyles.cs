@@ -11,7 +11,7 @@ namespace Feedbapp.Styles
     {
         private const string backgroundColor = "212830"; //"FFFFFF";
         private const string secondBackgroundColor = "212830";
-        private const string mainColor = "1fd660";
+        private const string buttonColor = "0e8c92";
 
         public static string GetBackgroundColor(bool withSimbol)
         {
@@ -23,9 +23,9 @@ namespace Feedbapp.Styles
             return Color.FromHex(backgroundColor);
         }
 
-        public static Color GetMainColor()
+        public static Color GetButtonColor()
         {
-            return Color.FromHex(mainColor);
+            return Color.FromHex(buttonColor);
         }
 
         public static Color GetSecondBackgroundColor()

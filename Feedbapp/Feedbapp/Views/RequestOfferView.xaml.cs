@@ -29,7 +29,7 @@ namespace Feedbapp.Views
             autoSender.Suggestions = users;
             autoSender.Placeholder = "¿Quién sos?";
             autoSender.TextColor = Color.White;
-            autoSender.SearchTextColor = Styles.MainStyles.GetMainColor();
+
             autoSender.ShowSearchButton = false;
             entryLayout.Children.Add(autoSender);
 
@@ -37,7 +37,7 @@ namespace Feedbapp.Views
             autoRecipient.Suggestions = users;
             autoRecipient.Placeholder = "¿A quién?";
             autoRecipient.TextColor = Color.White;
-            autoRecipient.SearchTextColor = Styles.MainStyles.GetMainColor();
+
             autoRecipient.ShowSearchButton = false;
             entryLayout.Children.Add(autoRecipient);
         }

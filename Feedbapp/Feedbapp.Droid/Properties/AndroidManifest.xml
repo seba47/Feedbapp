@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" package="FeedbappPkg.FeedbappPkg" android:versionCode="1" android:installLocation="internalOnly" android:versionName="MVP">
-	<uses-sdk android:minSdkVersion="15" />
-	<application android:label="Feedbapp" android:icon="@drawable/uruit_logo"></application>
+  <uses-sdk android:minSdkVersion="15" />
+  <application android:label="Feedbapp" android:icon="@drawable/feedbapp_icon"></application>
 </manifest>

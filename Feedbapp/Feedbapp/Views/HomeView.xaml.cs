@@ -15,16 +15,19 @@ namespace Feedbapp.Views
         {
             InitializeComponent();
             BackgroundColor = MainStyles.GetBackgroundColor();
+            Random r = new Random();
+            int rInt = r.Next(1, 2); //for ints
+            BackgroundImage = "home" + rInt.ToString() + ".png";
         }
 
-        async void GoToRequestView(object sender, EventArgs args)
+        private async void GoToRequestView(object sender, EventArgs args)
         {
             await Navigation.PushAsync(new RequestOfferView(true));
         }
-        async void GoToOfferView(object sender, EventArgs args)
+
+        private async void GoToOfferView(object sender, EventArgs args)
         {
             await Navigation.PushAsync(new RequestOfferView(false));
         }
-        
     }
 }

@@ -144,6 +144,8 @@
     <AndroidResource Include="Resources\drawable\webapi_logo.png" />
     <AndroidResource Include="Resources\drawable\home2.png" />
     <AndroidResource Include="Resources\drawable\home1.png" />
+    <AndroidResource Include="Resources\drawable\hamb.png" />
+    <AndroidResource Include="Resources\drawable\feedbapp_icon.png" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Feedbapp\Feedbapp.csproj">
