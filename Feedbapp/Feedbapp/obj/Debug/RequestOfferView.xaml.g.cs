@@ -18,11 +18,17 @@ namespace Feedbapp.Views {
         
         private StackLayout entryLayout;
         
+        private global::Feedbapp.Shared.AutoCompleteView entrySender;
+        
+        private global::Feedbapp.Shared.AutoCompleteView entryRecipient;
+        
         private Editor editorComments;
         
         private void InitializeComponent() {
             this.LoadFromXaml(typeof(RequestOfferView));
             entryLayout = this.FindByName<StackLayout>("entryLayout");
+            entrySender = this.FindByName<global::Feedbapp.Shared.AutoCompleteView>("entrySender");
+            entryRecipient = this.FindByName<global::Feedbapp.Shared.AutoCompleteView>("entryRecipient");
             editorComments = this.FindByName<Editor>("editorComments");
         }
     }

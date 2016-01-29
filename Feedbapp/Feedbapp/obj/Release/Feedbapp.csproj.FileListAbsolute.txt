@@ -25,7 +25,6 @@ F:\Feedbapp\Feedbapp\Feedbapp\bin\Release\System.Net.Http.Primitives.xml
 F:\Feedbapp\Feedbapp\Feedbapp\bin\Release\Xamarin.Forms.Core.xml
 F:\Feedbapp\Feedbapp\Feedbapp\bin\Release\Xamarin.Forms.Xaml.xml
 F:\Feedbapp\Feedbapp\Feedbapp\obj\Release\Feedbapp.csproj.App.config
-F:\Feedbapp\Feedbapp\Feedbapp\obj\Release\Feedbapp.csprojResolveAssemblyReference.cache
 F:\Feedbapp\Feedbapp\Feedbapp\obj\Release\LoginView.xaml.g.cs
 F:\Feedbapp\Feedbapp\Feedbapp\obj\Release\HomeView.xaml.g.cs
 F:\Feedbapp\Feedbapp\Feedbapp\obj\Release\ProfileView.xaml.g.cs
@@ -40,3 +39,4 @@ F:\Feedbapp\Feedbapp\Feedbapp\obj\Release\SentView.xaml.g.cs
 F:\Feedbapp\Feedbapp\Feedbapp\obj\Release\PlayGround_controls.xaml.g.cs
 F:\Feedbapp\Feedbapp\Feedbapp\obj\Release\Feedbapp.dll
 F:\Feedbapp\Feedbapp\Feedbapp\obj\Release\Feedbapp.pdb
+F:\Feedbapp\Feedbapp\Feedbapp\obj\Release\Feedbapp.csprojResolveAssemblyReference.cache

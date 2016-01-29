@@ -1,4 +1,5 @@
 ﻿using Feedbapp.Styles;
+using System.Threading.Tasks;
 using Xamarin.Forms;
 
 namespace Feedbapp
@@ -21,6 +22,10 @@ namespace Feedbapp
         /// </summary>
         protected void InitMVPApp()
         {
+            Feedbapp.Models.UserModel userM = new Feedbapp.Models.UserModel();
+            //Call the API: to fix the first slow request
+            Task.Run(() => userM.GetUserByUsername("test"));
+
             //NavigationPage np = new NavigationPage(new Views.SentView("Se le ha enviado una solicitud a Pepito para agendar una instancia."));
             NavigationPage np = new NavigationPage(new Views.CustomMasterDetailPage());
             np.BackgroundColor = Color.FromHex(MainStyles.GetBackgroundColor(false));
@@ -39,8 +44,8 @@ namespace Feedbapp
                     new Setter { Property = Button.TextColorProperty, Value = Color.White},
                     //new Setter { Property = Button.FontAttributesProperty, Value = FontAttributes.Bold},
                     new Setter { Property = Button.BorderRadiusProperty, Value = 0},
-                    new Setter { Property = Button.BackgroundColorProperty, Value= Styles.MainStyles.GetButtonColor()},
-                    new Setter { Property = Button.FontFamilyProperty, Value = "Comic Sans.ttf"}
+                    new Setter { Property = Button.BackgroundColorProperty, Value= Styles.MainStyles.GetButtonColor()}
+                    //new Setter { Property = Button.FontFamilyProperty, Value = "Comic Sans.ttf"}
                 }
             };
             // no Key specified, becomes an implicit style for ALL boxviews

@@ -44,6 +44,7 @@ F:\Feedbapp\WebAPI\bin\System.Web.WebPages.Deployment.dll
 F:\Feedbapp\WebAPI\bin\System.Web.WebPages.dll
 F:\Feedbapp\WebAPI\bin\System.Web.WebPages.Razor.dll
 F:\Feedbapp\WebAPI\bin\WebGrease.dll
+F:\Feedbapp\WebAPI\bin\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
 F:\Feedbapp\WebAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 F:\Feedbapp\WebAPI\bin\Newtonsoft.Json.xml
 F:\Feedbapp\WebAPI\bin\System.Net.Http.Formatting.xml
@@ -72,9 +73,8 @@ F:\Feedbapp\WebAPI\bin\Microsoft.Owin.Security.Google.xml
 F:\Feedbapp\WebAPI\bin\Microsoft.Owin.Security.Twitter.xml
 F:\Feedbapp\WebAPI\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 F:\Feedbapp\WebAPI\bin\System.Web.Http.Owin.xml
-F:\Feedbapp\WebAPI\obj\Release\WebAPI.dll
-F:\Feedbapp\WebAPI\obj\Release\WebAPI.pdb
-F:\Feedbapp\WebAPI\bin\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+F:\Feedbapp\WebAPI\obj\Release\WebAPI.csprojResolveAssemblyReference.cache
 F:\Feedbapp\WebAPI\obj\Release\WebAPI.Migrations.Initial.resources
 F:\Feedbapp\WebAPI\obj\Release\WebAPI.csproj.GenerateResource.Cache
-F:\Feedbapp\WebAPI\obj\Release\WebAPI.csprojResolveAssemblyReference.cache
+F:\Feedbapp\WebAPI\obj\Release\WebAPI.dll
+F:\Feedbapp\WebAPI\obj\Release\WebAPI.pdb

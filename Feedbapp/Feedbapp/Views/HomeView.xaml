@@ -7,10 +7,10 @@
       <Label  FontAttributes="Bold" XAlign="Center" Text="Solicita u ofrece Feedback a tus compañeros de UruIT rápida y sencillamente." FontSize="20" TextColor="White"></Label>
     </StackLayout>
     <StackLayout Padding="0,0,0,60">
-      <Button Text="Solicitar Feedback" WidthRequest="250" HeightRequest="100" Clicked="GoToRequestView" FontSize="24"></Button>
+      <Button Text="Solicitar Feedback" WidthRequest="250" HeightRequest="100" Clicked="GoToRequestView" FontSize="20"></Button>
     </StackLayout>
     <StackLayout>
-      <Button Text="Ofrecer Feedback" WidthRequest="250" HeightRequest="100" Clicked="GoToOfferView" FontSize="24" ></Button>
+      <Button Text="Ofrecer Feedback" WidthRequest="250" HeightRequest="100" Clicked="GoToOfferView" FontSize="20" ></Button>
     </StackLayout>
   </StackLayout>
 </ContentPage>

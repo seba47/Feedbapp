@@ -24,22 +24,8 @@ namespace Feedbapp.Views
 
             //** Main Binding context on the XAML file **
             List<string> users = ((BaseReqOffViewModel)this.BindingContext).NamesList;
-
-            Shared.AutoCompleteView autoSender = new Shared.AutoCompleteView();
-            autoSender.Suggestions = users;
-            autoSender.Placeholder = "¿Quién sos?";
-            autoSender.TextColor = Color.White;
-
-            autoSender.ShowSearchButton = false;
-            entryLayout.Children.Add(autoSender);
-
-            Shared.AutoCompleteView autoRecipient = new Shared.AutoCompleteView();
-            autoRecipient.Suggestions = users;
-            autoRecipient.Placeholder = "¿A quién?";
-            autoRecipient.TextColor = Color.White;
-
-            autoRecipient.ShowSearchButton = false;
-            entryLayout.Children.Add(autoRecipient);
+            entrySender.Suggestions = users;
+            entryRecipient.Suggestions = users;
         }
 
         public async void MainButtonClicked(object sender, EventArgs args)
