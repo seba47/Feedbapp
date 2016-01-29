@@ -19,7 +19,7 @@ namespace WebAPI.Shared
         public const string offerSubject = "Ofrecimiento de Feedback";
         public const string appEmail = "hello.feedbapp@gmail.com";
 
-        public static string getBody(Feedback f, string from, string to, string comments)
+        public static string getBody(Feedback f, string from, string emailFrom, string to, string comments)
         {
             string variableText = "te pidió";
             if (f.GetType() == typeof(Offered))
@@ -30,8 +30,8 @@ namespace WebAPI.Shared
             StringBuilder sb = new StringBuilder();
             sb.AppendFormat("Estimad@ {0}, <br /><br /> ", to);
             sb.AppendFormat("{0} {1} feedback mediante FeedbApp, la nueva aplicación de UruIT para facilitar las instancias de feedback.<br/><br/> ", from, variableText);
-            sb.AppendFormat("Mensaje de {0}: <br/><span style='font-family:Calibri;font-style:italic;'>\"{1}\"</span><br /><br />", from, comments);
-            sb.Append("Agendate una reunión!<br/><br/>");
+            sb.AppendFormat("Mensaje de {0} ({2}): <br/><span style='font-family:Calibri;font-style:italic;'>\"{1}\"</span><br /><br />", from, comments, emailFrom);
+            sb.AppendFormat("<a href='mailto:{0}'>Agendate una reunión!</a><br/><br/>", emailFrom);
             sb.Append("El equipo de FeedbApp");
             return sb.ToString();
         }

@@ -100,10 +100,10 @@ namespace WebAPI.Controllers
             int rId = requested.recipientId != null ? (int)requested.recipientId : 0;
             requested.sender = db.Users.Find(sId);
             requested.recipient = db.Users.Find(rId);
-            string requestBody = EmailService.getBody(requested, requested.sender.firstName, requested.recipient.firstName, requested.comments);
+            string requestBody = EmailService.getBody(requested, requested.sender.firstName, requested.sender.email, requested.recipient.firstName, requested.comments);
             ThreadStart threadStart = delegate ()
             {
-                EmailService.SendEmail(requested.sender.email, requested.recipient.email, EmailService.requestSubject, requestBody);
+                EmailService.SendEmail(EmailService.appEmail, requested.recipient.email, EmailService.requestSubject, requestBody);
                 EmailService.SendEmail(EmailService.appEmail, requested.sender.email, EmailService.notificationSubject, EmailService.requestNotificationBody(requested.recipient.firstName));
             };
             Thread thread = new Thread(threadStart);

@@ -42,3 +42,8 @@ F:\Feedbapp\Feedbapp\Feedbapp.Droid\obj\Release\res\drawable\hamb.png
 F:\Feedbapp\Feedbapp\Feedbapp.Droid\obj\Release\res\drawable\feedbapp_icon.png
 F:\Feedbapp\Feedbapp\Feedbapp.Droid\obj\Release\R.cs.flag
 F:\Feedbapp\Feedbapp\Feedbapp.Droid\obj\Release\uploadflags.txt
+F:\Deployment\Feedbapp\Feedbapp.Droid.dll.config
+F:\Deployment\Feedbapp\Feedbapp.Droid.dll
+F:\Deployment\Feedbapp\Feedbapp.Droid.pdb
+F:\Deployment\Feedbapp\FeedbappPkg.FeedbappPkg.apk
+F:\Deployment\Feedbapp\FeedbappPkg.FeedbappPkg-Signed.apk

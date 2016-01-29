@@ -78,10 +78,9 @@ namespace Feedbapp.Views
             NavigationPage.SetHasBackButton(sView, false);
         }
 
-        private void ResetControls()
+        public void ResetControls()
         {
-            //pkrSender.SelectedIndex = -1;
-            //pkrRecipient.SelectedIndex = -1;
+            entryRecipient.ClearField();
             editorComments.Text = "";
         }
     }

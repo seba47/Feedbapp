@@ -96,10 +96,10 @@ namespace WebAPI.Controllers
             int rId = offered.recipientId != null ? (int)offered.recipientId : 0;
             offered.sender = db.Users.Find(sId);
             offered.recipient = db.Users.Find(rId);
-            string offerBody = EmailService.getBody(offered, offered.sender.firstName, offered.recipient.firstName, offered.comments);
+            string offerBody = EmailService.getBody(offered, offered.sender.firstName, offered.sender.email, offered.recipient.firstName, offered.comments);
             ThreadStart threadStart = delegate ()
             {
-                EmailService.SendEmail(offered.sender.email, offered.recipient.email, EmailService.offerSubject, offerBody);
+                EmailService.SendEmail(EmailService.appEmail, offered.recipient.email, EmailService.offerSubject, offerBody);
                 EmailService.SendEmail(EmailService.appEmail, offered.sender.email, EmailService.notificationSubject, EmailService.offerNotificationBody(offered.recipient.firstName));
             };
             Thread thread = new Thread(threadStart);
