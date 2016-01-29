@@ -15,6 +15,7 @@ namespace Feedbapp.Droid
         {
             base.OnCreate(bundle);
             global::Xamarin.Forms.Forms.Init(this, bundle);
+            RequestedOrientation = ScreenOrientation.Portrait;
             LoadApplication(new App());
             this.ActionBar.SetIcon(Android.Resource.Color.Transparent);
         }

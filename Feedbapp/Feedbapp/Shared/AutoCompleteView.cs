@@ -813,5 +813,10 @@ namespace Feedbapp.Shared
         {
             _lstSuggestions.IsVisible = show;
         }
+
+        public void ClearField()
+        {
+            _entText.Text = "";
+        }
     }
 }
