@@ -86,9 +86,13 @@ namespace WebAPI.Controllers
             {
                 return BadRequest(ModelState);
             }
+            string tempComm = requested.comments;
+            requested.comments = string.Empty;
             db.Requested.Add(requested);
+
             if (db.SaveChanges() > 0)
             {
+                requested.comments = tempComm;
                 SendEmails(requested);
             }
             return CreatedAtRoute("DefaultApi", new { id = requested.feedbackId }, requested);

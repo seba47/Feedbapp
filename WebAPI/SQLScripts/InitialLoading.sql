@@ -52,6 +52,6 @@ INSERT INTO Users VALUES ('Maria Jose Sanguinetti','',	'mjsanguinetti','','majo@
 INSERT INTO Users VALUES ('Giuliana Corbo','',	'gcorbo','','giuliana.corbo@uruit.com');
 INSERT INTO Users VALUES ('Saul Mizrahi','',	'smizrahi','','saul.mizrahi@crmgamified.com');
 INSERT INTO Users VALUES ('Camila Giménez','',	'cgimenez','','camila.gimenez@uruit.com');
-INSERT INTO Users VALUES ('Andrea Ubilla','',	'aubilla','','andrea.ubilla@uruit.com');
+INSERT INTO Users VALUES ('Andrea Ubilla','',	'aubilla','','andrea@uruit.com');
 INSERT INTO Users VALUES ('Lorena Acosta','',	'lacosta','','lorena.acosta@uruit.com');
 INSERT INTO Users VALUES ('Nicolas Darriulat','',	'ndarriulat','','nicolas.darriulat@uruit.com');
