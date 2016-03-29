@@ -29,6 +29,7 @@ F:\Feedbapp\Feedbapp\Feedbapp\bin\Debug\System.Net.Http.Primitives.xml
 F:\Feedbapp\Feedbapp\Feedbapp\bin\Debug\Xamarin.Forms.Core.xml
 F:\Feedbapp\Feedbapp\Feedbapp\bin\Debug\Xamarin.Forms.Xaml.xml
 F:\Feedbapp\Feedbapp\Feedbapp\obj\Debug\Feedbapp.csproj.App.config
+F:\Feedbapp\Feedbapp\Feedbapp\obj\Debug\Feedbapp.csprojResolveAssemblyReference.cache
 F:\Feedbapp\Feedbapp\Feedbapp\obj\Debug\LoginView.xaml.g.cs
 F:\Feedbapp\Feedbapp\Feedbapp\obj\Debug\HomeView.xaml.g.cs
 F:\Feedbapp\Feedbapp\Feedbapp\obj\Debug\ProfileView.xaml.g.cs
@@ -43,4 +44,5 @@ F:\Feedbapp\Feedbapp\Feedbapp\obj\Debug\SentView.xaml.g.cs
 F:\Feedbapp\Feedbapp\Feedbapp\obj\Debug\PlayGround_controls.xaml.g.cs
 F:\Feedbapp\Feedbapp\Feedbapp\obj\Debug\Feedbapp.dll
 F:\Feedbapp\Feedbapp\Feedbapp\obj\Debug\Feedbapp.pdb
-F:\Feedbapp\Feedbapp\Feedbapp\obj\Debug\Feedbapp.csprojResolveAssemblyReference.cache
+F:\Feedbapp\Feedbapp\Feedbapp\obj\Debug\Feedbapp.dll.mdb
+F:\Feedbapp\Feedbapp\Feedbapp\bin\Debug\Feedbapp.dll.mdb
